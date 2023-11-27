@@ -6,7 +6,7 @@
 
 # Updates
 
-[11.26] Our first meetup on HTML structure and dataset collection.[Meetup_1](./meetup/11.26).
+[11.26] Our first meetup on HTML structure and dataset collection.[Meetup_1](./Meetup).
 
 
 ## Citation

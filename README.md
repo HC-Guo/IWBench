@@ -1,5 +1,5 @@
 # Image2HTML-Benchmark
-[ICML 2024] Benchmark for Evaluating Large Language Models  \\for Converting Images to HTML Code 
+[ICML 2024] Benchmark for Evaluating Large Language Models for Converting Images to HTML Code 
 
 
 👋 Welcome, this is a benchmark for evaluating large language models for Converting Images to HTML Code. 😊 We welcome everyone to participate and contribute 🌟.

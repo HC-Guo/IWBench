@@ -7,6 +7,7 @@
 # Updates
 
 [11.26] Our first meetup on HTML structure and dataset collection.[Meetup_1](./Meetup).
+
 [12.03] Second meetup on detailed metrics and human annotation.[Meetup_2](./Meetup).
 
 

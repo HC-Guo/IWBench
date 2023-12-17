@@ -6,7 +6,7 @@
 
 # Updates
 
-[12.17] better HTML preprocess script and HTML compare script is updated [code](./code), [production of partial datasets](https://drive.google.com/drive/folders/18qOha7IqmMUSYo-UvJmnB-9R0bCo7yrI?usp=drive_link)
+[12.17] better HTML preprocess script and HTML compare script is updated [code](./code), production of partial datasets is uploaded.[benchmark](https://drive.google.com/drive/folders/18qOha7IqmMUSYo-UvJmnB-9R0bCo7yrI?usp=drive_link)
 
 [12.11] Code for HTML-DOM tree, Patch comparison, HTML preprocessing is updated [code](./code)
 

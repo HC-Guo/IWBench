@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      /* Center aligns all elements */
+      padding: 20px;
+      /* Adds some space around the content */
+    }
+
+    .container {
+      background-color: #f8f8f8;
+      /* Light grey background */
+      padding: 20px;
+      margin: 20px auto;
+      /* Centers the container */
+      width: 80%;
+      /* Sets the width of the container */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      /* Adds a shadow for some depth */
+    }
+
+    .header {
+      margin-bottom: 20px;
+      /* Adds space below the header */
+    }
+
+    .call-to-action {
+      background-color: #007bff;
+      /* Blue background */
+      color: white;
+      /* White text */
+      padding: 10px 20px;
+      text-decoration: none;
+      /* No underline on the link */
+      border-radius: 5px;
+      /* Rounded corners */
+      display: inline-block;
+      /* Allows setting padding and margins */
+      margin-top: 20px;
+      /* Adds space above the button */
+    }
+
+    .footer {
+      font-size: 0.8em;
+      /* Smaller text in footer */
+      margin-top: 40px;
+      /* Adds space above the footer */
+      color: #666;
+      /* Dark grey text */
+    }
+
+    .unsubscribe {
+      color: #007bff;
+      /* Blue text for the unsubscribe link */
+      text-decoration: none;
+      /* No underline on the link */
+      margin-left: 5px;
+      /* Small space after 'Don't like these emails?' */
+    }
+
+    .unsubscribe:hover {
+      text-decoration: underline;
+      /* Underline on hover for better UX */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>Hi there</h1>
+    </div>
+
+    <p>Sometimes you just want to send a simple HTML email with a simple design and clear call to action. This is it.
+    </p>
+
+    <a href="#" class="call-to-action">Call To Action</a>
+
+    <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+      <circle
+        cx="10"
+        cy="10"
+        r="10"
+        onclick="alert('uidgui')" />
+    </svg>
+
+    <div class="footer">
+      <p>Company Inc, 7-11 Commercial St, Belfast BT1 2NB</p>
+      <p>Don't like these emails?<a href="#" class="unsubscribe">Unsubscribe</a></p>
+      <p>Powered by HTMLEmail.io</p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+下面是一种可能的HTML和CSS代码设计：
+
+HTML部分：
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <!-- 背景图像和图案 -->
+  <div class="bg-image"></div>
+  
+  <!-- 标题 -->
+  <h1 class="title">环保主题论坛</h1>
+  
+  <!-- 选项卡或折叠面板-->
+  <div class="tab">
+    <button class="tablinks" onclick="openForum(event, 'SustainableLifestyle')">可持续生活方式</button>
+    <button class="tablinks" onclick="openForum(event, 'EnvironmentLaw')">环境保护法律</button>
+    <button class="tablinks" onclick="openForum(event, 'GreenActivity')">环保活动和倡议</button>
+  </div>
+  
+  <!-- 卡片布局 -->
+  <div id="SustainableLifestyle" class="tabcontent">
+    <div class="card">
+      <img src="image1.png" alt="Image" style="width:100%">
+      <div class="container">
+        <h2><b>生活方式1</b></h2> 
+      </div>
+    </div>
+  </div>
+
+  <div id="EnvironmentLaw" class="tabcontent">
+    <div class="card">
+      <img src="image2.png" alt="Image" style="width:100%">
+      <div class="container">
+        <h2><b>法律1</b></h2> 
+      </div>
+    </div>
+  </div>
+
+  <div id="GreenActivity" class="tabcontent">
+    <div class="card">
+      <img src="image3.png" alt="Image" style="width:100%">
+      <div class="container">
+        <h2><b>活动1</b></h2>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 表单 -->
+  <div>
+    <h2>留言板</h2>
+    <form action="/submit_form" method="post">
+      <textarea id="message" name="message" rows="4" cols="50"></textarea>
+      <input type="submit" value="Submit">
+    </form> 
+  </div>
+  
+  <!-- 页脚 -->
+  <footer>
+    <p>Copyright © 2022</p>
+  </footer>
+
+  <!-- 视频 -->
+  <div>
+    <video width="320" height="240" controls>
+      <source src="environment_video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
+```
+
+CSS部分(styles.css) :
+
+```css
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+.bg-image {
+  background: url('background_image.jpg');
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  text-align: center;
+  margin: 20px;
+  font-size: 3em;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+```
+
+由于站点中的交互性功能需要JavaScript进行操作，下面利用JavaScript来实现选项卡的切换(scripts.js) .
+
+```javascript
+function openForum(evt, forumName) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(forumName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+```
+
+请注意，以上代码仅为示例代码，假设已经有了所需的图片和视频等资源，并可能需要些许的修改以适应你的实际情况。

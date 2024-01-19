@@ -1,0 +1,86 @@
+下面是您请求的代码的基本框架。这个HTML模板已经定义了卡片布局, 边栏, 超链接和按钮, 背景图像和图案, 视频等所有需要的界面元素，并用CSS进行了样式定义。
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #f4f4f4;
+    left: -200px;
+    transition: all .3s;
+}
+.card {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.button {
+    background-color: #58db72;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: white; 
+    color: black; 
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="#sustainable_living">Sustainable Living</a>
+  <a href="#law">Environment Protection Law</a>
+  <a href="#activity">Activities and Initiatives</a>
+</div>
+
+<div class="content">
+  <div class="card" id="sustainable_living">
+    <h2>Sustainable Living</h2>
+    <p>Discuss ways to live sustainably</p>
+    <button class="button">New Post</button>
+  </div>
+
+  <div class="card" id="law">
+    <h2>Environment Protection Law</h2>
+    <p>Discuss the laws regarding environment protection</p>
+    <button class="button">New Post</button>
+  </div>
+
+  <div class="card" id="activity">
+    <h2>Activities and Initiatives</h2>
+    <p>Discuss your activities and initiatives towards environment protection.</p>
+    <button class="button">New Post</button>
+  </div>
+
+  <div class="video">
+    <h2>Environment awareness video</h2>
+    <video width="400" controls>
+      <source src="mov_bbb.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+</body>
+</html>
+```
+
+上述代码中，我已经为您添加了三个讨论板块的卡片，并设置了链接至这些讨论板块的边栏。这些讨论板块包括：'可持续生活方式'、'环保法制'和'环保活动和倡议'。每个卡片上都有一个按钮，用户可以点击此按钮来创建一个新的帖子。我还添加了一个视频组件，您可以将它替换成您想展示的环保主题视频。请注意，这只是一个基本模板，您可能需要进行适当的修改以适应您的实际需求。

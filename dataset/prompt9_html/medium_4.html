@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>环保论坛</title>
+<!-- CSS样式设置 -->
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+header {background-color: #228B22; color: white; padding: 10px; text-align: center;}
+nav {background-color: #f0f0f0; padding:15px;}
+article {float: right; padding: 20px; width: 70%; background-color: #f0f0f0;}
+aside {float: left; width: 25%; padding: 20px; background-color: #f0f0f0;}
+footer {clear: both; text-align: center; padding: 10px; background-color:#228B22; color: white;}
+button {background-color: #4CAF50; color: white; padding: 10px; margin: 10px 0; border: none; cursor: pointer;}
+audio {display: block; margin: 20px auto;}
+.card {box-shadow: 0 0 10px 0 rgba(0,0,0,0.2); transition: 0.3s; width: 90%; margin: 20px auto; padding: 20px; background-color: #fff;}
+.card:hover {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>环保论坛</h1>
+</header>
+
+<!-- 面包屑导航 -->
+<nav>
+  <a href="home.html">主页</a> > <a href="forum.html">环保论坛</a>
+</nav>
+
+<!-- 主论坛部分 -->
+<article>
+    <div class="card">
+        <h2>可持续生活方式</h2>
+        <button type="button">发帖</button>
+        <button type="button">编辑</button>
+    </div>
+
+    <div class="card">
+        <h2>环保活动和倡议</h2>
+        <button type="button">发帖</button>
+        <button type="button">编辑</button>
+    </div>
+
+    <div class="card">
+        <h2>环境保护法律</h2>
+        <button type="button">发帖</button>
+        <button type="button">编辑</button>
+    </div>
+</article>
+
+<!-- 边栏部分 -->
+<aside>
+    <div class="card">
+        <h2>版主公告</h2>
+        <p>环保是我们每个人的责任，让我们一起为地球做出贡献！</p>
+    </div>
+  
+    <!-- 社交分享按钮 -->
+    <button type="button" onclick="window.location.href = 'http://www.facebook.com/sharer.php?u=' + document.URL">分享到Facebook</button>
+    <button type="button" onclick="window.location.href = 'http://twitter.com/share?text=' + document.title + '&url=' + document.URL">分享到Twitter</button>
+  
+    <!-- 音频 -->
+    <audio controls>
+         <source src="environment.mp3" type="audio/mpeg">
+         您的浏览器不支持音频元素。
+    </audio>
+</aside>
+
+<!-- 页脚 -->
+<footer>
+    <p>版权所有 &copy; 2022 环保论坛</p>
+</footer>
+
+</body>
+</html>

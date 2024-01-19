@@ -1,0 +1,85 @@
+以下是一个基于你的要求的简单HTML和CSS样例，此样例使用一个自适应布局，卡片来展示影片资讯并且评价可以被用户提交。有一个滑动横幅展示放映中的影片。同时用户偏好存储在localStorage里，但是现在我们还没有任何流媒体链接的处理。
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=UTF-8>
+    <title>电影评价</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f3f3f3;
+        }
+
+        #carousel {
+            display: flex;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 10px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            display: inline-block;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        #current {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 80%;
+            box-sizing: border-box;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>电影评价</h1>
+    
+    <div id="carousel">
+        <div class="card">
+            <img src="movie1.jpg">
+            <h2>Movie 1</h2>
+            <p>Movie 1 Description</p>
+            <a href="#">观看</a>
+        </div>
+        <!-- More Cards Go Here -->
+    </div>
+
+    <div id="current">
+        <h2>Current Reviews</h2>
+        <!-- Reviews Go Here -->
+    </div>
+    
+    <div>
+        <h2>Submit a Review</h2>
+        <form id="reviewForm">
+            <textarea required></textarea>
+            <button type="submit">提交</button>
+        </form>
+    </div>
+    
+    <script>
+        document.getElementById('reviewForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var review = event.target.elements[0].value;
+            // 把这个评论添加到"Current Reviews"
+            // 或者发送给服务器
+        });
+    </script>
+</body>
+</html>
+```
+以上是一些HTML和CSS代码的基础，实际的功能实现可能会更复杂需要使用JavaScript或者更进一步的服务器端语言。同时此电影图片和流媒体链接也需要实际数据来源。
+也建议理解和遵守版权法规。

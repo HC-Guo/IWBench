@@ -1,0 +1,78 @@
+HTML和CSS是构建网站的基本技术，根据你的要求，下面是一个简单的网页代码。
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url("background_image.jpg");
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+.search-bar {
+  width: 30%;
+  border: 1px solid grey;
+  padding: 10px;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+.breadcrumb {
+  list-style-type: none;
+  display: flex;
+}
+.breadcrumb li {
+  margin-right: 1em;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <ul class="breadcrumb">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#forum">Forum</a></li>
+    <li><a href="#topics">Topics</a></li>
+  </ul>
+</nav>
+
+<h2>Our Forum</h2>
+
+<div class="search-bar">
+  <input type="text" placeholder="Search...">
+</div>
+
+<h4>Board Categories</h4>
+
+<div class="card">
+  <p><a href="#sustainability">Sustainable Lifestyles</a></p>
+</div>
+
+<div class="card">
+  <p><a href="#laws">Environment Protection Laws</a></p>
+</div>
+
+<div class="card">
+  <p><a href="#activities">Activities And Initiatives</a></p>
+</div>
+
+<footer>
+  <p>Created by Environment Forum</p>
+</footer>
+
+</body>
+</html>
+```
+
+这个页面的内容如下:一个装饰了背景图像的呈现论坛主题的页面。面包屑导航链接(Home > Forum > Topics)帮助用户知道他们在网站上的位置。搜索栏允许用户搜索他们感兴趣的主题。 'Board Categories'下面有几个以卡片布局显示的链接，通过点击链接，用户可以查看或参与讨论。我们在CSS中添加了样式来突出这些卡片。此外，我们还在页面底部添加了一个简单的页脚。
+
+注意: 由于这是一个简化的示例，某些功能(如链接，进度条和加载动画，和视频插入)并未完全实现。实际开发中，你可能需要JavaScript或者服务器端语言来实现真正的搜索功能，同样你也需要实际的链接URL来构建链接以及真实的图片、视频路径来展示。

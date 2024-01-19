@@ -1,0 +1,93 @@
+首先，这是一个大规模的项目，需要用到HTML, CSS, JavaScript以及后端编程，数据库，版权等多方面的知识。以下是一个基础的HTML+CSS代码生成，此代码只是演示最基本的框架，实际需要根据需求与设计去丰富与优化。
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>集中最新电影和电视剧评价</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        .navbar{
+            display: flex;
+            background-color: #f0f0f0;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .carousel{
+            width: 100%;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 20px 0;
+        }
+        .carousel img{
+            width: 20%;
+            height: auto;
+            display: inline-block;
+        }
+        .card{
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .card img{
+            width: 100%;
+        }
+        .card-body{
+            padding: 15px;
+        }
+        #user-pref{
+            display: none;
+        }
+        #user-pref:checked ~ .card:not(.preferred){
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#movies">电影</a>
+        <a href="#tvshows">电视剧</a>
+        <label>
+            <input type="checkbox" id="user-pref" />
+            只看我喜欢的
+        </label>
+    </div>
+
+    <h1>欢迎来到最新电影和电视剧评价聚合站</h1>
+    
+    <div class="carousel">
+        <!-- 滑动横幅/轮播 -->
+    </div>
+
+    <h2 id="movies">电影</h2>
+    <div>
+        <div class="card">
+            <img src="movie-thumbnail.jpg" />
+            <div class="card-body">
+                <h3>电影1</h3>
+                <p>电影1描述...</p>
+            </div>
+        </div>
+        <!-- 更多卡片... -->
+    </div>
+
+    <h2 id="tvshows">电视剧</h2>
+    <div>
+        <div class="card preferred">
+            <img src="tvshow-thumbnail.jpg" />
+            <div class="card-body">
+                <h3>电视剧1</h3>
+                <p>电视剧1描述...</p>
+            </div>
+        </div>
+        <!-- 更多卡片... -->
+    </div>
+
+</body>
+</html>
+```
+
+请注意这只是一个简化的版本，实际的网站需要使用到JavaScript以实现更多的交互性，例如：用户的评分系统等。以及还需要后端技术和数据库来存储和处理数据。最后，你要合理地应对版权问题，特别是涉及到直接链接到不同流媒体平台观看选项时。

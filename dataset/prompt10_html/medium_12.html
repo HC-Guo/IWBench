@@ -1,0 +1,67 @@
+<!-- HTML Code -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>电影评价聚合网站</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      color: white;
+      padding: 14px 16px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+    }
+    #sidebar {
+      border-right: 1px solid #ddd;
+      padding: 15px;
+      height: 100vh;
+      float: left;
+      width: 200px;
+      background-color: #f1f1f1;
+    }
+    #main-content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+    .breadcrumb {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .breadcrumb a {
+      text-decoration: none;
+      color: #6c757d;
+    }
+    .breadcrumb a:hover {
+      color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#">首页</a> | <a href="#">最新电影</a> | <a href="#">最新电视剧</a> | <a href="#">用户评分</a>
+  </div>
+  <div id="sidebar">
+    <h3>用户内容偏好</h3>
+    <p>设置你的偏好，获取更多你喜爱的内容.</p>
+  </div>
+  <div id="main-content">
+    <h1>电影评价</h1>
+    <div class="breadcrumb">
+        <a href="#">首页</a> > <a href="#">最新电影</a>
+    </div>
+    <!-- Your Content Here -->
+    <p>这是一部电影的评价...</p>
+    <button>分享到微博</button>
+    <button>分享到微信</button>
+    <!-- Stream Links -->
+    <a href="#">观看链接1</a>
+    <a href="#">观看链接2</a>
+  </div>
+</body>
+</html>

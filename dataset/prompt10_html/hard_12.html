@@ -1,0 +1,100 @@
+以下是根据你提供的需求设计的HTML和CSS样式代码。请注意，为了演示起见，我使用了一些占位符，并且我未实现实时更新评论和用户评分系统，因为这涉及到的是后端开发和数据库知识。
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background: url("your-background-image.jpg");
+            background-size: cover;
+        }
+
+        #sidebar {
+            position: fixed;
+            width: 200px;
+            height: 100%;
+            background: #333;
+            color: #fff;
+            overflow: auto;
+        }
+
+        #main-content {
+            margin-left: 210px;
+            padding: 20px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: black;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 70%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h2>电影及电视剧评价</h2>
+        <p>链接到流媒体平台...</p>
+        <img src="cover.jpg" alt="电影海报" style="width:100%">
+        <button id="btn-rate">打分</button>
+    </div>
+
+    <div id="main-content">
+        <h1>电影名称</h1>
+        <p>电影简介...</p>
+        <button id="btn-comment">评论</button>
+
+        <!-- 模态窗口 -->
+        <div id="comment-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>填写评论...</p>
+                <form>
+                    <label for="fname">用户名</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="comment">评论</label><br>
+                    <input type="text" id="comment" name="comment"><br>
+                    <input type="submit" value="提交">
+                </form>
+            </div>
+        </div>
+
+        <!-- 评论区 -->
+        <div id="comment-section">
+            <h3>评论</h3>
+            <p>用户评论...</p>
+        </div>
+
+        <!-- 页脚 -->
+        <div id="footer">
+            <p>版权所有 &copy; 20XX</p>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+注意，此代码只是个基本的网站布局，并未包含javascript，所以模态窗口和打分按钮暂时无法使用。实现这些功能则需要使用javascript以及后端编程语言。在真实的开发中，你可能还需要编写更多代码来实现用户评分系统，评论版块等功能。
+
+自定义内容偏好通常需求用户登录并记录用户的喜好，这需要后端开发。因此如果你需要这些功能你可能需要聘请一名全栈开发者或者前后端开发者来协助你实现。

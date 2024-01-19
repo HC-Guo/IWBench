@@ -1,0 +1,114 @@
+以下是一个基本的HTML代码示例，并使用CSS样式对这个环保主题的论坛网站进行设计。由于环保图像和相关数据不可用，所以这里只提供静态的Div块，您可以根据实际需求替换成想要的内容。
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        #nav-bar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        #nav-bar li {
+            float: left;
+        }
+        #nav-bar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        #nav-bar li a:hover {
+            background-color: #111;
+        }
+        #sidebar {
+            background-color: #f0f0f0;
+            width: 200px;
+            height: 100%;
+            position: fixed;
+        }
+        #main-content {
+            margin-left: 200px;
+            padding: 1px 16px;
+            height: 1000px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,.close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <ul id="nav-bar">
+        <li><a href="#sustainable-living">Sustainable Living</a></li>
+        <li><a href="#environmental-law">Environmental Law</a></li>
+        <li><a href="#eco-actions">Eco Actions and Initiatives</a></li>
+    </ul>
+
+    <div id="sidebar">
+        <h2>Sidebar</h2>
+    </div>
+
+    <div id="main-content">
+        <h1>Welcome to our Eco Forum!</h1>
+        <p>Join us in our discussions!</p>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Modal Content...</p>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById('myModal');
+        var span = document.getElementsByClassName('close')[0];
+        span.onclick = function() {
+            modal.style.display = 'none';
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
+```
+这是一个非常基本的网站设计，实际上还有很多其他的特征和功能，例如评论系统，投票功能，用户注册登录系统等等，需要使用更复杂的技术来实现，例如JavaScript、PHP、Database等。如果需要这些功能，推荐寻找一个专业的网站开发者或者是网站开发公司等。

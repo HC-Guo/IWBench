@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>电影和电视剧评价聚合网站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .content {
+            margin: 15px;
+        }
+        .content h2 {
+            color: #333;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .icon {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>电影和电视剧评价聚合网站</h1>
+        <img class="icon" src="icon.png" alt="Icon">
+    </div>
+
+    <div class="content">
+        <h2>最新评价</h2>
+        <div id="reviews">Loading...</div>
+
+        <h2>用户评分系统</h2>
+        <div id="rating_system">Loading...</div>
+
+        <h2>在线观看</h2>
+        <div id="streaming_options">Loading...</div>
+
+        <h2>偏好设置</h2>
+        <div id="preferences_options">Loading...</div>
+    </div>
+
+    <div class="footer">
+        <p>版权所有 &copy; 2022</p>
+    </div>
+
+    <script>
+        // 代码区 用来实现实时更新评论,用户评分系统, 直接链接流媒体平台和自定义偏好内容等功能
+        // Example:
+        // fetch('/api/reviews').then(data => {
+        //     document.getElementById('reviews').innerText = data;
+        // });
+        // ...
+    </script>
+</body>
+</html>

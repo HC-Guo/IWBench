@@ -1,0 +1,61 @@
+这是一个清晰方式来建立你所需要的HTML网页代码：
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>环保社区</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card {
+            border: 1px solid #ccc;
+            margin: 10px;
+            width: calc(33% - 20px);
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .card h3 {
+            font-size: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌱 环保社区</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h3><i class="fas fa-leaf"></i> 可持续生活方式</h3>
+            <p>在这里讨论关于如何实现可持续的生活方式。</p>
+        </div>
+        <div class="card">
+            <h3><i class="fas fa-gavel"></i> 环境保护法律</h3>
+            <p>了解和讨论有关环境保护的法律。</p>
+        </div>
+        <div class="card">
+            <h3><i class="fas fa-hands-helping"></i> 环保活动和倡议</h3>
+            <p>参与并分享你关于环保的活动和倡议。</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        保护环境，人人有责 © 2022
+    </footer>
+</body>
+</html>
+```
+
+这是一个非常基础的环保主题网站。其中的关于投票、发布和编辑帖子等功能将需要服务器端支持并且使用JavaScript进行前端交互，这超出了静态HTML和CSS的内容。但是，这个例子展示了如何使用卡片布局和Flexbox，同时也加入了环保主题的图标和页脚。

@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>科技新闻网站</title>
+<style>
+body {
+    font-family: Arial;
+}
+#main {
+    display: flex;
+    flex-flow: row wrap;
+}
+#news-scroll, #hot-topic, #subscribe, #comments {
+    flex: 1;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#video-player {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>欢迎来到科技新闻网站</h1>
+        <form>
+            <input type="text" placeholder="搜索新闻...">
+            <button type="submit">搜索</button>
+        </form>
+    </header>
+
+    <div id="main">
+        <div id="news-scroll">
+            <marquee behavior="scroll" direction="left">最新的科技新闻报道，深度分析文章，播客和视频内容</marquee>
+        </div>
+        <div id="video-player">
+            <video controls>
+                <source src="technews.mp4" type="video/mp4">
+            </video>
+            <br>
+            <br>
+            <audio controls>
+                <source src="news_audio.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div id="hot-topic">
+            <h2>热门话题</h2>
+        </div>
+        <div id="subscribe">
+            <h2>订阅电子报</h2>
+            <form>
+                <input type="email" placeholder="您的邮箱..." required/>
+                <button type="submit">订阅</button>
+            </form>
+        </div>
+        <div id="comments">
+            <h2>评论区</h2>
+            <form>
+                <textarea placeholder="写下你的评论..."></textarea>
+                <br>
+                <button type="submit">提交评论</button>
+            </form>
+        </div>
+        <div id="progress">
+            <h2>页面加载进度</h2>
+            <progress id="file" value="70" max="100"> 70% </progress>
+        </div>
+        <div id="card-layout" style="display: flex;">
+            <div style="flex: 1; margin: 10px; padding: 15px; border: 1px solid #ccc; border-radius: 4px;">
+                <h3>新闻1</h3>
+                <img src="news1.jpg">
+                <p>一些新闻摘要...</p>
+                <a href="#">阅读更多</a>
+            </div>
+            <div style="flex: 1; margin: 10px; padding: 15px; border: 1px solid #ccc; border-radius: 4px;">
+                <h3>新闻2</h3>
+                <img src="news2.jpg">
+                <p>一些新闻摘要...</p>
+                <a href="#">阅读更多</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

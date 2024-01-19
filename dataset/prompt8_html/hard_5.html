@@ -1,0 +1,84 @@
+下面是基于您要求的一个基本HTML页面代码。由于您的需求中涉及到大量动态内容和实际功能（如视频播放、评论功能、电子报订阅等），这些需要后端语言如JavaScript或服务端语言如PHP、数据库等支持，HTML和CSS本身无法实现。因此在这里我将给出的代码仅为静态页面展示，提供页面框架和基本的样式。
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>科技新闻网站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+        }
+        .news-ticker {
+            background-color: #e3e3e3;
+            padding: 10px;
+            margin: 20px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .content-left, .content-right {
+            width: 45%;
+        }
+        .subscribe {
+            background-color: #e3e3e3;
+            padding: 10px;
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>科技新闻网站</h1>
+        <input type="text" placeholder="搜索..." />
+        <button>搜索</button>
+    </header>
+
+    <div class="news-ticker">
+        <marquee>滚动新闻...</marquee>
+    </div>
+
+    <div class="content">
+        <div class="content-left">
+            <h2>最新新闻</h2>
+            <p>New news...</p>
+            <h2>热门话题</h2>
+            <ul>
+                <li><a href="#">Topic 1</a></li>
+                <li><a href="#">Topic 2</a></li>
+            </ul>
+        </div>
+        
+        <div class="content-right">
+            <h2>播客/视频区</h2>
+            <img src="default.png" alt="Image">
+            <video controls>
+                <source src="movie.mp4" type="video/mp4">
+            </video>
+            <h2>评论区</h2>
+            <textarea>Leave a comment...</textarea>
+        </div>
+    </div>
+    
+    <div class="subscribe">
+        <h2>订阅我们的电子报</h2>
+        <input type="text" name="email" placeholder="你的邮箱">
+        <button>订阅</button>
+    </div>
+</body>
+
+</html>
+```
+
+我们还需要引用例如 bootstrap 的库来提供模态框等高级的功能，同时要实现评论功能还需要一个处理后端的服务。其中的"New news..."、"Topic 1"、"Topic 2"、"default.png"以及"movie.mp4"这些都是占位符，您可以根据需要替换为您自己网站上的相应内容。

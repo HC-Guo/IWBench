@@ -1,0 +1,87 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>科技新闻</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            background-image: url('tech-background.jpg');
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            color: white;
+            padding: 15px;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px;
+        }
+        .news-ticker {
+            background-color: #f1f1f1;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .subscribe {
+            background-color: #f1f1f1;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        #videoplayer {
+           width: 80%;
+           height: 480px;
+           margin: 15px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#news">新闻</a>
+        <a href="#analysis">深度分析</a>
+        <a href="#podcast">播客</a>
+        <a href="#video">视频</a>
+    </div>
+    <div class="news-ticker">
+        <marquee>最新的科技新闻在此滚动</marquee>
+    </div>
+    <div id="videoplayer">
+        <video src="tech-video.mp4" controls></video>
+    </div>
+    <div class="hot-topics">
+        <h2>热门话题</h2>
+        <img src="hot-topic1.jpg" alt="Hot Topic 1">
+        <img src="hot-topic2.jpg" alt="Hot Topic 2">
+    </div>
+    <div class="subscribe">
+        <h2>订阅我们的新闻电子报</h2>
+        <form action="/submit_email">
+            <input type="email" placeholder="输入电子邮件..">
+            <input type="submit">
+        </form>
+    </div>
+    <footer>
+        <p>科技新闻 - 版权所有 &copy; 20XX</p>
+    </footer>
+</body>
+</html>
+```
+
+请注意，这是一个基础的HTML页面，在实际使用中，您需要替换 "tech-background.jpg", "tech-video.mp4" 和 "hot-topic1.jpg", "hot-topic2.jpg" 为实际的图片和视频文件路径。而且在“订阅我们的新闻电子报”的部分，表单提交地址 “/submit_email” 需要替换为实际接收订阅请求的服务器地址。
+
+CSS 样式已内嵌在页面中，你也可以将样式放在单独的 CSS 文件中，并在 HTML 文档头部引用该 CSS 文件。

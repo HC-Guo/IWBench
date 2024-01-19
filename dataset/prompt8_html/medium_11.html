@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.carousel {
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.carousel img {
+  height: 200px;
+  margin: 20px;
+}
+
+.news_ticker {
+  background-color: #ddd;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.video_section {
+  display: flex;
+  gap: 20px;
+}
+
+.video_section iframe {
+  flex: 1;
+}
+
+.newsletter_subscription {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>科技新闻站</h1>
+
+<div class="navbar">
+  <a href="#">最新新闻</a>
+  <a href="#">深度分析</a>
+  <a href="#">播客</a>
+  <a href="#">视频</a>
+</div>
+
+<div class="carousel">
+  <img src="banner1.jpg" alt="轮播1">
+  <img src="banner2.jpg" alt="轮播2">
+  <img src="banner3.jpg" alt="轮播3">
+</div>
+
+<div class="news_ticker">
+  <marquee>这里是最新的滚动新闻</marquee>
+</div>
+
+<div class="video_section">
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+  </iframe>
+</div>
+
+<div class="newsletter_subscription">
+  <h2>订阅我们的电子报</h2>
+  <form action="#">
+    <label for="email">电子邮件:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <input class="button" type="submit" value="订阅">
+  </form>
+</div>
+
+<div class="footer">
+  <p>Copyright &copy; 2023 - 2025 公司名称</p>
+</div>
+
+</body>
+</html>

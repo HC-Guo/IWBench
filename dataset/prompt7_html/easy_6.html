@@ -1,0 +1,63 @@
+由于HTML及CSS代码复杂性及篇幅限制，以下仅为一个简单示例且并未包含所有功能。
+
+```HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        #sidebar {
+            width: 20%;
+            height: 100vh;
+            background-image: url("your_sidebar_background_url");
+        }
+        #main-content {
+            width: 60%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-image: url("your_main_background_url");
+        }
+        #footer {
+            position: fixed;
+            width: 100%;
+            height: 50px;
+            bottom: 0;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="sidebar">
+            <!-- Sidebar content -->
+        </div>
+        <div id="main-content">
+            <form>
+                <label for="profile">Create Profile:</label><br>
+                <input type="text" id="profile" name="profile"><br>
+                <label for="status">Status Update:</label><br>
+                <input type="text" id="status" name="status">
+            </form>
+            
+
+            <!-- Social sharing functions and controls would go here -->
+            <!-- Note, actual implementation of these features involve 
+            backend programming and not part of HTML/CSS -->
+
+        </div>
+    </div>
+
+    <!-- Attach footer -->
+    <div id="footer">
+        <p>Copyright © 2022 by Your Name</p>
+    </div>
+</body>
+</html>
+```
+
+以上HTML及CSS代码简单展现了页面结构，包括边栏（sidebar）、主内容（main-content）和页脚（footer）。背景图像通过CSS的background-image属性设置。真实的社交网络平台(像Facebook或Twitter)会依赖JavaScript、PHP等其它语言以及数据库等技术，目前只能提供HTML和CSS代码，无法满足所有的功能要求。

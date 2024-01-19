@@ -1,0 +1,84 @@
+由于HTML代码过于详细复杂，下面提供的是HTML主体框架，而且由于论坛、员工目录和文档共享等功能需要后端支持，所以这里仅提供静态页面设计。CSS样式会简单附在style标签内，但在实际项目中，应放在外部CSS文件中。这里的代码也无法完全展示所有的图标和具体信息内容，只用于说明符合需求的HTML结构。
+
+```HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS样式 */
+        body {font-family: Arial, sans-serif;}
+        nav {background-color: #f0f0f0;margin-bottom:10px;padding:10px;}
+        .navigation > a {margin-right: 15px;}
+        .card {border:1px solid #ccc; padding:10px;margin-bottom:10px;}
+        .icon {width:24px;height:24px;}
+    </style>
+</head>
+
+<body>
+    <!-- 新闻板块，使用卡片布局 -->
+    <section>
+        <div class="card">
+            <h2>News</h2>
+            <p>This is the latest company news...</p>
+        </div>
+    </section>
+
+    <!-- 员工目录卡片板块 -->
+    <section>
+        <div class="card">
+            <h2>Employee Directory</h2>
+            <p>A list of all employees...</p>
+        </div>
+    </section>
+
+    <!-- 论坛卡片板块 -->
+    <section>
+        <div class="card">
+            <h2>Forum</h2>
+            <p>View and participate in discussions...</p>
+        </div>
+    </section>
+
+    <!-- 工作流程卡片板块 -->
+    <section>
+        <div class="card">
+            <h2>Workflow Management</h2>
+            <p>Keep track of your work...</p>
+        </div>
+    </section>
+
+    <!-- 文档共享卡片板块 -->
+    <section>
+        <div class="card">
+            <h2>Document Sharing</h2>
+            <p>Securely share and collaborate on documents...</p>
+        </div>
+    </section>
+
+    <!-- 边栏导航 -->
+    <nav class="navigation">
+        <a href="#"><img src="" class="icon" /> Home</a>
+        <a href="#"><img src="" class="icon" /> News</a>
+        <a href="#"><img src="" class="icon" /> Employees</a>
+        <a href="#"><img src="" class="icon" /> Forum</a>
+        <a href="#"><img src="" class="icon" /> Workflow</a>
+        <a href="#"><img src="" class="icon" /> Document</a>
+    </nav>
+
+    <!-- 搜索功能 -->
+    <form action="#">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><img src="" class="icon" /></button>
+    </form>
+    
+    <!-- 个人化设置选项 -->
+    <section>
+        <div class="card">
+            <h2>Personal Settings</h2>
+            <p>Adjust your personal settings...</p>
+        </div>
+    </section>
+</body>
+</html>
+```
+请注意这只是一个基础的网页设计，实际的网页可能需要更多的元素和样式，包括使用JavaScript脚本和后端HTML模板来动态生成内容。

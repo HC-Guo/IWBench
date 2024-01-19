@@ -1,0 +1,117 @@
+由于HTML代码比较长，我会给出关键模块的HTML代码段，并为你提供基本的css样式示例。
+
+首先，我们创建一个包含标题、面包屑导航、搜索栏、选项卡或折叠面板的主体结构：
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>企业内部门户</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div id="header">
+    <h1>企业内部门户</h1>
+    <div>
+        <a href="#">首页</a> > <a href="#">新闻发布</a>
+    </div>
+    <div id="search">
+        <form action="search.php" method="get">
+            <input type="text" name="query" />
+            <input type="submit" value="搜索" />
+        </form>
+    </div>
+</div>
+<div id="tabs">
+    <button class="tablink" onclick="openPage('News', this)" id="defaultTab">新闻发布</button>
+    <button class="tablink" onclick="openPage('Directory', this)">员工目录</button>
+</div>
+</body>
+```
+然后，我们创建内部论坛、工作流程管理、文档共享等内容模块：
+
+```html
+<body>
+<div id="forum" class="tabcontent">
+    <h2>内部论坛</h2>
+    ...
+</div>
+<div id="workflow" class="tabcontent">
+    <h2>工作流程管理</h2>
+    ...
+</div>
+<div id="document" class="tabcontent">
+    <h2>文档共享</h2>
+    ...
+</div>
+```
+
+接着，创建页脚，包含导向其他网页的超链接：
+
+```html
+<div id="footer">
+    <a href="about.html">关于我们</a> | 
+    <a href="contact.html">联系我们</a> | 
+    <a href="sitemap.html">网站地图</a> 
+</div>
+</body>
+</html>
+```
+
+一个便捷的video和audio的标签:
+
+```
+<body>
+  <video width="320" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <audio controls>
+    <source src="horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>  
+```
+
+下面就是简单styles.css的样子。
+
+```css
+body {
+    font-family: Arial, sans-serif;
+}
+#header {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+#tabs {
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+```
+
+以上都是基础HTML和CSS代码示例，具体实现将依公司组织结构和功能需求进一步定制。您需要具有服务器端脚本处理、数据库查询等后端技术来实现完整功能。

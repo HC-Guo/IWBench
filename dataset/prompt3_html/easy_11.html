@@ -1,0 +1,65 @@
+生成一个企业内部使用的门户网站的HTML和CSS代码如下：
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.banner {
+  width: 100%;
+  height: 300px;
+  overflow: auto; 
+}
+.banner img {
+  width: 100%;
+  height: 300px;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.main-content {
+  margin-left: 210px;
+  padding: 20px; 
+}
+</style>
+</head>
+<body>
+
+<div class="banner">
+  <img src="banner-image.jpg" alt="Banner Image">
+</div>
+
+<div class="sidebar">
+  <h2>标题</h2>
+  <ul>
+    <li><a href="#news">新闻</a></li>
+    <li><a href="#directory">员工目录</a></li>
+    <li><a href="#forum">论坛</a></li>
+    <li><a href="#workflow">工作流程管理</a></li>
+    <li><a href="#docs">文档共享</a></li>
+  </ul>
+</div>
+
+<div class="main-content">
+  <h1>欢迎来到我们的企业门户网站</h1>
+  <p>这是我们的新闻发布版块...</p>
+  <p>这是我们的员工目录...</p>
+  <p>这是我们的内部论坛...</p>
+  <p>这是我们的工作流程管理工具...</p>
+  <p>这是我们的文档共享和协作平台...</p>
+</div>
+
+</body>
+</html>
+```
+
+这段代码为您创建了一个包含滑动横幅、标题和导航栏的简洁明了的门户网站。请注意，您将需要适当地自定义各个段落的内容以及导航栏链接的目标地址。您还需要更改“banner-image.jpg”以指向您的横幅图像（如果有）的正确路径。此外，本示例并未包含搜索和个性化设置功能的代码，因为这将需要更复杂的编程，可能包括JavaScript和后端服务器支持。

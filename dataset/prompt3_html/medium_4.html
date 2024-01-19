@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>企业门户网站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .nav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 40%;
+            margin: 10px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .content {
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="#home">主页</a>
+        <a href="#news">新闻</a>
+        <a href="#directory">人员名册</a>
+        <a href="#forum">内部论坛</a>
+        <a href="#workflow">工作流程管理</a>
+        <a href="#document">文档分享</a>
+        <a href="#settings">个人设置</a>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <h3>动态新闻发布</h3>
+            <video controls>
+                <source src="news.mp4" type="video/mp4">
+            </video>
+            <p>最新公司新闻发布</p>
+            <div class="socialShare">
+                <button>分享到Facebook</button>
+                <button>分享到Twitter</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>内部论坛</h3>
+            <audio controls>
+                <source src="forum.mp3" type="audio/mpeg">
+            </audio>
+            <p>加入内部论坛进行讨论与交流</p>
+        </div>
+    </div>
+</body>
+
+</html>

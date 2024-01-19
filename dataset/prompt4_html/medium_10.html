@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: #5f9ea0;
+            color: white;
+            font-size: 30px;
+        }
+        
+        .content {
+            padding: 20px;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .product div {
+            margin-bottom: 20px;
+        }
+        
+        img {
+            width:250px;
+            height:300px;
+        }
+        
+        .btn {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>时尚服装店</h1>
+    </div>
+
+    <div class="content">
+        <h2>新品上市</h2>
+        <div class="product">
+            <div>
+                <img src="new_product.jpg" alt="新品">
+                <p>详细的产品描述、尺码信息</p>
+                <button class="btn" type="button">加入购物车</button>
+            </div>
+        </div>
+
+        <h2>热销商品</h2>
+        <div class="product">
+            <div>
+                <img src="popular_product.jpg" alt="热销商品">
+                <p>详细的产品描述、尺码信息</p>
+                <button class="btn" type="button">加入购物车</button>
+            </div>
+        </div>
+
+        <h2>折扣专区</h2>
+        <div class="product">
+            <div>
+                <img src="discount_product.jpg" alt="打折商品">
+                <p>详细的产品描述、尺码信息</p>
+                <button class="btn" type="button">加入购物车</button>
+            </div>
+        </div>
+        
+        <h2>购物流程视频</h2>
+        <video controls width="250">
+            <source src="shopping_process.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="footer">
+        <p><a href="#">客户服务</a> | <a href="#">订单跟踪</a> | <a href="#">安全支付</a></p>
+        <p>分享到：<a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+    </div>
+</body>
+</html>

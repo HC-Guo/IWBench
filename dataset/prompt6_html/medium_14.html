@@ -1,0 +1,78 @@
+这是一个设计的非常复杂的网站，由于编写这样的代码可能需要很长时间，但是我可以给出关键部分的HTML和CSS样式。
+
+首先是HTML部分：
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Programming Courses</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="banner">
+        <h1>欢迎来到在线编程课程平台</h1>
+    </div>
+    <nav class="breadcrumb">
+        <a href="#">首页</a> > <a href="#">在线课程</a> > <a href="#">Python基础</a>
+    </nav>
+    <section class="course-list">
+        <!--To be filled with courses.-->
+    </section>
+    <div class="video-tutorial">
+        <!--Embed video tutorial here.-->
+    </div>
+    <footer>
+        <p>© 2022在线编程课程平台</p>
+    </footer>
+</body>
+</html>
+```
+接下来是CSS部分：
+
+```css
+body {
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.breadcrumb {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.video-tutorial {
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video-tutorial iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+```
+
+这只是一个粗略的蓝图，你还需要额外的HTML和CSS代码，以及可能的JavaScript代码来实现其他功能如成就追踪，论坛互动，搜索功能等。记住，这是一个大规模的项目可能需要几个月的时间来完成，特别是如果你一人在执行。

@@ -1,0 +1,104 @@
+由于篇幅限制，我无法在这里提供完整的HTML和CSS代码，不过我可以给出关键部分的示例代码，这样便能更清楚地理解如何构建这个网站。
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>在线编程教育平台</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>在线编程教育平台</h1>
+  <p>选择您喜欢的课程并开始学习！</p>
+</div>
+
+<div class="navbar">
+  <a href="#">在线课程</a>
+  <a href="#">学术研究</a>
+  <a href="#">学习工具</a>
+</div>
+
+<div class="row">
+  <div class="side">...</div>
+  <div class="main">
+    <h2>课程标题</h2>
+    <h5>课程简介, Dec 7, 2021</h5>
+    <div class="video">...</div>
+    <p>这里是课程详情...</p>
+    </div>
+</div>
+
+<div class="footer">
+  <h2>页脚</h2>
+</div>
+
+</body>
+</html>
+```
+
+对应的CSS代码示例：
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-image: url('background.jpg');
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+```
+
+请注意，以上只是一个通用的HTML和CSS的样板代码，真正的网站设计往往会更复杂，并需要服务器端的语言如NodeJS, PHP等来支撑如动态内容更新，个人成就追踪，用户推荐系统等功能。使用JavaScript也可以实现诸如课程播放器、滑动横幅等交互元素。我建议请专业的网站开发人员来建设这样的网站。

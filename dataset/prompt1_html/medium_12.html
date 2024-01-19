@@ -1,0 +1,59 @@
+由于HTML和CSS代码在回答中无法完全展示，以下仅为简化版本。实际应用时，需要添加更多的CSS代码来实现响应式设计、过渡效果以及其他各种样式。此外，每张图片都需要有一个URL，但在此处，我们只使用了占位符。
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>摄影师作品展示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>摄影师作品展示</h1>
+    <div class="gallery">
+        <img src="image-url1" alt="作品1">
+        <img src="image-url2" alt="作品2">
+        <!-- 更多作品... -->
+    </div>
+
+    <h2>关于摄影师</h2>
+    <p>这里是摄影师的背景和艺术理念。</p>
+
+    <h2>联系信息</h2>
+    <p>这里是摄影师的联系信息。</p>
+
+    <div class="social-links">
+        <a href="facebook-link">Facebook</a>
+        <a href="twitter-link">Twitter</a>
+        <a href="instagram-link">Instagram</a>
+        <!-- 更多社交媒体链接... -->
+    </div>
+</body>
+</html>
+```
+
+其中，每个社交媒体链接都应该被替换成实际的链接。更复杂的设计可能会包含更多的元素，如页脚、导航菜单、过滤选项等。

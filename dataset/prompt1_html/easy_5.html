@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摄影师作品集</title>
+    <style>
+        body {
+            background-image: url('background.jpg');
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            text-align:center;
+            padding:20px;
+        }
+        .footer {
+            text-align:center;
+            padding:20px;
+            background-color: #f2f2f2;
+        }
+        .sidebar {
+            float:left;
+            width:20%;
+            background:#f2f2f2;
+            padding:20px;
+        }
+        .main-content {
+            float:left;
+            width:80%;
+            padding:20px;
+        }
+        .gallery img {
+            width: 100%;
+            transition:transform 0.25s ease;
+        }
+        .gallery img:hover {
+            transform:scale(1.1);
+        }
+        @media(max-width: 768px) {
+            .sidebar, .main-content {
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>摄影师作品集</h1>
+        <p>欢迎来到我的世界</p>
+    </div>
+    <div class="sidebar">
+        <h2>关于我</h2>
+        <p>这里是摄影师的专业背景和艺术理念的详细介绍。[背景图像和图案]</p>
+    </div>
+    <div class="main-content">
+        <div class="gallery">
+            <img src='image1.jpg' alt='图片一'>
+            <img src='image2.jpg' alt='图片二'>
+            <img src='image3.jpg' alt='图片三'>
+        </div>
+        <div class="contact-info">
+            <h2>联系方式</h2>
+            <p>电话：12345678</p>
+            <p>邮箱：photographer@example.com</p>
+        </div>
+        <div class="social-media">
+            <h2>社交媒体</h2>
+            <a href="facebook.com">Facebook</a>
+            <a href="twitter.com">Twitter</a>
+            <a href="Instagram.com">Instagram</a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>版权所有 ©2023 摄影师姓名. [页脚]</p>
+    </div>
+</body>
+</html>

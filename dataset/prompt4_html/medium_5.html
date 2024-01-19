@@ -1,0 +1,62 @@
+HTML：
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>在线时尚服装店</title>
+    <style>
+        body { background-color: #f2f2f2; font-family: Arial, sans-serif; }
+        .header, .footer { background-color: #333; color: #fff; padding: 20px; text-align: center; }
+        .category { float: left; width: 15%;}
+        .product { float: right; width: 80%;}
+        .clearfix { clear: both; }
+        .banner { display: flex; overflow: auto;}
+        .banner img { width: 100%; }
+        .social-share { text-align: center;}
+        .video { margin-top: 20px; }
+        .video iframe { width: 100%; height: 300px; }
+    </style>
+</head>
+<body>
+    <div class="header">在线时尚服装店</div>
+
+    <div class="category">
+        <ul>
+            <li>新品上市</li>
+            <li>热销商品</li>
+            <li>折扣专区</li>
+        </ul>
+    </div>
+
+    <div class="product">
+        <h2>产品名称</h2>
+        <div class="banner">
+            <img src="图片地址">
+            <!-- 更多图片... -->
+        </div>
+        <p>产品描述</p>
+        <p>尺码信息</p>
+        <div>用户评价</div>
+        <button>购买</button>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="video">
+        <iframe src="视频地址" frameborder="0"></iframe>
+    </div>
+
+    <div class="social-share">
+        <button>分享到Facebook</button>
+        <button>分享到Twitter</button>
+        <!-- 更多分享按钮... -->
+    </div>
+
+    <div class="footer">版权所有 &copy; 2021 在线时尚服装店</div>
+</body>
+</html>
+```
+
+需要注意的是，上面给出的是一个基本的 HTML 结构，还需要根据实际设计和内容进行进一步的适配和填充，如图片地址、视频地址、产品详情、分享按钮实现等。另外，像购买、在线支付、订单跟踪这些功能涉及重要的后端逻辑处理，此处只是从前端页面角度进行了基本设计展示。

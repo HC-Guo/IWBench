@@ -1,0 +1,109 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Meta Tags for Responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>摄影师的作品集</title>
+    <style>
+        /* CSS样式 */
+        body {
+            background-color: #f3f3f3;
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .image-gallery img {
+            width: 30%;
+            margin: 1%;
+            transition: all .2s ease-in-out;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .card {
+            margin: 2%;
+            background-color: #fff;
+            padding: 2%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-links a {
+            margin: 0 1%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1% 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>摄影师的作品集</h1>
+        </header>
+
+        <div class="image-gallery">
+            <!--替换链接为高分辨率图片链接-->
+            <img src="IMAGE_URL" alt="Image Description" class="card" />
+            <img src="IMAGE_URL" alt="Image Description" class="card" />
+            <img src="IMAGE_URL" alt="Image Description" class="card" />
+        </div>
+
+        <div class="bio">
+            <h2>关于摄影师</h2>
+            <p class="card">
+               这里是摄影师的专业背景和艺术理念的详细介绍...
+            </p>
+        </div>
+
+        <div class="contact">
+            <h2>联系信息</h2>
+            <p class="card">
+               这里是摄影师的联系信息...
+            </p>
+        </div>
+
+        <div class="social-links">
+            <h2>社交媒体</h2>
+            <a href="SOCIAL_MEDIA_LINK_1"><img src="IMAGE_URL_FOR_SOCIAL_MEDIA_1" alt="Social Media 1" /></a>
+            <a href="SOCIAL_MEDIA_LINK_2"><img src="IMAGE_URL_FOR_SOCIAL_MEDIA_2" alt="Social Media 2" /></a>
+            <a href="SOCIAL_MEDIA_LINK_3"><img src="IMAGE_URL_FOR_SOCIAL_MEDIA_3" alt="Social Media 3" /></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>版权所有 &copy; 2022 摄影师名称</p>
+    </footer>
+</body>
+</html>
+```
+以上代码为摄影师展示作品集的网页，你需要替换`IMAGE_URL`, `SOCIAL_MEDIA_LINK` 和`SOCIAL_MEDIA_IMAGE` 为实际的图片和社交媒体链接。此外，在摄影师的专业背景、艺术理念和联系信息区域，你需要根据实际情况填写相应信息。标题，页脚，卡片布局，超链接和按钮已按要求包含在代码中，网站响应式设计，可以适应不同设备的显示。

@@ -1,0 +1,117 @@
+下面是一个基本的HTML及CSS样板，仅提供了页面框架和样式，图片、音频、社交媒体链接等元素需要你根据具体需求进行替换，也需要添加更多的CSS样式以实现更好的视觉效果。
+
+HTML:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Photographer Name</h1>
+        <audio controls>
+            <source src="audio_file.mp3" type="audio/mpeg">
+            Your browser does not support HTML audio.
+        </audio>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="social-media-link-here">Social Media</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="card">
+                <img src="example-image.jpg" alt="example">
+                <div class="description">Sample Description</div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>Professional background and artistic concept.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Contact information.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2022 Photographer Name</p>
+    </footer>
+</body>
+</html>
+```
+
+CSS:
+```css
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: #000;
+    padding: 10px;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+.card {
+    margin: 20px;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+```
+
+此代码只执行了一些主要功能和响应式设计，你还可以调整样式以适应你眼中想要的美学感觉，以及为社交媒体链接添加实际链接等等。

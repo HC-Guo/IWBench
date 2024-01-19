@@ -1,0 +1,70 @@
+这是一个简单的HTML示例代码，采用了响应式设计，并包含了一些CSS样式。请注意，这只是一个很基本的模板，不包含图像和社交媒体链接。这些元素将需要你根据个人需求和风格进行添加和修改。
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摄影作品集</title>
+    <style>
+        body {
+            background-image: url("your-background-image-url");
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 40%;
+            margin: auto;
+            border-radius: 5px;
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        @media screen and (max-width: 600px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>欢迎来到我的摄影作品集</h1>
+    </div>
+
+    <div class="card">
+        <h2>作品展示</h2>
+        <img src="your-gallery-image-url" style="width:100%">
+        <p>作品简介</p>
+    </div>
+
+    <div class="card">
+        <h2>关于我</h2>
+        <p>摄影师专业背景和艺术理念介绍。</p>
+    </div>
+
+    <div class="card">
+        <h2>联系方式</h2>
+        <p>您可以在此处查看我的联系方式</p>
+        <p>[社交媒体快速链接图标]</p>
+    </div>
+
+</body>
+</html>
+```
+这段HTML创建了一个包含卡片布局和标题的网页，以及三个卡片：一个用于展示摄影师的作品，一个用于介绍摄影师，最后一个包含联系方式和社交媒体链接的卡片（你需要替换文本占位符以显示实际内容）。而网页的背景图像则通过CSS的background-image属性设置。

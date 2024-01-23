@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test HTML</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .highlight { background-color: yellow; }
+    </style>
+    <script>
+        function consoleClickEvent() {
+            console.log("Clicked!");
+        }
+        function alertClickEvent() {
+            alert("Clicked!");
+        }
+    </script>
+</head>
+<body onload="console.log('Page loaded');">
+    <h1 onclick="onClickEvent()">Click Me!</h1>
+    <p class="highlight">This is a test paragraph.</p>
+    <a href="https://www.example.com" target="_blank" rel="noopener">Example Link</a>
+    <div style="color: red;">This is a styled div.</div>
+    <button type="button" onclick="alertClickEvent()">Click Button</button>
+    <input type="text" placeholder="Enter text here" required>
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+    </ul>
+    <img src="image.jpg" alt="Test Image">
+</body>
+</html>

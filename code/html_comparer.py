@@ -1,112 +1,48 @@
-from lxml import html
-import difflib
-
-def read_html_file(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        return file.read()
-
-def serialize_html_elements(tree, include_styles=False):
-    elements = []
-    for element in tree.iter():
-        if element.tag.lower() in ['script', 'style'] and not include_styles:
-            continue
-        tag = element.tag
-        attributes = dict(element.attrib)
-        if 'style' in attributes and not include_styles:
-            del attributes['style']
-        attributes_str = ' '.join([f'{k}="{v}"' for k, v in attributes.items()])
-        text = (element.text or "").strip()
-        serialized_element = f"<{tag} {attributes_str}>{text}</{tag}>"
-        elements.append(serialized_element)
-    return elements
-
-def map_semantic_roles(elements):
-    roles = {
-        # ? 同义词如何获取？如何自动化？
-        # ？ 一份文件有多个同义词，如何处理？
-        'header': ['header', 'head', 'top', 'branding'],
-        'footer': ['footer', 'foot', 'bottom'],
-        'navigation': ['nav', 'menu', 'navigation'],
-        'main-content': ['main', 'content', 'article', 'body'],
-        'sidebar': ['sidebar', 'side', 'aside'],
-        'advertisement': ['ad', 'ads', 'advert', 'sponsor']
-    }
+from html_custom_element import compare_element
     
-    role_mapping = {role: [] for role in roles}
-    
-    for element in elements:
-        for role, keywords in roles.items():
-            if any(keyword in element for keyword in keywords):
-                role_mapping[role].append(element)
-    return role_mapping
+# def compare_func(item1, item2):
+#     # 这是一个示例比较函数，假设返回两个元素之间的六个维度分数
+#     return [0.9, 0.95, 0.9, 0.88, 0.93, 0.91]
 
-def build_visible_dom_tree(element, depth=0):
-    visible_tags = ['div', 'span', 'a', 'ul', 'ol', 'li', 'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'img', 
-                    'table', 'thead', 'tbody', 'tfoot', 'tr', 'td', 'th', 'button', 'input', 'textarea', 'select', 'form']
-    visible_elements = []
-    if element.tag.lower() in visible_tags:
-        tag = element.tag.lower()
-        attributes = {k: v for k, v in element.attrib.items() if k.lower() not in ['onclick', 'onload', 'onmouseover']}
-        attributes_str = ' '.join([f'{k}="{v}"' for k, v in attributes.items()])
-        text_content = element.text_content().strip() if element.text_content().strip() else ''
-        serialized_element = f"{' ' * depth}< {tag} {attributes_str} >{text_content}"
-        visible_elements.append(serialized_element)
+def is_match(item1, item2, threshold=0.9):
+    scores = compare_element(item1, item2)
+    # 先验减枝
+    if scores[0] == 0.0:
+        return False
+    return sum(scores) / len(scores) >= threshold
 
-    for child in element:
-        visible_elements.extend(build_visible_dom_tree(child, depth + 1))
+def count_matches(a, b, threshold=0.9):
+    count = 0
+    for item_a in a:
+        if any(is_match(item_a, item_b, threshold=threshold) for item_b in b):
+            count += 1
+    return count
 
-    return visible_elements
+def find_lcs(a, b, threshold=0.9):
+    m, n = len(a), len(b)
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
 
-def serialize_styles(tree):
-    styles = []
-    for element in tree.xpath('//link[@rel="stylesheet"] | //style'):
-        if element.tag == 'link':
-            href = element.get('href', '')
-            styles.append(f'<link rel="stylesheet" href="{href}">')
-        elif element.tag == 'style':
-            text = element.text.strip() if element.text else ""
-            styles.append(f'<style>{text}</style>')
-    return styles
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if is_match(a[i - 1], b[j - 1], threshold=threshold):
+                dp[i][j] = dp[i - 1][j - 1] + 1
+            else:
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
+    return dp[m][n]
 
-def compare_sequences(seq1, seq2):
-    d = difflib.Differ()
-    diff = list(d.compare(seq1, seq2))
-    return diff
-
-def compare_and_print_differences(label, seq1, seq2):
-    # This function prints the differences between two sequences with a given label
-    print(f"\nDifferences in {label}:")
-    diff = compare_sequences(seq1, seq2)
-    for line in diff:
-        if line.startswith('+ ') or line.startswith('- '):
-            print(line)
-
-file1 = 'test/index1.html'
-file2 = 'test/index2.html'
-
-html_content1 = read_html_file(file1)
-html_content2 = read_html_file(file2)
-
-tree1 = html.fromstring(html_content1)
-tree2 = html.fromstring(html_content2)
-
-serialized_elements1 = serialize_html_elements(tree1)
-serialized_elements2 = serialize_html_elements(tree2)
-
-semantic_map1 = map_semantic_roles(serialized_elements1)
-semantic_map2 = map_semantic_roles(serialized_elements2)
-
-visible_dom_tree1 = build_visible_dom_tree(tree1)
-visible_dom_tree2 = build_visible_dom_tree(tree2)
-
-serialized_styles1 = serialize_styles(tree1)
-serialized_styles2 = serialize_styles(tree2)
-
-compare_and_print_differences("HTML", serialized_elements1, serialized_elements2)
-compare_and_print_differences("CSS", serialized_styles1, serialized_styles2)
-compare_and_print_differences("Visible DOM Tree", visible_dom_tree1, visible_dom_tree2)
+def compare(a, b, threshold):
+    match_count = count_matches(a, b, threshold=threshold)
+    lcs_result = find_lcs(a, b, threshold=threshold)
+    len_a = len(a)
+    return (match_count/len_a, lcs_result/len_a) if len_a != 0.0 else (1.0, 1.0)
 
 
+if __name__=="__main__":
+    a = []
+    b = []
+    match_count = count_matches(a, b)
+    lcs_result = find_lcs(a, b)
+    score = compare(a, b, 0.9)
+    print(match_count, lcs_result, score)
 
-for role in semantic_map1.keys():
-    compare_and_print_differences(f"Semantic Mapping for role '{role}'", semantic_map1[role], semantic_map2[role])
+

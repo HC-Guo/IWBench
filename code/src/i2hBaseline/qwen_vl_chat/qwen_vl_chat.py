@@ -2,7 +2,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from transformers.generation import GenerationConfig
 import torch
 
-def generateAnswer_qwen_vl(device='cuda', model_path = "Qwen/Qwen-VL", text='Generate html source code corresponding to the image:', image_path='https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg'):
+def generateAnswer_qwen_vl_chat(device='cuda', model_path = "Qwen/Qwen-VL-chat", text='Generate html source code corresponding to the image:', image_path='https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg'):
     torch.manual_seed(1234)
     tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
     model = AutoModelForCausalLM.from_pretrained(model_path, device_map="cuda", trust_remote_code=True).eval()

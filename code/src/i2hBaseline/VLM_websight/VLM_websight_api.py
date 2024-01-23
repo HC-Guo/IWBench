@@ -21,21 +21,7 @@ def convert_to_rgb(image):
     alpha_composite = alpha_composite.convert("RGB")
     return alpha_composite
 
-# The processor is the same as the Idefics processor except for the BILINEAR interpolation,
-# so this is a hack in order to redefine ONLY the transform method
-def custom_transform(x):
-    x = convert_to_rgb(x)
-    x = to_numpy_array(x)
-    x = resize(x, (960, 960), resample=PILImageResampling.BILINEAR)
-    x = PROCESSOR.image_processor.rescale(x, scale=1 / 255)
-    x = PROCESSOR.image_processor.normalize(
-        x,
-        mean=PROCESSOR.image_processor.image_mean,
-        std=PROCESSOR.image_processor.image_std
-    )
-    x = to_channel_dimension_format(x, ChannelDimension.FIRST)
-    x = torch.tensor(x)
-    return x
+
 
 
 def generateAnswer_websight(device='cuda', model_path = "/mnt/chenjh/LargeModels/VLM_WebSight_finetuned", img_path=""):
@@ -45,6 +31,22 @@ def generateAnswer_websight(device='cuda', model_path = "/mnt/chenjh/LargeModels
         model_path,
         # token=API_TOKEN,
     )
+
+    # The processor is the same as the Idefics processor except for the BILINEAR interpolation,
+    # so this is a hack in order to redefine ONLY the transform method
+    def custom_transform(x):
+        x = convert_to_rgb(x)
+        x = to_numpy_array(x)
+        x = resize(x, (960, 960), resample=PILImageResampling.BILINEAR)
+        x = PROCESSOR.image_processor.rescale(x, scale=1 / 255)
+        x = PROCESSOR.image_processor.normalize(
+            x,
+            mean=PROCESSOR.image_processor.image_mean,
+            std=PROCESSOR.image_processor.image_std
+        )
+        x = to_channel_dimension_format(x, ChannelDimension.FIRST)
+        x = torch.tensor(x)
+        return x
 
     MODEL = AutoModelForCausalLM.from_pretrained(
         model_path,

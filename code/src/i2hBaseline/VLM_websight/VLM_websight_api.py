@@ -6,21 +6,7 @@ from transformers import AutoModelForCausalLM, AutoProcessor
 from transformers.image_utils import to_numpy_array, PILImageResampling, ChannelDimension
 from transformers.image_transforms import resize, to_channel_dimension_format
 
-DEVICE = torch.device("cuda")
-########################### 这里需要修改路径：https://huggingface.co/HuggingFaceM4/VLM_WebSight_finetuned
-PROCESSOR = AutoProcessor.from_pretrained(
-    "/mnt/chenjh/LargeModels/VLM_WebSight_finetuned",
-    # token=API_TOKEN,
-)
-MODEL = AutoModelForCausalLM.from_pretrained(
-    "/mnt/chenjh/LargeModels/VLM_WebSight_finetuned",
-    # token=API_TOKEN,
-    trust_remote_code=True,
-    torch_dtype=torch.bfloat16,
-).to(DEVICE)
-image_seq_len = MODEL.config.perceiver_config.resampler_n_latents
-BOS_TOKEN = PROCESSOR.tokenizer.bos_token
-BAD_WORDS_IDS = PROCESSOR.tokenizer(["<image>", "<fake_token_around_image>"], add_special_tokens=False).input_ids
+
 
 
 def convert_to_rgb(image):
@@ -51,18 +37,38 @@ def custom_transform(x):
     x = torch.tensor(x)
     return x
 
-inputs = PROCESSOR.tokenizer(
-    f"{BOS_TOKEN}<fake_token_around_image>{'<image>' * image_seq_len}<fake_token_around_image>",
-    return_tensors="pt",
-    add_special_tokens=False,
-)
 
-########################################### 这里是图片的路径
-image = Image.open('/mnt/chenjh/i2h-bench/google.png')
+def generateAnswer_websight(device='cuda', model_path = "/mnt/chenjh/LargeModels/VLM_WebSight_finetuned", img_path=""):
+    DEVICE = torch.device(device)
+    ########################### 这里需要修改路径：https://huggingface.co/HuggingFaceM4/VLM_WebSight_finetuned
+    PROCESSOR = AutoProcessor.from_pretrained(
+        model_path,
+        # token=API_TOKEN,
+    )
 
-inputs["pixel_values"] = PROCESSOR.image_processor([image], transform=custom_transform)
-inputs = {k: v.to(DEVICE) for k, v in inputs.items()}
-generated_ids = MODEL.generate(**inputs, bad_words_ids=BAD_WORDS_IDS, max_length=4096)
-generated_text = PROCESSOR.batch_decode(generated_ids, skip_special_tokens=True)[0]
+    MODEL = AutoModelForCausalLM.from_pretrained(
+        model_path,
+        # token=API_TOKEN,
+        trust_remote_code=True,
+        torch_dtype=torch.bfloat16,
+    ).to(DEVICE)
 
-print(generated_text)
+    image_seq_len = MODEL.config.perceiver_config.resampler_n_latents
+    BOS_TOKEN = PROCESSOR.tokenizer.bos_token
+    BAD_WORDS_IDS = PROCESSOR.tokenizer(["<image>", "<fake_token_around_image>"], add_special_tokens=False).input_ids
+
+    image = Image.open(img_path)
+
+    inputs = PROCESSOR.tokenizer(
+        f"{BOS_TOKEN}<fake_token_around_image>{'<image>' * image_seq_len}<fake_token_around_image>",
+        return_tensors="pt",
+        add_special_tokens=False,
+    )
+    
+    inputs["pixel_values"] = PROCESSOR.image_processor([image], transform=custom_transform)
+
+    inputs = {k: v.to(DEVICE) for k, v in inputs.items()}
+    generated_ids = MODEL.generate(**inputs, bad_words_ids=BAD_WORDS_IDS, max_length=4096)
+    generated_text = PROCESSOR.batch_decode(generated_ids, skip_special_tokens=True)[0]
+
+    return generated_text

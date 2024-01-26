@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .header,
+        .footer {
+            padding: 20px;
+            background-color: #f6f6f6;
+            text-align: center;
+        }
+        .main-content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 20px;
+        }
+        .breadcrumb {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .breadcrumb a {
+            color: blue;
+        }
+        .modal {
+            display: none;
+        }
+        .modal.is-visible {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Movies Reviews</h1>
+        <input type="search" placeholder="Search...">
+    </div>
+    <div class="main-content">
+        <div class="breadcrumb"><a href="#">Home</a> / Movies / Titanic</div>
+        <div class="card">
+            <h2>Titanic (1997)</h2>
+            <p>User score: 7.8</p>
+            <p><button onclick="document.getElementById('modal1').classList.add('is-visible')" >Leave a review</button>
+            <a href="http://link-to-streaming-site.com/watch/titanic">Watch now</a></p>
+        </div>
+        <div class="card">
+            <h2>Users reviews</h2>
+            <p>John Doe: I love this movie!</p>
+        </div>
+        <div id="modal1" class="modal">
+            <h2>Leave a review</h2>
+            <div><input type="range" min="1" max="10" value="5"></div>
+            <textarea placeholder="Your review"></textarea>
+            <button onclick="document.getElementById('modal1').classList.remove('is-visible')">Submit</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2022 My Movies Reviews. All rights reserved.</p>
+    </div>
+</body>
+</html>

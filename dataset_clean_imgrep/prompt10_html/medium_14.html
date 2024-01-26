@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      /* CSS file for design customization */
+      body {
+        background-image: url('bg.jpg'); /* URL of your background image */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .carousel {
+        display: flex;
+        overflow: auto;
+        width: 100%;
+        scroll-snap-type: x mandatory;
+      }
+      .carousel div {
+        flex: 0 0 auto;
+        margin: 10px;
+        scroll-snap-align: center;
+      }
+      h1 {
+        font-size: 2em;
+        text-align: center;
+        color: #ff6347; /* Tomato */
+      }
+      footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+      }
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+      }
+      .video-container iframe,
+      .video-container object,
+      .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    
+    <title>Movie and TV Review Aggregator</title>
+</head>
+
+<body>
+    <header>
+        <!-- This is your main header or title -->
+        <h1>Movie and TV Review Aggregator</h1>
+    </header>
+
+    <section class="carousel">
+        <!-- This will be your carousel of latest movies or TV shows -->
+        <div><img src="https://picsum.photos/seed/picsum/200/300" alt="Image"></div>
+        <div><img src="https://picsum.photos/seed/picsum/200/300" alt="Image"></div>
+        <div><img src="https://picsum.photos/seed/picsum/200/300" alt="Image"></div>
+    </section>
+
+    <section>
+      <!-- This will be your video section -->
+      <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe>
+      </div>
+    </section>
+
+    <section>
+        <!-- Comments section goes here -->
+        <!-- User rating system is ideally done through backend -->
+    </section>
+    
+    <footer>
+        <!-- Footer information here -->
+        <p>&copy; 2022 Movie and TV Review Aggregator. All rights reserved.</p>
+    </footer>
+</body>
+</html>

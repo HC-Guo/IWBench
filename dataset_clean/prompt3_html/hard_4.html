@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>企业内部门户网站</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #navigation {
+            margin-bottom: 15px;
+            background-color: #f8f9fa;
+            padding: 15px;
+        }
+        #navigation a {
+            margin-right: 15px;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 100%;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .card-body {
+            padding: 10px;
+        }
+        .progress-bar {
+            width: 0;
+            height: 15px;
+            background-color: #4caf50;
+            text-align: right;
+            line-height: 15px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="navigation">
+        <a href="#">首页</a>
+        <a href="#">新闻</a>
+        <a href="#">员工目录</a>
+        <a href="#">论坛</a>
+        <a href="#">工作流程管理</a>
+        <a href="#">文档共享</a>
+    </div>
+    
+    <div class="card">
+        <div class="card-body">
+            <h2>新闻发布</h2>
+            
+            <form>
+                <label for="subject">主题：</label><br>
+                <input type="text" id="subject" name="subject"><br>
+                <label for="message">消息：</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="发布">
+            </form>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-body">
+            <h2>员工搜索</h2>
+            
+            <form>
+                <label for="search">搜索员工：</label>
+                <input type="text" id="search" name="search">
+                <input type="submit" value="搜索">
+            </form>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-body">
+            <h2>工作进度</h2>
+            
+            <div class="progress-bar" style="width:70%">70%</div>
+        </div>
+    </div>
+</body>
+</html>

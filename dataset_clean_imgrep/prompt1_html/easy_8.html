@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>摄影师作品展示</title>
+    <style>
+        body {font-family: Arial, sans-serif;}
+        .container {max-width: 1200px; margin: 0 auto;}
+        .hero {width: 100%; height: 500px; position: relative;}
+        .hero img {width: 100%; height: 100%; object-fit: cover;}
+        .hero-content {position: absolute; bottom: 20px; left: 20px; color: #fff;}
+        .gallery {display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); grid-gap: 15px;}
+        .gallery img {width: 100%; height: 200px; object-fit: cover;}
+        .about, .contact {margin-bottom: 50px;}
+        .footer {background-color: #222; color: #fff; padding: 20px 0; text-align: center;}
+        .social-media {display: flex; justify-content: center; padding: 20px 0;}
+        .social-media a {margin: 0 15px;}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <!--滑动横幅/轮播-->
+        <div class="hero">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+            <div class="hero-content">
+                <h1>我的摄影作品</h1>
+                <p>探索我的视野，体验我的创作</p>
+            </div>
+        </div>
+        <!--图像画廊-->
+        <div class="gallery">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+        </div>
+        <!--摄影师介绍-->
+        <div class="about">
+            <h2>关于我</h2>
+            <p>这里是摄影师的专业背景和艺术理念</p>
+        </div>
+        <!--联系信息-->
+        <div class="contact">
+            <h2>联系我</h2>
+            <p>这里是摄影师的联系信息</p>
+        </div>
+        <!--社交媒体链接-->
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+        <!--页脚-->
+        <div class="footer">
+            <p>版权所有 &copy; 2021 摄影师姓名</p>
+        </div>
+    </div>
+</body>
+</html>
+注：上述代码中的图片地址和社交媒体链接地址都是演示用的，实际应替换为实际上传的图片地址和实际的社交媒体链接地址。

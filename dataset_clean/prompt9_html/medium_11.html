@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>环保论坛</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background-color: #228B22;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #nav {
+            margin: 5px;
+        }
+
+        #nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #nav ul a {
+            color: black;
+            text-decoration: none;
+        }
+
+        #breadcrumb {
+            background-color: #eeeeee;
+            padding: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        #footer {
+            background-color: #228B22;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-icon {
+            height: 32px;
+            width: 32px;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>环保论坛</h1>
+    </div>
+
+    <div id="breadcrumb">
+        <a href="homepage.html">首页</a> > <a href="forum.html">论坛</a>
+    </div>
+
+    <div id="nav">
+        <ul>
+            <li><a href="sustainable_lifestyle.html">可持续生活方式</a></li>
+            <li><a href="environmental_law.html">环境保护法律</a></li>
+            <li><a href="activism.html">环保活动和倡议</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <img src="environment.jpg" alt="环保Image">
+        <button class="btn" onclick="location.href='post.html'">发布新帖</button>
+    </div>
+
+    <div id="footer">
+        <a href="contact.html">联系我们</a> | <a href="about.html">关于</a>
+        <p>
+            分享至：
+            <a href="share.html"><img src="fb.png" alt="Facebook" class="social-icon"></a>
+            <a href="share.html"><img src="tw.png" alt="Twitter" class="social-icon"></a>
+            <a href="share.html"><img src="ig.png" alt="Instagram" class="social-icon"></a>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> 环保论坛</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul id="breadcrumb">
+      <li><a href="#">首页</a></li>
+      <li><a href="#">环保活动和倡议</a></li>
+    </ul>
+  </nav>
+  <h1>Welcome to Our Environment Protection Forum</h1>
+  <div id="tabs">
+    <button class="tablink" onclick="openTab(event, 'Lifestyle')">可持续生活方式</button>
+    <button class="tablink" onclick="openTab(event, 'Law')">环境保护法律</button>
+    <button class="tablink" onclick="openTab(event, 'Activities')">环保活动和倡议</button>
+  </div>
+  <div id="Lifestyle" class="tabcontent">
+    <h2>可持续生活方式</h2>
+  </div>
+  <div id="Law" class="tabcontent">
+    <h2>环境保护法律</h2>
+  </div>
+  <div id="Activities" class="tabcontent">
+    <h2>环保活动和倡议</h2>
+  </div>
+  <div id="sidebar">
+    <h3>热门话题</h3>
+  </div>
+  <form>
+    <input type="text" name="post" placeholder="在这里发表你的观点...">
+    <input type="submit" value="发表">
+  </form>
+  <audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <div id="social-share">
+    <button>分享到Facebook</button>
+    <button>分享到Twitter</button>
+  </div>
+  <div id="loader"></div>
+  <script src="script.js"></script>
+</body>
+</html>

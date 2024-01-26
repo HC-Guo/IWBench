@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>企业内部门户网站</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url(background.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        #sidebar {
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .carousel {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-text {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            color: #fff;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="sidebar">
+        <h2>公司资源</h2>
+        <ul>
+            <li>新闻发布</li>
+            <li>员工目录</li>
+            <li>内部论坛</li>
+            <li>工作流程管理</li>
+            <li>文档共享</li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div class="carousel">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+            <div class="carousel-text">Welcome to our company portal</div>
+        </div>
+        <h1>欢迎来到我们的公司门户</h1>
+        <p>在这里，您可以找到我们的新闻发布，员工目录，内部论坛，工作流程管理以及文档共享等资源。</p>
+        <h2>新闻发布</h2>
+        <!-- insert news content here -->
+        <h2>员工目录</h2>
+        <!-- insert employee directory here -->
+        <h2>内部论坛</h2>
+        <!-- insert forum here -->
+        <h2>工作流程管理</h2>
+        <!-- insert workflow management tools here -->
+        <h2>文档共享</h2>
+        <!-- insert document sharing platform here -->
+    </div>
+
+</body>
+</html>

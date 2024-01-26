@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Travel & Food Blog</title>
+    
+    <style>
+        body {
+            background-image: url('backgroud-image.jpg');
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            width: 20%;
+            border: 1px solid #000;
+            box-shadow: 0px 0px 10px #000;
+            margin: 2%;
+            padding: 2%;
+            float: left;
+            background-color: #fff;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .comment-section {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .video-responsive {
+            position: relative;
+            padding-bottom: 56.25%;
+        }
+        .video-responsive iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .breadcrumb {
+            padding: 10px;
+            margin-bottom: 10px;
+            background: #f8f8f8;
+        }
+        .social-button-container{
+            display:flex;
+            justify-content:space-around;
+            padding:1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="homepage.html">Home</a> / <a href="blog.html">Blog</a>
+    </div>
+    
+    <div class="card">
+        <h2>Blog Title Here</h2>
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+        <p>Blog content here...</p>
+        <div class="social-button-container">
+            <button>Facebook</button>
+            <button>Twitter</button>
+            <button>Instagram</button>
+        </div>
+    </div>
+
+    <!-- Repeat the div class="card" block for each blog post -->
+
+    <div class="video-responsive">
+        <iframe 
+            src="https://www.youtube.com/embed/tgbNymZ7vqY" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="comment-section">
+        <h3>Comments</h3>
+        <!-- Comments will go here -->
+    </div>
+
+    <div class="best-blog">
+        <h2>Best Blog of the Month</h2>
+        <!-- Best blog content will go here -->
+    </div>
+</body>
+</html>

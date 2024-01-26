@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>电影电视剧评价聚合网站</title>
+    <style>
+        body {
+            background-image: url("background.jpg");
+            background-size: cover;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .carousel {
+            display: flex;
+            overflow: auto;
+            white-space: nowrap;
+            width: 100%;
+            padding: 20px;
+        }
+        .carousel img {
+            width: 300px;
+            height: 200px;
+            margin-right: 20px;
+        }
+        .review-board {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            overflow: auto;
+        }
+        .review {
+            border-bottom: 1px solid gray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#reviews">影评</a>
+        <a href="#ratings">评分系统</a>
+        <a href="#links">观看链接</a>
+    </div>
+    
+    <div class="carousel">
+        <img src="movie1.jpg" alt="Movie 1">
+        <img src="movie2.jpg" alt="Movie 2">
+        <img src="movie3.jpg" alt="Movie 3">
+    </div>
+
+    <div class="review-board" id="reviews">
+        <h2>实时影评更新</h2>
+        <div class="review">
+            <h3>影评1: </h3>
+            <p>这部电影非常棒....</p>
+        </div>
+        <div class="review">
+            <h3>影评2: </h3>
+            <p>我觉得这部剧不怎么样....</p>
+        </div>
+    </div>
+    
+    <div class="rating-system" id="ratings">
+        <h2>用户评分系统</h2>
+        <p>电影1评分: 4.5/5</p>
+        <p>电影2评分: 3.8/5</p>
+    </div>
+    
+    <div class="watch-links" id="links">
+        <h2>观看链接</h2>
+        <a href="link1">电影1链接</a><br>
+        <a href="link2">电影2链接</a>
+    </div>
+</body>
+</html>

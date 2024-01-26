@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>集中最新电影和电视剧评价</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        .navbar{
+            display: flex;
+            background-color: #f0f0f0;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .carousel{
+            width: 100%;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 20px 0;
+        }
+        .carousel img{
+            width: 20%;
+            height: auto;
+            display: inline-block;
+        }
+        .card{
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .card img{
+            width: 100%;
+        }
+        .card-body{
+            padding: 15px;
+        }
+        #user-pref{
+            display: none;
+        }
+        #user-pref:checked ~ .card:not(.preferred){
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#movies">电影</a>
+        <a href="#tvshows">电视剧</a>
+        <label>
+            <input type="checkbox" id="user-pref" />
+            只看我喜欢的
+        </label>
+    </div>
+
+    <h1>欢迎来到最新电影和电视剧评价聚合站</h1>
+    
+    <div class="carousel">
+        <!-- 滑动横幅/轮播 -->
+    </div>
+
+    <h2 id="movies">电影</h2>
+    <div>
+        <div class="card">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+            <div class="card-body">
+                <h3>电影1</h3>
+                <p>电影1描述...</p>
+            </div>
+        </div>
+        <!-- 更多卡片... -->
+    </div>
+
+    <h2 id="tvshows">电视剧</h2>
+    <div>
+        <div class="card preferred">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+            <div class="card-body">
+                <h3>电视剧1</h3>
+                <p>电视剧1描述...</p>
+            </div>
+        </div>
+        <!-- 更多卡片... -->
+    </div>
+
+</body>
+</html>

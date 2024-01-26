@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>科技新闻</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .carousel {
+            width: 100%;
+            overflow: hidden;
+        }
+        .carousel img {
+            width: 100%;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .news-ticker {
+            height: 30px;
+            overflow: hidden;
+        }
+        .news-ticker p {
+            animation: scroll 10s linear infinite;
+        }
+        @keyframes scroll {
+            0% {transform: translateY(0);}
+            100% {transform: translateY(-100%);}
+        }
+    </style>
+</head>
+<body>
+
+<div class="carousel">
+    <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+</div>
+
+<div class="card">
+    <h2>最新新闻</h2>
+    <p>汽车制造商开始使用AI进行决策..</p>
+    <button>查看更多</button>
+</div>
+
+<div class="card">
+    <h2>深度分析</h2>
+    <p>云计算对科技行业的影响..</p>
+    <button>查看更多</button>
+</div>
+
+<div class="card">
+    <h2>热门话题</h2>
+    <p>5G技术如何改变我们的生活</p>
+    <button>查看更多</button>
+</div>
+
+<div class="news-ticker">
+    <p>滚动新闻标题...</p>
+</div>
+
+<div class="video-section">
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+        你的浏览器不支持HTML5视频。
+    </video>
+</div>
+
+<div class="subscribe-form">
+    <form>
+        <label for="email">订阅我们的电子报</label>
+        <input type="email" id="email" name="email" placeholder="你的邮件...">
+        <button type="submit">订阅</button>
+    </form>
+</div>
+
+</body>
+</html>

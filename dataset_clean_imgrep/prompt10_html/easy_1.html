@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>影评聚合网站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .main {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .review-card {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-card h3 {
+            margin-top: 0;
+        }
+
+        .review-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* 这是用户评分部分的样式 */
+        .rating {
+            color: tomato;
+            margin-bottom: 10px;
+        }
+
+        /* 这是链接流媒体平台的样式 */
+        .stream-link {
+            background-color: tomato;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin-right: 5px;
+        }
+
+        /* 这是首页的样式 */
+        .home-link {
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* 这是用户定制内容偏好的样式 */
+        .preferences {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>[标题]</h1>
+    </header>
+
+    <main class="main">
+        <a href="" class="home-link">[图标]</a>
+        <h2>最新评论</h2>
+        <div class="review-card">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+            <h3>电影名称与简介</h3>
+            <p>影评内容.</p>
+            <p class="rating">用户评分: 5/5</p>
+            <p>观看选项：</p>
+            <a href="" class="stream-link">Netflix</a>
+            <a href="" class="stream-link">HBO</a>
+            <a href="" class="stream-link">Amazon Prime</a>
+        </div>
+        <div class="preferences">
+            <h2>内容偏好</h2>
+            <p>在这里设置您的内容偏好。</p>
+        </div>
+    </main>   
+</body>
+
+</html>

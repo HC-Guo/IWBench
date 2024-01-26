@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>新闻网站主页</title>
+    <style>
+        body {
+            background: url('背景图像 URL') no-repeat center center;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .sidebar {
+            float: left;
+            width: 20%;
+            height: 100vh;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .main-content {
+            float: left;
+            width: 80%;
+            height: 100vh;
+            padding: 20px;
+        }
+        .footer {
+            clear: both;
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>实时天气</h3>
+        <div id="weather_widget"></div>
+        
+        <h3>个人化仪表板</h3>
+        <div id="personal_dashboard"></div>
+    </div>
+    <div class="main-content">
+        <h2>最新新闻</h2>
+        <div id="news_ticker"></div>
+
+        <h3>高级搜索</h3>
+        <form>
+            <input type="text" name="search" placeholder="关键字">
+            <input type="date" name="date">
+            <select name="category">
+                <option value="">全部</option>
+                <!-- 更多选项... -->
+            </select>
+            <input type="submit" value="搜索">
+        </form>
+        
+    </div>
+    <div class="footer">
+        <p>版权所有 &copy; 日期</p>
+    </div>
+    
+    <script>
+        // 这里是地理定位功能、动态新闻滚动条、个人化仪表板的JavaScript代码，假设这些功能已经编写完成。
+        // 请将这些功能的JS代码复制到这里。
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>我的新闻站点</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #slider {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+        .slide {
+            float: left;
+            width: 100%;
+            height: 100%;
+        }
+        #newsTicker {
+            margin: 20px 0;
+            overflow: hidden;
+            background: #eee;
+        }
+        #weatherWidget {
+            background: #ccc;
+            margin-bottom: 20px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>我的新闻站点</h1>
+    <div id="breadcrumbs">
+        <a href="#">首页</a> > <a href="#">新闻</a> > 当前新闻
+    </div>
+    <div id="slider">
+        <div class="slide"><img src="https://picsum.photos/seed/picsum/200/300" alt="Image">标题1</div>
+        <div class="slide"><img src="https://picsum.photos/seed/picsum/200/300" alt="Image">标题2</div>
+        <!--或多或少的幻灯片-->
+    </div>
+    <div id="newsTicker">
+        滚动条新闻
+    </div>
+    <div id="weatherWidget">
+        天气小组件
+    </div>
+    <div id="search">
+        <input type="text" placeholder="搜索新闻"/>
+        <button>搜索</button>
+    </div>
+    <div id="newsContent">
+        <!--这里会显示新闻的内容-->
+    </div>
+    <footer>
+        页脚内容，如版权声明，隐私政策等等
+    </footer>
+</body>
+</html>

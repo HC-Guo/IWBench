@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photographer Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url('background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 40px;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 0.5s ease-in-out;
+      }
+      .gallery-item {
+        width: 30%;
+        margin-bottom: 20px;
+      }
+      .about,
+      .contact {
+        margin-bottom: 40px;
+      }
+      .social-media {
+        display: flex;
+        justify-content: space-around;
+      }
+      .social-media a {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="about">
+        <h1>About the Photographer</h1>
+        <p><!-- Photographer Bio Here --></p>
+      </div>
+      <div class="gallery">
+        <h1>Gallery</h1>
+        <!-- Gallery Items Here -->
+        <div class="gallery-item">
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+        </div>
+      </div>
+      <div class="contact">
+        <h1>Contact Information</h1>
+        <p><!-- Contact Info Here --></p>
+      </div>
+      <div class="social-media">
+        <a href="#"><img src="https://picsum.photos/seed/picsum/200/300" alt="Image"></a>
+        <a href="#"><img src="https://picsum.photos/seed/picsum/200/300" alt="Image"></a>
+        <a href="#"><img src="https://picsum.photos/seed/picsum/200/300" alt="Image"></a>
+      </div>
+    </div>
+    <script>
+      let gallery = document.querySelector(".gallery");
+      window.addEventListener("DOMContentLoaded", function() {
+        setInterval(() => {
+          let galleryItems = document.querySelectorAll(".gallery-item");
+          galleryItems.forEach(item => {
+            item.style.transform = "scale(1.05)";
+          });
+          setTimeout(() => {
+            galleryItems.forEach(item => {
+              item.style.transform = "scale(1)";
+            });
+          }, 2000);
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>

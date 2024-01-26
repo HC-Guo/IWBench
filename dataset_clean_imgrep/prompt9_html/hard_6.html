@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>环保主题论坛</title>
+    <style>
+        body {
+            background-image: url('your_background_image');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #navBar {
+            padding: 10px;
+            background-color: #32CD32;
+        }
+        #navBar a {
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        }
+        .tabContent {
+            display: none;
+            animation: fadeIn 1s;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        .socialShare {
+            float: right;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.tab').click(function() {
+                $('.tabContent').hide();
+                $('#' + $(this).data('tab')).show();
+            });
+            $('.tab').first().trigger('click');
+        });
+    </script>
+</head>
+<body>
+    <h1>环保主题论坛</h1>
+    <div id="navBar">
+        <a href="#" class="tab" data-tab="sustainableLiving"> 可持续生活方式 </a>
+        <a href="#" class="tab" data-tab="environmentalLaw"> 环境保护法律 </a>
+        <a href="#" class="tab" data-tab="environmentalInitiative"> 环保活动和倡议 </a>
+    </div>
+    <div id="contentWrapper">
+        <div class="tabContent" id="sustainableLiving">
+            这是 "可持续生活方式" 的讨论区 
+        </div>
+        <div class="tabContent" id="environmentalLaw">
+            这是 "环境保护法律" 的讨论区 
+        </div>
+        <div class="tabContent" id="environmentalInitiative">
+            这是 "环保活动和倡议" 的讨论区 
+        </div>
+    </div>
+    <form action="/search">
+        <input type="text" id="gsearch" name="gsearch">
+        <input type="submit" value="搜索">
+    </form>
+    <div id="div1" class="socialShare">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+    </div>
+</body>
+</html> 
+
+注意：
+1. 你需要将 'your_background_image' 更改为你的背景图片 URL。
+2. 现在，当你点击导航栏中的链接时，相关的讨论板块会显示出来，其他板块则会隐藏。
+3. 同样，你需要将 socialShare 中的 'facebook_icon.png'、'twitter_icon.png' 和 'linkedin_icon.png' 更改为你的社交图标 URL。
+4. 上述代码的 CSS 和 Javascript 已经嵌入在 HTML 中，你也可以根据需要将它们移出到单独的 .css 和 .js 文件中。

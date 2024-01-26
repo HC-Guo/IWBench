@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻网站主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+        .sidebar {
+            width: 200px;
+            position: fixed;
+            height: 100%;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .sidebar img {
+            width: 100%;
+            height: auto;
+        }
+        .container {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .news-ticker {
+            background-color: #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .widget {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        #search-box {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="logo.png" alt="Logo">
+        <!-- 更多边栏内容 -->
+    </div>
+    <div class="container">
+        <div class="news-ticker">
+             <!-- 新闻滚动条内容 -->
+        </div>
+        <div class="widget">
+            <!-- 实时天气小组件内容 -->
+        </div>
+        <div class="widget">
+            <!-- 个人化仪表板内容 -->
+        </div>
+        <input type="text" id="search-box" placeholder="搜索……">
+    </div>
+</body>
+</html>

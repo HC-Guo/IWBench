@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a class="active" href="#home">在线课程</a>
+  <a href="#academic">学术研究</a>
+  <a href="#tool">学习工具</a>
+</div>
+
+<div class="content">
+  <h2>在线编程课程教育平台</h2>
+  <p>这是一个提供多种在线编程课程的教育平台，每个课程都有详细的概述、学习目标、视频教程、可下载的练习材料、在线编程练习环境和一个用户可以互动的论坛.</p>
+  <button onclick="location.href='#course1'">课程详情</button>
+  <hr>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+  <hr>
+  <h4>学习进度</h4>
+  <p>这里有你的学习进度以及你所获取的徽章和证书。</p>
+  <button onclick="location.href='#achievement'">查看进度</button>
+  <hr>
+  <h4>在线练习</h4>
+  <p>点击下方按钮进行在线练习。</p>
+  <button onclick="location.href='#exercises'">开始练习</button>
+</div>
+
+<footer style="text-align:center;padding:20px;background-color:#f1f1f1;position:fixed;width:100%;bottom:0;">
+  &copy; 2022 编程教育平台
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your News Site Name</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .carousel {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carousel img {
+        width: 100%;
+        height: 300px;
+        animation: sliding 10s infinite linear;
+    }
+
+    .dashboard {
+        margin: 20px 0;
+    }
+
+    .search {
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    @keyframes sliding {
+        0% { left: 0; }
+        100% { left: -100%; }
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Your News Site Name</h1>
+    </div>
+
+    <div class="carousel">
+        <img src="news1.jpg" alt="news1">
+        <img src="news2.jpg" alt="news2">
+    </div>
+
+    <div class="dashboard">
+        <h2>Local news</h2>
+        <p id="localNews">Loading...</p>
+        <h2>Weather update</h2>
+        <p id="weather">Loading...</p>
+        <h2>Emergency notices</h2>
+        <p id="emergency">Loading...</p>
+    </div>
+
+    <div class="search">
+        <h2>Search News</h2>
+        <input type="text" id="keyword" placeholder="Keyword">
+        <input type="date" id="date">
+        <select id="category">
+            <option value="">All Categories</option>
+        </select>
+        <button>Search</button>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2022 Your News Site Name. All rights reserved.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>时尚服装店</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Link to an external CSS stylesheet -->
+</head>
+<body>
+    <header style="background-image: url('header.png');">
+        <!-- Hero video -->
+        <video autoplay muted loop>
+            <source src="hero.mp4" type="video/mp4">
+        </video>
+        <!-- Site navigation -->
+        <nav>
+            <ul>
+                <li><a href="#new-arrivals">新品上市</a></li>
+                <li><a href="#hot-products">热销商品</a></li>
+                <li><a href="#discounts">折扣专区</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Breadcrumbs for navigation -->
+        <ul id="breadcrumbs">
+            <li><a href="#">首页</a></li>
+            <li><a href="#category">分类</a></li>
+            <li><a href="#product">产品</a></li>
+        </ul>
+        <!-- Product catalogue -->
+        <section id="catalogue">
+            <article class="product">
+                <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+                <h2>产品名称</h2>
+                <p>产品描述</p>
+                <!-- Size info, user reviews and ordering process would need complex backend support -->
+            </article>
+            <!-- More products... -->
+        </section>
+    </main>
+
+    <!-- Footer with audio player -->
+    <footer>
+        <audio controls>
+            <source src="background-music.mp3" type="audio/mpeg">
+        </audio>
+    </footer>
+</body>
+</html>

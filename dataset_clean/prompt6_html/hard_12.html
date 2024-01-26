@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Online Programming Course</title>
+      <style>
+         body {font-family: Arial, sans-serif;}
+         #header, #footer {background-color: #f0f0f0; padding: 10px;}
+         #main {padding: 20px;}
+         #main .tabcontent {display: none;} /* Hides the content initially */
+      </style>
+   </head>
+   <body>
+      <div id="header">
+         <h1>在线编程课程</h1>
+         <input type="text" placeholder="搜索..." id="search-input">
+      </div>
+      <div id="main">
+         <!-- Start of Tab section -->
+         <div class="tab">
+            <button class="tablinks">在线课程</button>
+            <button class="tablinks">学术研究</button>
+            <button class="tablinks">学习工具</button>
+         </div>
+
+         <div id="online-course" class="tabcontent">
+            <h2>在线课程</h2>
+            <p>这是关于在线课程的详细介绍...</p>
+         </div>
+
+         <div id="academic-research" class="tabcontent">
+            <h2>学术研究</h2>
+            <p>这是关于学术研究的详细介绍...</p>
+         </div>
+
+         <div id="learning-tools" class="tabcontent">
+            <h2>学习工具</h2>
+            <p>这是关于学习工具的详细介绍...</p>
+         </div>
+         <!-- End of Tab section -->
+
+         <hr>
+
+         <!-- Start of Course section -->
+         <div>
+            <h2>课程列表</h2>
+            <!-- Other courses will be similar -->
+            <div>
+               <h3>课程名称1</h3>
+               <p>课程介绍...</p>
+               <p>学习目标:</p>
+               <ul>
+                  <li>学习目标1...</li>
+                  <!-- more objectives -->
+               </ul>
+               <a href="#">视频教程链接</a> <br>
+               <a href="#">下载练习材料</a> <br>
+               <a href="#">在线编程环境</a> <br>
+               <a href="#">论坛</a>
+            </div>
+         </div>
+         <!-- End of Course section -->
+      </div>
+      <div id="footer">
+         <!-- Social sharing buttons -->
+         <button>分享到Facebook</button>
+         <button>分享到Twitter</button>
+         <!-- other social website -->
+      </div>
+   </body>
+</html>

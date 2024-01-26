@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="个人旅行和美食体验博客">
+    <title>旅行和美食体验博客</title>
+    <style>
+        /* CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            background: url("bg-pattern.png");
+        };
+        .modal {
+            display: none;
+            position: fixed;
+            background-color: rgba(0,0,0,0.5);
+        };
+    </style>
+</head>
+<body>
+    <!-- Modal/Popup Box -->
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>在这里添加一些文本</p>
+        </div>
+    </div>
+
+    <!-- Images -->
+    <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+    <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+
+    <!-- Social Share Buttons -->
+    <button>Share on Facebook</button>
+    <button>Share on Twitter</button>
+    <button>Share on Instagram</button>
+
+    <!-- Form -->
+    <form action="">
+        名字: <br> <input type="text" name="name"> <br>
+        Email: <br> <input type="text" name="email"> <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Comment Section -->
+    <div class="comments_section">
+        <h2>Do leave a message!</h2>
+        <textarea></textarea>
+        <button type="button">Submit Comment</button>
+    </div>
+
+    <!-- Title -->
+    <h1>欢迎来到我的旅行和美食体验博客</h1>
+
+    <!-- Video -->
+    <video width="320" height="240" controls>
+        <source src="travel_video.mp4" type="video/mp4">
+    </video>
+</body>
+</html>

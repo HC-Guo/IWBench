@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>科技新闻网站</title>
+  <style>
+    body {
+      background-image: url("background.jpg"); /*通过URL自定义你的背景图像路径*/
+      font-family: Arial, sans-serif;
+    }
+    #title {
+      text-align: center;
+      color: #333;
+    }
+    #sidebar {
+      float: right;
+      width: 200px;
+    }
+    #main {
+      margin-right: 200px; /* Same as the width of the sidebar */
+    }
+    .fadein {
+      animation: fadeIn ease 2s;
+    }
+    form {
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">最新科技新闻网站</h1>
+
+  <label for="searchbar">搜索:</label>
+  <input type="text" id="searchbar" name="searchbar">
+
+  <div id="main">
+    <div class="fadein">
+      <img src="https://picsum.photos/seed/picsum/200/300" alt="Image"> <!-- 一个加载动画 -->
+    </div>
+
+    <div id="news_bar">
+      <!-- 新闻滚动条所在位置，这里依靠后端代码实现功能 -->
+    </div>
+
+    <div id="video_container">
+      <!-- 视频播放区，这里使用各类视频嵌入代码 -->
+    </div>
+
+    <form action="subscribe_newsletter.php" method="post">
+      Email: <input type="text" name="email"><br>
+      <input type="submit" value="订阅">
+    </form>
+
+    <div id="comments_section">
+      <!-- 评论区 -->
+    </div>
+  </div>
+
+  <div id="sidebar">
+    <!-- 热门话题 -->
+  </div>
+
+</body>
+</html>
+
+以上是一个基于请求做出的静态网页HTML，由于评论、新闻滚动条、搜索功能、视频播放、进度条、订阅新闻信等功能通常需要后端的支持互动性功能，此处只提供了一个静态占位。你需要结合后端如PHP，JavaScript等可以创建动态网站。对于CSS样式，我只提供了一些基础和通用的样式，可以根据你的设计和需要进行具体调整。

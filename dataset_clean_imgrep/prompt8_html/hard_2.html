@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    margin-bottom: 20px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+    padding: 20px 16px;
+}
+.sidebar {
+    width: 30%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    overflow: auto;
+}
+.video {
+    width: 100%;
+    height: auto;
+}
+</style>
+</head>
+<body>
+<h1>科技新闻网站</h1>
+<div class="sidebar">
+<marquee>滚动新闻：<a href="#">最新科技新闻1</a>  <a href="#">最新科技新闻2</a></marquee>
+<h2>热门话题</h2>
+<div class="card">
+  <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+  <div class="container">
+    <h4><b>话题1</b></h4> 
+    <p>中文描述</p> 
+  </div>
+</div>
+<div class="card">
+  <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+  <div class="container">
+    <h4><b>话题2</b></h4> 
+    <p>中文描述</p> 
+  </div>
+</div>
+<h2>订阅电子报</h2>
+<form action="#">
+  <label for="email">电子邮件：</label><br>
+  <input type="email" id="email" name="email" required><br>
+  <input type="submit" value="订阅">
+</form>
+</div>
+<div style="margin-right:35%;">
+<h2>视频板块</h2>
+<video class="video" controls>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+<button onclick="myFunction()" class="accordion">投稿</button>
+<div id="myDIV" style="display: none;">
+  <form action="#">
+  <label for="title">标题：</label><br>
+  <input type="text" id="title" name="title" required><br>
+  <label for="content">内容：</label><br>
+  <textarea id="content" name="content" rows="4" cols="50" required></textarea><br>
+  <input type="submit" value="提交">
+  </form>
+</div>
+<h2>评论区</h2>
+<form>
+<textarea name="comment" rows="5" cols="50" required></textarea><br>
+<input type="submit" value="發表">
+</form>
+</body>
+</html>

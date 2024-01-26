@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IP Based News Site</title>
+    <style type="text/css">
+        body {background-image: url("background.jpg"); font-family: Arial, sans-serif;}
+        #header {color: white; background-color: #333; padding: 10px; text-align: center;}
+        #breadcrumb {margin: 10px; color: #666;}
+        #newsTicker {margin: 20px; padding: 10px; background-color: #f2f2f2; border: 1px solid #ddd; font-size: 18px; animation: myAnimation 3s infinite;}
+        #weatherWidget {width: fit-content; margin: 40px; padding: 20px; background-color: #f2f2f2; border: 1px solid #ddd;}
+        #userDashboard {text-align: center; padding: 20px;}
+        #searchBox {width: 30%; padding: 10px;}
+        #footer {background-color: #333; color: white; text-align: center; padding: 10px; margin-top: 20px;}
+        @keyframes myAnimation {
+            0% {margin-left: 0px;}
+            100% {margin-left: -300px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="header"><h1>IP Based News Site</h1></div>
+    <div id="breadcrumb"><a href="#">Home</a> / <a href="#">News</a></div>
+    <div id="newsTicker">Latest News: Crypto Prices Plummet, Tech Stocks Surge...</div>
+    <div id="weatherWidget"><img src="https://picsum.photos/seed/picsum/200/300" alt="Image"> Currently 15°C with Light Rain in Your Area</div>
+    <div id="userDashboard"><h2>Your Dashboard</h2><button>Edit Dashboard Content</button></div>
+    <input id="searchBox" type="text" placeholder="Search News by Keywords, Date or Category" />
+    <div id="footer">Copyright © 2023 All rights Reserved.</div>
+</body>
+</html>

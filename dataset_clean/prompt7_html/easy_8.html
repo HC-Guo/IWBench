@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 200px;
+            height: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+            color: #fff;
+        }
+        .main {
+            margin-left: 200px;
+            margin-right: 50px;
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #f6f6f6;
+            padding: 10px;
+            color: #000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Social Network</h2>
+        <p>User info here</p>
+    </div>
+    <div class="main">
+        <div class="card">
+            <h2>Status Update</h2>
+            <p>Text here...</p>
+        </div>
+        <div class="card">
+            <h2>Image Post</h2>
+            <p>Images here...</p>
+        </div>
+        <div class="card">
+            <h2>Video Post</h2>
+            <p>Videos here...</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Footer content here...</p>
+    </div>
+</body>
+</html>

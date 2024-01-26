@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>科技新闻</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: auto;
+        }
+        header {
+            background: #50b3a2;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        #news-bar {
+            float: right;
+            width: 30%;
+            margin-top: 20px;
+        }
+        #video-section {
+            float: left;
+            width: 60%;
+            margin-top: 20px;
+        }
+        #subscribe {
+            padding: 20px;
+            color: white;
+            background: #35424a;
+        }
+        .hot-topic {
+            margin-right: 20px;
+            float: left;
+            width: 200px;
+            height: auto;
+            padding: 20px;
+            border: #cccccc 1px solid;
+            border-radius: 5px;
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="brand">
+                <h1><span class="highlight">科技</span>新闻</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">深度分析</a></li>
+                    <li><a href="#">播客</a></li>
+                    <li><a href="#">视频</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="news-bar">
+            <marquee behavior="scroll" direction="left">滚动的新闻条</marquee>
+        </div>
+        <div id="video-section">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                您的浏览器不支持HTML5视频。
+            </video>
+        </div>
+        <div>
+            <div class="hot-topic">
+                <h3>热门话题</h3>
+                <p>话题内容</p>
+            </div>
+        </div>
+
+        <form id="subscribe">
+            <input type="email" placeholder="输入您的邮箱以订阅我们的新闻">
+            <button type="submit">订阅</button>
+        </form>
+    </div>
+
+    <div>
+        <button onclick="shareToSNS()">分享</button>
+    </div>
+
+    <script>
+        function shareToSNS() {
+            // 这是一个示例函数，真实的社交分享功能需要使用各自社交平台提供的API
+            alert('分享到社交媒体!');
+        }
+    </script>
+
+</body>
+</html>

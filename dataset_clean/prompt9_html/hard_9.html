@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>环保论坛</title>
+    <style>
+        body {
+            background-image: url("environment.jpg");
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .sidebar {
+            position: fixed;
+            height: 100%;
+            width: 0;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        .forum_card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #f3f3f3;
+        }
+        .bar {
+            width: 10%;
+            height: 15px;
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">可持续生活方式</a>
+        <a href="#">环境保护法律</a>
+        <a href="#">环保活动和倡议</a>
+    </div>
+
+    <div id="main">
+        <button onclick="openNav()">☰ 打开论坛板块</button>   
+        <div class="forum_card">
+            <img src="logo.png" alt="Logo" style="width:100%">
+            <h1>环保论坛</h1>
+            <p>选择你感兴趣的论坛板块并发表或编辑帖子。</p>
+
+            <form action="/submit_forum_post">
+                <label for="post_title">标题:</label><br>
+                <input type="text" id="post_title" name="post_title"><br>
+                <label for="post_content">内容:</label><br>
+                <input type="text" id="post_content" name="post_content"><br>
+                <input type="submit" value="提交">
+            </form> 
+
+            <div class="progress-bar">
+                <div class="bar"></div>
+            </div>
+
+            <div class="share-buttons">
+                <a href="https://www.facebook.com/sharer.php?u=http://www.环保论坛.com" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                </a>
+                <a href="https://twitter.com/share?url=http://www.环保论坛.com&text=Simple%20Share%20Buttons" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                </a>
+            </div>
+            
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+<script>
+    function openNav() {
+        document.getElementById("sidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+</script>
+
+</body>
+</html>

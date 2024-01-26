@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>科技新闻网站</title>
+    <style>
+        body {font-family: Arial, sans-serif;}
+        .breadcrumb {background: #f8f8f8; padding: 10px;}
+        .navbar {color: blue;text-decoration: none;margin:0 10px;}
+        .video-section {width: 100%; max-width: 800px; margin: auto;}
+        .subscription-form input[type="email"] {padding: 5px; margin: 10px 0;}
+        .subscription-form button {background: blue; color: white; padding: 10px 20px; border: none;}
+        footer {background: #f8f8f8; text-align: center; padding: 20px;}
+        .social-btn {margin-right: 10px;}
+        .hot-topics {margin:20px 0;}
+    </style>
+</head>
+<body>
+    <!-- 面包屑导航 -->
+    <div class="breadcrumb">
+        <a href="/" class="navbar">首页</a> > <a href="/technews" class="navbar">科技新闻</a>
+    </div>
+
+    <!-- 新闻滚动条 -->
+    <marquee>这里是最新的科技新闻!</marquee>
+
+    <!-- 视频播放区域 -->
+    <div class="video-section">
+        <video width="800" controls>
+            <source src="movie.mp4" type="video/mp4">
+            你的浏览器不支持HTML5 video标签.
+        </video>
+    </div>
+
+    <!-- 热门话题 -->
+    <div class="hot-topics">
+        <h2>热门话题</h2>
+        <!-- 补充热门话题内容 -->
+    </div>
+
+    <!-- 订阅电子报 -->
+    <div class="subscription-form">
+        <h2>订阅我们的新闻</h2>
+        <form>
+            <input type="email" placeholder="输入你的邮箱">
+            <button type="submit">订阅</button>
+        </form>
+        
+    </div>
+
+    <!-- 音频 -->
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 页脚 -->
+    <footer>
+        Copyright © 2022. All Rights Reserved.
+        <!-- 社交分享按钮 -->
+        <div>
+            <a href="#" class="social-btn">Facebook</a> 
+            <a href="#" class="social-btn">Twitter</a> 
+            <a href="#" class="social-btn">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>

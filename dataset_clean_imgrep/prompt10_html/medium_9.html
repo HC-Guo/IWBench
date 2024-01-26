@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>电影电视剧评论聚合平台</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #F3F3F3;
+        }
+        nav{
+            margin: 0;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+        nav a{
+           margin: 0 10px;
+           color: white;
+           text-decoration: none;
+        }
+        #sidebar{
+            width: 200px;
+            float: left;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        #content{
+            margin-left: 210px;
+            padding: 10px;
+        }
+        h1{
+            margin-top: 0;
+        }
+        img{
+            width: 200px;
+            height: 300px;
+        }
+        .audio-control{
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">首页</a>
+        <a href="/movies">电影</a>
+        <a href="/tv-shows">电视剧</a>
+        <a href="/preferences">设置偏好</a>
+    </nav>
+    <div id="sidebar">
+        <h2>实时更新评论</h2>
+        <!-- 评论列表动态生成，此处省略 -->
+    </div>
+    <div id="content">
+        <h1>最新电影和电视剧评价</h1>
+        <div>
+            <!-- 电影或电视剧信息动态生成，此处省略 -->
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+            <div>
+                <p>电影或电视剧简介</p>
+                <a href="link/to/streaming/platform">在线观看</a>
+                <!-- 用户评分功能，此处省略 -->
+            </div>
+        </div>
+        <div class="audio-control">
+            <audio controls>
+                <source src="path/to/audio" type="audio/mpeg">
+                您的浏览器不支持HTML5音频播放
+            </audio>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    padding: 2px 16px;
+}
+#progressbar {
+    width: 100%;
+    background-color: #f3f3f3;
+}
+#progress {
+    width: 0%;
+    height: 30px;
+    background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>
+
+<div class="card">
+  <img src="img_lights.jpg" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>Forum Section</b></h4>
+    <p>Eco-friendly Lifestyle</p>
+    <p>Environmental Protection Law</p>
+    <p>Eco-Friendly Activities and Initiatives</p>
+  </div>
+</div>
+
+<script type="text/javascript">
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("progress").style.width = scrolled + "%";
+}
+</script>
+<div id="progressbar">
+    <div id="progress"></div>
+</div>
+
+</body>
+</html>

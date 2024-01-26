@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>社交网络平台</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+      }
+      .carousel {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+      }
+      .carousel img {
+        width: 100%;
+        height: auto;
+      }
+      .content {
+        margin: 20px;
+      }
+      .content video, .content audio {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>欢迎来到我们的社交网络平台</h1>
+    </header>
+  
+    <div class="carousel">
+      <img src="轮播图1.jpg" alt="Slide 1">
+      <img src="轮播图2.jpg" alt="Slide 2">
+      <img src="轮播图3.jpg" alt="Slide 3">
+    </div>
+  
+    <div class="content">
+      <h2>分享你的生活</h2>
+      <p>在这里，你可以跟朋友分享你的生活瞬间，包括图片、视频及音频。</p>
+  
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+  
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  
+      <p>快把你的最新动态分享到社交媒体吧!</p>
+      <button onClick="shareOnSocialMedia()">分享</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 排版 */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border:1px solid black;
+}
+</style>
+</head>
+<body>
+
+<h1>我的电影&电视剧评论网站</h1>
+
+<!-- 面包屑导航 -->
+<div class="breadcrumb">
+  <a href="#home">首页</a> >
+  <a href="#movie">电影</a> >
+  <a href="#tvshow">电视剧</a>
+</div>
+
+<!-- 搜索栏 -->
+<div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="搜索电影或电视剧.." name="search">
+      <button type="submit">提交</button>
+    </form>
+</div>
+
+<!-- 图片，卡片布局 -->
+<div class="grid-container">
+  <div class="grid-item"><img src="movie1.jpg" alt="movie1"></div>
+  <div class="grid-item"><img src="movie2.jpg" alt="movie2"></div>
+  <div class="grid-item"><img src="movie3.jpg" alt="movie3"></div>  
+</div>
+
+<!-- 插入JavaScript或其它技术来实现：实时更新评论板块，用户评分系统，直接链接到不同流媒体平台的观看选项 -->
+
+<!-- 页脚 -->
+<footer>
+  <p>版权所有 &copy; 2021</p>
+</footer>
+
+</body>
+</html>

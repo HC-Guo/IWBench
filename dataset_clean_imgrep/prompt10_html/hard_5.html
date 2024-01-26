@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>电影和电视剧评价聚合网站</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+    }
+    .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .navbar a:hover {
+        background: #ddd;
+        color: black;
+    }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#home">主页</a>
+        <a href="#movies">电影</a>
+        <a href="#tvshows">电视剧</a>
+        <a href="#usersettings">用户设置</a>
+    </div>
+
+    <!-- Title -->
+    <h1>欢迎来到电影和电视剧评价聚合网站!</h1>
+
+    <!-- Search Bar -->
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="搜索电影或电视剧">
+
+    <!-- Sliding Banner -->
+    <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+
+    <!-- Movie and TV Show Reviews -->
+    <div id="reviews">
+    <!-- Sample Review -->
+        <h2>电影1</h2>
+        <p>这是对电影1的评论......</p>
+        <a href="#" class="watch-button">观看</a>
+        <div class="rating-system"></div>
+    </div>
+
+    <!-- Social Share Buttons -->
+    <div>
+        <button>分享到Facebook</button>
+        <button>分享到Twitter</button>
+        <button>分享到Instagram</button>
+    </div>
+
+    <!-- Video -->
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+    </video>
+
+</body>
+</html>

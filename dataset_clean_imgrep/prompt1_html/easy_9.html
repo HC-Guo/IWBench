@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摄影作品集</title>
+    <style>
+        body {
+            background-image: url("your-background-image-url");
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 40%;
+            margin: auto;
+            border-radius: 5px;
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        @media screen and (max-width: 600px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>欢迎来到我的摄影作品集</h1>
+    </div>
+
+    <div class="card">
+        <h2>作品展示</h2>
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+        <p>作品简介</p>
+    </div>
+
+    <div class="card">
+        <h2>关于我</h2>
+        <p>摄影师专业背景和艺术理念介绍。</p>
+    </div>
+
+    <div class="card">
+        <h2>联系方式</h2>
+        <p>您可以在此处查看我的联系方式</p>
+        <p>[社交媒体快速链接图标]</p>
+    </div>
+
+</body>
+</html>

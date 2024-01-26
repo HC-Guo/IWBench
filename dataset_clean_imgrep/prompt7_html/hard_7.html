@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>社交网络平台</title>
+  <style>
+    /* CSS样式 */
+    body {
+      background-image: url('background.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+    }
+    header, footer {
+      padding: 1em;
+      background-color: #b3b3b3;
+      clear: left;
+      text-align: center;
+    }
+    nav {
+      margin: 0;
+      padding: 1em;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .carousel-item {
+      width: 100%;
+      height: 400px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      color: #fff;
+      background-color: #4caf50;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- 滑动横幅/轮播 -->
+    <div class="carousel">
+      <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+      <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+      <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+    </div>
+    <!-- 搜索栏 -->
+    <form>
+      <input type="search" placeholder="搜索...">
+      <input type="submit" value="搜索">
+    </form>
+  </header>
+
+  <nav>
+    <!-- 选项卡或折叠面板 -->
+    <ul>
+      <li><a href="#home">主页</a></li>
+      <li><a href="#profile">个人资料</a></li>
+      <li><a href="#settings">设置</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- 表单 -->
+    <form>
+      <label for="post">发表状态:</label><br>
+      <input type="text" id="post" name="post"><br>
+      <input type="submit" value="发布">
+    </form>
+    <!-- 音频 -->
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+  </main>
+
+  <footer>
+    <!-- 页脚 -->
+    <p>版权所有 © 2022</p>
+  </footer>
+</body>
+
+</html>

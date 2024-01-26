@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>社交网络平台</title>
+    </head>
+    <body>
+        <!-- 头部 logo -->
+        <header>
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+        </header>
+        <!-- 个人资料 -->
+        <section>
+          <form>
+            <input type="text" placeholder="姓名" name="name">
+            <input type="text" placeholder="年龄" name="age">
+            <!--更多表单元素...-->
+            <input type="submit" value="提交">
+          </form>
+        </section>
+        <!--状态更新-->
+        <section>
+          <textarea placeholder="你在想什么？"></textarea>
+          <input type="submit" value="发布">
+        </section>
+        <!--图片与视频分享-->
+        <section>
+          <input type="file" accept="image/*, video/*">
+        </section>
+        <!--评论区-->
+        <section>
+          <textarea placeholder="发表你的看法"></textarea>
+          <input type="submit" value="评论">
+          <!--加载更多以前的评论-->
+          <button onClick="loadMoreComments()">加载更多</button>
+        </section>
+        <!--其他区域-->
+        <!--音频-->
+        <audio controls>
+          <source src="audio.mp3" type="audio/mp3">
+        </audio>
+    </body>
+</html>

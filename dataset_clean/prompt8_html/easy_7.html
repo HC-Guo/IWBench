@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>科技新闻站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("background.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+        }
+        .sidebar {
+            float: right;
+            width: 20%;
+            background: rgba(0,0,0,0.7);
+            padding: 20px;
+            box-sizing: border-box;
+            height: 100vh;
+        }
+        .content {
+            width: 75%;
+            float: left;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .news-ticker {
+            background: rgba(0,0,0,0.7);
+            padding: 10px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .subscribe-form input[type="email"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .subscribe-form input[type="submit"] {
+            width: 15%;
+            padding: 10px;
+            background: white;
+            border: none;
+            color: black;
+        }
+        .video-content {
+            background: rgba(0,0,0,0.7);
+            padding: 10px;
+            color: white;
+        }
+        .hot-topics {
+            background: rgba(0,0,0,0.7);
+            padding: 10px;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>科技新闻站</h1>
+        <div class="subscribe-form">
+            <input type="email" placeholder="输入你的Email以订阅科技新闻">
+            <input type="submit" value="订阅">
+        </div>
+        <div class="hot-topics">
+            <h2>热门话题</h2>
+            <!-- 热门话题列表 -->
+        </div>
+    </div>
+    <div class="content">
+        <div class="news-ticker">
+            <h2>新闻滚动条</h2>
+            <!-- 新闻滚动条内容 -->
+        </div>
+        <div class="video-content">
+            <h2>视频内容</h2>
+            <!-- 视频内容插入处 -->
+        </div>
+    </div>
+</body>
+</html>

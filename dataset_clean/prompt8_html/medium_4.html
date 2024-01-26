@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<header>
+<h1>科技新闻网站</h1>
+</header>
+
+<nav class="sidebar">
+  <ul>
+    <li><a href="#">科技新闻</a></li>
+    <li><a href="#">深度分析</a></li>
+    <li><a href="#">播客</a></li>
+    <li><a href="#">视频</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+  <div class="card">
+    <h2>新闻标题</h2>
+    <img src="news-image.jpg" alt="News Image">
+    <p>新闻描述。</p>
+    <button>阅读更多</button>
+  </div>
+  
+  <div class="newsfeed">
+    <h2>新闻订阅</h2>
+    <form action="/subscribe" method="post">
+      <label for="email">邮箱:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <input type="submit" value="订阅">
+    </form>
+  </div>
+  
+  <div class="video-section">
+    <h2>最新视频</h2>
+    <video width="400" controls>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<footer>
+  <p>版权所有 &copy; 2022 科技新闻</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>时尚服装店</title>
+    <style>
+        /* 设置整体布局 */    
+        body {
+            width: 90%;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* 设置导航栏样式 */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        /* 设置商品展示区样式 */
+        .product-area {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            max-width: 200px;
+            background: #fff;
+            align-items: center;
+            padding: 15px;
+            margin: 15px;
+            text-align: center;
+        }
+
+        /* 设置页脚样式 */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            margin-top: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 面包屑导航 -->
+    <div class="navbar">
+        <a href="#">新品上市</a>
+        <a href="#">热销商品</a>
+        <a href="#">折扣专区</a>
+    </div>
+
+    <!-- 商品展示区 -->
+    <div class="product-area">
+        <div class="product-card">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+            <h3>产品名称</h3>
+            <p>产品描述</p>
+        </div>
+        <!-- 此处可以添加其他商品卡片 -->
+    </div>
+
+    <!-- 分享按钮 -->
+    <a href="#"><img src="https://picsum.photos/seed/picsum/200/300" alt="Image"></a>
+    <a href="#"><img src="https://picsum.photos/seed/picsum/200/300" alt="Image"></a>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        <p>©2022 时尚服装店</p>
+    </div>
+</body>
+
+</html>

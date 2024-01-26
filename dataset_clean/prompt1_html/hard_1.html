@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摄影师作品集</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .nav-bar {
+            background-color: #333;
+            color: white;
+            overflow: hidden;
+        }
+        .nav-bar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .nav-bar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .sidebar {
+            float: right;
+            width: 300px;
+            padding: 20px;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="#home">首页</a>
+        <a href="#gallery">图片展示</a>
+        <a href="#about">关于我</a>
+        <a href="#contact">联系我</a>
+    </nav>
+
+    <div class="main-content">
+        <div id="home">
+            <h1>欢迎来到我的网站</h1>
+            <p>我是一位专业的摄影师，希望你能喜欢我的作品。</p>
+        </div>
+
+        <div id="gallery" class="image-gallery">
+            <!-- 这里将展示高清图片，代码省略 -->
+        </div>
+
+        <div id="about">
+            <h2>关于我</h2>
+            <p>我是一位拥有丰富经验的摄影师，对摄影有自己的理解和见解。我在多个不同的领域都有所涉猎，包括风景摄影、人像摄影、航拍摄影等。</p>
+        </div>
+
+        <div id="contact">
+            <h2>联系我</h2>
+            <p>如果你有任何问题，或者你愿意和我共享你的想法，赶紧联系我吧。</p>
+            <!-- 这里可以添加一个联系表单，代码省略 -->
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <!-- 社交媒体链接、搜索栏、评论区等等，代码省略 -->
+    </div>
+
+    <!-- 模态窗口/弹出框、音频等，在适当的地方添加，代码省略 -->
+
+    <footer>
+        <p>Copyright &copy; 2023 Your Name</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environment Forum</title>
+    <style>
+        body {font-family: Arial, sans-serif;}
+        #sidebar {width: 200px; float: left; padding: 10px;}
+        #main {margin-left: 210px; padding: 20px;}
+        .card {border: 1px solid #eee; padding: 20px; margin-bottom: 20px;}
+        .card img {width: 100%;}
+        .card audio {width: 100%;}
+        h1 {color: #007B51;}
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h1>Environment Forum</h1>
+        <h2>Boards</h2>
+        <ul>
+            <li><a href="/sustainable-living">Sustainable Living</a></li>
+            <li><a href="/environmental-laws">Environmental Laws</a></li>
+            <li><a href="/campaigns">Campaigns and Initiatives</a></li>
+        </ul>
+        <h2>Search</h2>
+        <form action="/search">
+            <input type="text" placeholder="Search..." name="q">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+    
+    <div id="main">
+        <div class="slideshow">
+            <img src="/images/banner1.jpg" alt="Slideshow Image 1">
+            <img src="/images/banner2.jpg" alt="Slideshow Image 2">
+        </div>
+        <h2>Latest Discussions</h2>
+        <div class="card">
+            <img src="/images/post1.jpg" alt="Post Image">
+            <h3><a href="/posts/1">Discussion 1</a></h3>
+            <audio controls src="/sounds/discussion1.mp3"></audio>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <a href="/posts/1">Read More...</a>
+        </div>
+        <div class="card">
+            <img src="/images/post2.jpg" alt="Post Image">
+            <h3><a href="/posts/2">Discussion 2</a></h3>
+            <audio controls src="/sounds/discussion2.mp3"></audio>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <a href="/posts/2">Read More...</a>
+        </div>
+    </div>
+</body>
+</html>

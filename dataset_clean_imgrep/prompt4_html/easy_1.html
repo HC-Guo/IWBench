@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Fashion Store</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            .header {
+                width: 100%;
+                height: 70px;
+                background-color: #333;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 30px;
+                box-sizing: border-box;
+            }
+
+            .header .logo {
+                font-size: 24px;
+            }
+
+            .header .navigation a {
+                color: white;
+                text-decoration: none;
+                margin-left: 20px;
+            }
+
+            .banner {
+                width: 100%;
+                height: 300px;
+                background-color: #f2f2f2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 28px;
+            }
+
+            .content {
+                display: flex;
+                margin: 20px;
+            }
+
+            .sidebar {
+                width: 20%;
+            }
+
+            .main {
+                width: 80%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .product-card {
+                width: 24%;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+
+            .product-card img {
+                width: 100%;
+            }
+
+            .product-card .title,
+            .product-card .description,
+            .product-card .price {
+                margin: 0 0 10px 0;
+            }
+
+            .footer {
+                width: 100%;
+                height: 60px;
+                background-color: #333;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+                position: fixed;
+                bottom: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">Fashion Trends Online</div>
+            <div class="navigation">
+                <a href="#new-arrivals">New Arrivals</a>
+                <a href="#hot-selling">Hot Selling</a>
+                <a href="#discount-area">Discount Area</a>
+            </div>
+        </div>
+        <div class="banner">
+            <div>Welcome to The World of Fashion</div>
+        </div>
+        <div class="content">
+            <div class="sidebar">Sidebar content goes here</div>
+            <div class="main">
+                <div class="product-card">
+                    <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+                    <h3 class="title">Product Name</h3>
+                    <p class="description">Product Description goes here......</p>
+                    <p class="price">$100</p>
+                </div>
+                <!-- Add more product cards as per the requirement -->
+            </div>
+        </div>
+        <div class="footer">
+            <div>© 2021 Fashion Trends Online. All Rights Reserved</div>
+        </div>
+    </body>
+</html>

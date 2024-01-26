@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #newsTicker {
+            height: 50px;
+            line-height: 50px;
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
+
+        #videoSection {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        #subscribeForm {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ddd;
+        }
+
+        #sidebar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #ccc;
+            overflow: auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <!-- sidebar content -->
+    </div>
+
+    <div id="newsTicker">
+        <!-- latest news -->
+    </div>
+
+    <div id="videoSection">
+        <!-- video content -->
+    </div>
+
+    <div id="subscribeForm">
+        <form>
+            <div class="form-group">
+                <label for="email">电子邮件地址</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <button type="submit">订阅</button>
+        </form>
+    </div>
+</body>
+</html>

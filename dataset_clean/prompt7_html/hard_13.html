@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('background.jpg');
+}
+#nav {
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.tab {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+#progressBar {
+  width: 100%;
+  background-color: #f3f3f3;
+  border: 1px solid #f1f1f1;
+}
+#progressBar div {
+  height: 30px;
+  background-color: #4caf50;
+  width: 0;
+}
+.footer {
+  background-color: #ddd;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div id="nav">
+  <div class="tab">Home</div>
+  <div class="tab">My Profile</div>
+  <div class="tab">Messages</div>
+  <div class="tab">Notifications</div>
+</div>
+
+<form>
+  <input type="text" placeholder="Write a status update..." />
+  <input type="file" id="imageUpload" accept="image/*">
+  <input type="submit" value="Post">
+</form>
+
+<div id="progressBar">
+  <div></div>
+</div>
+
+<footer class="footer">
+  <p>© 2023 My Social Network. All rights reserved.</p>
+</footer>
+</body>
+</html>

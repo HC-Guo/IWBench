@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      body {
+	        font-family: Arial, sans-serif;
+      }
+
+      /* Navigation Bar */
+      .breadcrumb {
+	        list-style-type: none;
+	        overflow: hidden;
+	        background-color: #333;
+      }
+      .breadcrumb li {
+	        float: left;
+	        padding: 16px;
+	        color: white;
+      }
+
+       /* Carousel */
+      .slider {
+	        width: 100%;
+	        display: flex;
+	        overflow-x: auto;
+       }
+
+      .slider img {
+	         width: 100%;
+	         margin: 0 16px;
+      }
+
+      /* Card Layout */
+      .card {
+	        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	        max-width: 300px;
+	        margin: auto;
+	        margin-bottom: 2rem;
+	        text-align: center;
+        font-family: arial;
+      }
+
+      /* Video Section */
+      .video-container {
+	        position: relative;
+	        overflow: hidden;
+	        width: 100%;
+	        padding-top: 56.25%;
+      }
+
+      .video-container iframe {
+	        position: absolute;
+	        top: 0;
+	        left: 0;
+	        width: 100%;
+	        height: 100%;
+      }
+    </style>
+</head>
+
+<body>
+    <!-- Breadcrumb Navigation -->
+    <ul class="breadcrumb">
+        <li>首页</li>
+        <li>科技新闻</li>
+        <li>深度分析</li>
+    </ul>
+
+    <!-- Carousel Section -->
+    <div class="slider">
+        <img src="news1.jpg" alt="News 1">
+        <img src="news2.jpg" alt="News 2">
+        <img src="news3.jpg" alt="News 3">
+    </div>
+
+    <!-- News Card Section -->
+    <div class="card">
+        <img src="news1.jpg" alt="News Image" style="width:100%">
+        <h1>科技新闻标题</h1>
+        <p>这里是新闻简介...</p>
+        <p><button>阅读更多</button></p>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+    </div>
+
+    <!-- Social Media Share Options -->
+    <div>
+        分享到: 
+        <a href="#"><img src="facebook.jpg" alt="Facebook" width="30px" /></a>
+        <a href="#"><img src="twitter.jpg" alt="Twitter" width="30px" /></a>
+        <a href="#"><img src="linkedin.jpg" alt="Linkedin" width="30px" /></a>
+    </div>
+
+    <!-- Subscribe Section -->
+    <div>
+        <p>订阅我们的电子报，第一时间获取最新科技新闻及深度分析！</p>
+        <input type="text" placeholder="电子邮箱地址">
+        <button>提交</button>
+    </div>
+
+</body>
+</html>

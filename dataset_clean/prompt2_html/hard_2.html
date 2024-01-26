@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>新闻首页</title>
+    <style>
+        body {
+            background-image: url('background.jpg'); /* 更换为实际的背景图像文件路径 */
+            font-family: Arial, sans-serif;
+        }
+        header {
+            height: 150px;
+            color: white;
+            background-color: black;
+        }
+        #news-ticker {
+            margin-top: 20px;
+            background: white;
+            overflow: hidden;
+            height: 30px;
+            line-height: 30px;
+            list-style-type: none;
+            animation: scrolling 5s infinite;
+            -webkit-animation: scrolling 5s infinite;
+        }
+        .weather-widget {
+            height: 100px;
+            width: 100px;
+            background: white;
+            margin: 20px;
+            float: right;
+        }
+        #advanced-search {
+            margin: 20px;
+        }
+        footer {
+            height: 70px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>新闻首页</h1>
+        <ul id="news-ticker">
+            <li>新闻1...</li>
+            <li>新闻2...</li>
+            <li>新闻3...</li>
+            <!-- 新闻列表，此处需要动态生成，可以由JavaScript或服务器端代码实现 -->
+        </ul>
+        <div class="weather-widget"></div>
+    </header>
+    <div id="advanced-search">
+        <input type="text" id="search" placeholder="关键词..."/>
+        <input type="date" id="date" placeholder="日期..."/>
+        <select id="category">
+            <option>新闻</option>
+            <option>体育</option>
+            <option>娱乐</option>
+            <!-- 填充更多的类别 -->
+        </select>
+        <button type="submit">搜索</button>
+    </div>
+    <footer>版权信息</footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>摄影师的作品集</title>
+    <style>
+        .navbar { background-color: #333; padding: 20px; color:#fff; } 
+        .navbar a { color: #fff; margin-right:20px; text-decoration:none; } 
+        .gallery-img { width:100%; }
+        .about, .contact { margin:20px 0; }
+        .social-buttons a { margin-right:10px; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#gallery">画廊</a>
+        <a href="#about">关于</a>
+        <a href="#contact">联系我</a>
+    </div>
+    <div id="gallery">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image">
+        <!-- More Images -->
+    </div>
+    <div id="about" class="about">
+        <h1>About The Photographer</h1>
+        <p>此处添加关于摄影师的详细介绍。</p>
+    </div>
+    <div id="contact" class="contact">
+        <h1>Contact Me</h1>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="social-buttons">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+    </div>
+</body>
+</html>

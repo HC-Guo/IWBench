@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>科技新闻</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 10px;
+        }
+        .hot-topic {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>欢迎来到科技新闻网站</h1>
+
+    <div id="newsBar">
+        <marquee><h2>新闻滚动条：最新的科技新闻报道</h2></marquee>
+    </div>
+
+    <div id="videoArea">
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            你的浏览器不支持视频播放
+        </video>
+    </div>
+
+    <div class="hot-topic">
+        <h3>热门话题</h3>
+        <div class="card">
+            <h4>话题一</h4>
+            <p>话题详细内容一</p>
+            <a href="#" class="btn">查看更多</a>
+        </div>
+        <div class="card">
+            <h4>话题二</h4>
+            <p>话题详细内容二</p>
+            <a href="#" class="btn">查看更多</a>
+        </div>
+    </div>
+
+    <div id="subscribe">
+        <h3>订阅我们的电子报</h3>
+        <input type="email" placeholder="请输入你的邮箱">
+        <input type="submit" value="订阅">
+    </div>
+
+    <audio src="podcast.mp3" controls></audio>
+
+    <footer>
+        <p>版权所有 &copy; 2022 科技新闻网站</p>
+    </footer>
+</body>
+</html>

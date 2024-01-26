@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>社交网络平台</title>
+    <style>
+        /* 在这里添加css样式 */
+        #sidebar {
+            width: 200px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#profile">个人资料</a></li>
+            <li><a href="#settings">设置</a></li>
+            <!-- 在这里添加更多导航链接 -->
+        </ul>
+    </nav>
+
+    <!-- 个人资料区 -->
+    <section id="profile">
+        <h2>个人资料</h2>
+        <img src="profile.jpg" alt="个人头像"> <!--头像-->
+        <form>
+            <label for="bio">个人简介</label>
+            <textarea id="bio"></textarea>
+
+            <input type="submit" value="提交">
+        </form>
+    </section>
+
+    <!-- 状态更新区 -->
+    <section id="status-update">
+        <h2>状态更新</h2>
+        <form>
+            <label for="status">新状态</label>
+            <textarea id="status"></textarea>
+
+            <input type="submit" value="提交">
+        </form>
+    </section>
+
+    <!-- 设置区 -->
+    <section id="settings">
+        <h2>隐私设置</h2>
+        <form>
+            <label for="privacy">谁可以看到我的内容：</label>
+            <select id="privacy">
+                <option value="public">所有人</option>
+                <option value="friends">仅好友</option>
+                <option value="private">仅我</option>
+                <!-- 在这里添加更多选项 -->
+            </select>
+
+            <input type="submit" value="提交">
+        </form>
+    </section>
+
+    <!-- 边栏 -->
+    <div id="sidebar">
+        <!-- 在这里添加边栏内容 -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+html
+<html>
+<head>
+<title>Technology news</title>
+<style>
+        body {
+            background-image: url('背景图像和图案');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            color: #4CAF50;
+        }
+        .news-bar {
+            overflow: auto;
+            white-space: nowrap;
+            height: 50px;
+        }
+        .video-content {
+            text-align: center;
+        }
+        .hot-topics {
+            display: flex;
+            justify-content: space-around;
+        }
+        .subscribe {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<h1>title</h1>
+</div>
+<div class="news-bar">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</div>
+<div class="video-content">
+<video controls="" height="240" width="320">
+<source src="科技新闻.mp4" type="video/mp4"/>Your browser does not support the video tag.</video>
+</div>
+<div class="hot-topics">
+<div><h2>[Hot Topic 1]</h2></div>
+<div><h2>[Hot topic 2]</h2></div>
+<div><h2>[Hot Topic 3]</h2></div>
+</div>
+<div class="subscribe">
+<h2>Subscribe to our electronic newspaper</h2>
+<form action="/subscribe" method="get">
+<label for="email">Email:</label><br/>
+<input id="email" name="email" type="email"/><br/>
+<input type="submit" value="订阅"/>
+</form>
+</div>
+</body>
+</html>

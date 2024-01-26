@@ -1,0 +1,81 @@
+
+html
+<html>
+<head>
+<title>Concentrate on the latest movie and TV drama reviews</title>
+<style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        .navbar{
+            display: flex;
+            background-color: #f0f0f0;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .carousel{
+            width: 100%;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 20px 0;
+        }
+        .carousel img{
+            width: 20%;
+            height: auto;
+            display: inline-block;
+        }
+        .card{
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .card img{
+            width: 100%;
+        }
+        .card-body{
+            padding: 15px;
+        }
+        #user-pref{
+            display: none;
+        }
+        #user-pref:checked ~ .card:not(.preferred){
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+<a href="#movies">film</a>
+<a href="#tvshows">TV play</a>
+<label>
+<input id="user-pref" type="checkbox"/>Just look at what I like</label>
+</div>
+<h1>Welcome to the latest movie and TV drama evaluation aggregation site</h1>
+<div class="carousel">
+Sliding banner/carousel
+</div>
+<h2 id="movies">film</h2>
+<div>
+<div class="card">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<div class="card-body">
+<h3>Movie 1</h3>
+<p>Movie 1 Description</p>
+</div>
+</div>
+More cards
+</div>
+<h2 id="tvshows">TV play</h2>
+<div>
+<div class="card preferred">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<div class="card-body">
+<h3>TV Drama 1</h3>
+<p>TV Series 1 Description</p>
+</div>
+</div>
+More cards
+</div>
+</body>
+</html>

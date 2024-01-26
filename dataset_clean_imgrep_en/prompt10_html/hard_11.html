@@ -1,0 +1,55 @@
+
+html
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 排版 */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border:1px solid black;
+}
+</style>
+</head>
+<body>
+<h1>My Movie&amp;TV Drama Review Website</h1>
+Breadcrumb navigation
+<div class="breadcrumb">
+<a href="#home">home page</a>&gt;<a href="#movie">film</a>&gt;<a href="#tvshow">TV play</a>
+</div>
+Search bar
+<div class="search-container">
+<form action="/action_page.php">
+<input name="search" placeholder="搜索电影或电视剧.." type="text"/>
+<button type="submit">Submit</button>
+</form>
+</div>
+Picture, card layout
+<div class="grid-container">
+<div class="grid-item"><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></div>
+<div class="grid-item"><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></div>
+<div class="grid-item"><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></div>
+</div>
+Insert JavaScript or other technologies to achieve real-time updates of comment sections, user rating systems, and direct links to viewing options on different streaming platforms
+footer
+<footer>
+<p>All rights reserved ©  two thousand and twenty-one</p>
+</footer>
+</body>
+</html>

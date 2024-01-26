@@ -1,0 +1,66 @@
+
+html
+<html>
+<head>
+<title>Internal enterprise portal website</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .card {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        .card p {
+            margin: 0;
+        }
+        @keyframes carousel {
+            from {opacity: 1} 
+            50% {opacity: 0} 
+            to {opacity: 1}
+        }
+        .carousel img {
+            width: 100%;
+            border-radius: 5px;
+            animation: carousel 5s infinite;
+        }
+        .carousel-container {
+               overflow: hidden; 
+               width: 100%;
+               position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>Internal enterprise portal website</h1>
+<nav>
+<a href="#">home page</a>|<a href="#">News Release</a>|<a href="#">Employee directory</a>|<a href="#">forum</a>|<a href="#">Workflow</a>|<a href="#">Shared Documents</a>
+</nav>
+</header>
+<section class="carousel-container">
+<div class="carousel"><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></div>
+</section>
+<section class="news card">
+<h3>News Release</h3>
+<p>View the latest company news and updates.</p>
+<button><a href="#"><span>Read more</span></a></button>
+</section>
+<section class="directory card">
+<h3>Employee directory</h3>
+<p>Search and contact our employees.</p>
+<button><a href="#"><span>Search for employees</span></a></button>
+</section>
+</div>
+</body>
+</html>

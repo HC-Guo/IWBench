@@ -1,0 +1,83 @@
+
+html
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="个人旅行和美食体验博客网站" name="description"/>
+<title>Personal travel and food experience blog website</title>
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+section.blog {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+.app-btn {
+    background-color: #008CBA;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+.comments {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+    </style>
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="#home">homepage</a></li>
+<li><a href="#blog">Blog</a></li>
+<li><a href="#bestblogs">Best Blog</a></li>
+</ul>
+<input placeholder="搜索.." type="text"/>
+</nav>
+<section class="blog" id="blog">
+<h2>Blog Title</h2>
+<p>Blog content</p>
+<button class="app-btn">Read more</button>
+<div class="social-share">
+<a href="#">Share on Facebook</a>
+<a href="#">Share on Twitter</a>
+</div>
+</section>
+<section class="comments">
+<h2>Comment section</h2>
+<p>Comment content</p>
+<button class="app-btn">Submit comments</button>
+</section>
+<footer>
+<p>All rights reserved ©  two thousand and twenty-two</p>
+</footer>
+</body>
+</html>

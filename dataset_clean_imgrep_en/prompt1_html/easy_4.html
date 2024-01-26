@@ -1,0 +1,95 @@
+html
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Photographer's portfolio</title>
+<style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+        .card {
+            margin: 20px;
+            background-color: rgba(255,255,255,0.8);
+            color: #000;
+            border-radius: 10px;
+            width: 300px;
+            padding: 15px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .image-container {
+            position: relative;
+            margin: 10px;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease-in-out;
+        }
+        .image:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+<header style="background-image: url('background.jpg'); height: 90vh; 
+        background-size: cover; color: #fff; display: flex; 
+        justify-content: center; align-items: center; 
+        text-align: center; flex-direction: column;">
+<h1>Photographer's portfolio</h1>
+<p>[Add a brief introduction of the photographer here]</p>
+</header>
+<section class="image-gallery">
+<div class="image-container">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</div>
+<div class="image-container">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</div>
+Add more pictures here
+</section>
+<section class="container">
+<div class="card">
+<h2>About Me</h2>
+<p>[Add detailed introduction of the photographer here]</p>
+<a href="about.html">Learn more</a>
+</div>
+<div class="card">
+<h2>Contact information</h2>
+<p>[Add photographer's contact information here]</p>
+<a href="contact.html">Learn more</a>
+</div>
+</section>
+<footer style="background-color: #333; color: #fff; 
+        text-align: center; padding: 20px 0px;">
+<p>©  The 2022 photographer's portfolio, all rights reserved</p>
+<div style="display: flex; justify-content: center;">
+Replace # and add icons based on the photographer's actual social media links
+<a href="#" style="margin: 0px 10px;">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</a>
+<a href="#" style="margin: 0px 10px;">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</a>
+</div>
+</footer>
+</body>
+</html>

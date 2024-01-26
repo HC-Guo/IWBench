@@ -1,0 +1,76 @@
+
+html
+<html>
+<head>
+<title>Technology news website</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            justify-content: space-between;
+        }
+        .carousel {
+            display: flex;
+            overflow: auto;
+            scrollbar-width: thin;
+            scrollbar-color: lightgray gray;
+        }
+        .carousel img {
+            height: 200px;
+            margin-right: 10px;
+        }
+        .sidebar {
+            float: right;
+            width: 20%;
+        }
+        .main-content {
+            float: left;
+            width: 75%;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+<h1>Technology news</h1>
+<div>Homepage/News/Video/Blog/Subscription</div>
+</div>
+<div class="carousel">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</div>
+<div class="main-content">
+<h2>Latest news</h2>
+<p>Take it...</p>
+<h2>hot topic</h2>
+<p>Take it...</p>
+<h2>Subscribe to electronic newspapers</h2>
+<form>
+<input placeholder="电子邮件" required="" type="email"/>
+<button type="submit">subscription</button>
+</form>
+</div>
+<div class="sidebar">
+<h2>Video playback area</h2>
+<video controls="">
+<source src="sample.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="footer">
+<p>All rights reserved ©  2022 Technology News Website</p>
+</div>
+</body>
+</html>

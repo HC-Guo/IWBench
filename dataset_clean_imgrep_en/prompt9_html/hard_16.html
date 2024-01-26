@@ -1,0 +1,65 @@
+html
+<html>
+<head>
+<title>Environmental Forum</title>
+<style>
+        body {
+          background-image: url('background.jpg');
+        }
+        .navbar {
+          overflow: hidden;
+          background-color: #333;
+        }
+        .navbar a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        .content {
+          margin-top:50px;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+<a href="#sustainable-bar">Sustainable lifestyle</a>
+<a href="#law-bar">Environmental Protection Law</a>
+<a href="#activity-bar">Environmental activities and initiatives</a>
+<input placeholder="搜索.." style="float:right; padding: 6px; border: none; margin-top: 8px; margin-right: 16px; font-size: 17px;" type="text"/>
+</div>
+<div class="content" id="sustainable-bar">
+<h1>Sustainable lifestyle</h1>
+<a class="button" href="new-post-sustainable.html">Post a new post</a>
+</div>
+<div class="content" id="law-bar">
+<h1>Environmental Protection Law</h1>
+<a class="button" href="new-post-law.html">Post a new post</a>
+</div>
+<div class="content" id="activity-bar">
+<h1>Environmental activities and initiatives</h1>
+<a class="button" href="new-post-activity.html">Post a new post</a>
+</div>
+Modal Window/Popup Box
+<div class="modal" id="myModal">
+<div class="modal-content">
+<span class="close">×</span>
+<p>Modal Window Content</p>
+</div>
+</div>
+<script>
+        var modal = document.getElementById("myModal");
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
+</body>
+</html>

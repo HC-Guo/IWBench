@@ -1,0 +1,72 @@
+
+html
+<html>
+<head>
+<title>News website homepage</title>
+<style>
+        /* 请根据实际情况调整CSS样式 */
+        body { font-family: Arial, sans-serif; }
+        .card { border: 1px solid #eee; padding: 10px; margin-bottom: 10px; }
+        .breadcrumb { margin-top: 10px; }
+        .breadcrumb a { color: #666; text-decoration: none; }
+        .comment-section { margin-top: 20px; }
+        .comment-section textarea { width: 100%; height: 100px; }
+    </style>
+</head>
+<body>
+<header>
+<nav>
+Navigation bar
+<a href="#">homepage</a>|<a href="#">home news</a>|<a href="#">international news </a>
+</nav>
+</header>
+<div class="breadcrumb">
+Breadcrumb navigation
+<a href="#">homepage</a>&gt;<a href="#">home news</a>&gt;<span>Current page</span>
+</div>
+<main>
+<aside>
+Real time weather widget
+<div class="card">
+<div>Beijing: Sunny 25 ° C</div>
+</div>
+Personalized dashboard
+<div class="card">
+<h2>My dashboard</h2>
+Users can customize content
+</div>
+</aside>
+<section>
+Dynamic news scrollbar
+<div class="card">
+<h2>Latest news</h2>
+<ul>
+<li>News 1</li>
+<li>News 2</li>
+<li>News Three</li>
+</ul>
+</div>
+Advanced search function
+<div class="card">
+<h2>Search for news</h2>
+<form>
+<input placeholder="按关键词搜索" type="search"/>
+<input placeholder="按日期搜索" type="date"/>
+<select>
+<option>Search by category</option>
+<option>home news</option>
+<option>international news </option>
+</select>
+<button type="submit">search</button>
+</form>
+</div>
+</section>
+<section class="comment-section">
+Comment section
+<h2>Leave your comment</h2>
+<textarea placeholder="输入你的评论..."></textarea>
+<button type="button">Submit</button>
+</section>
+</main>
+</body>
+</html>

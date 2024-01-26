@@ -1,0 +1,142 @@
+html
+<html>
+<head>
+<title>Technology news</title>
+<style>
+        body {
+            background-image: url('background.jpg');
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+        }
+        nav ul {
+            display: inline-block;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        article {
+            margin: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        #newsletter-form {
+            text-align: center;
+            margin: 20px;
+        }
+        #newsletter-form input[type="text"] {
+            padding: 10px;
+            width: 200px;
+        }
+        .social-share-buttons {
+            text-align: center;
+            margin: 20px;
+        }
+        .video-player {
+            text-align: center;
+            margin: 20px;
+        }
+        .hot-topics {
+            text-align: center;
+            margin: 20px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;   
+        }
+    </style>
+</head>
+<body>
+<header>
+<h1>Technology news</h1>
+</header>
+<nav>
+<ul>
+<li><a href="#">Latest news</a></li>
+<li><a href="#">Deep analysis</a></li>
+<li><a href="#">podcast </a></li>
+<li><a href="#">video</a></li>
+</ul>
+</nav>
+<article>
+<div class="video-player">
+<video controls="">
+<source src="sample.mp4" type="video/mp4"/>
+</video>
+</div>
+<audio controls="">
+<source src="audio.mp3" type="audio/mpeg"/>
+</audio>
+<h2>hot topic</h2>
+<div class="hot-topics">
+<p>News 1<a href="#">View more</a></p>
+<p>News 2<a href="#">View more</a></p>
+<p>News 3<a href="#">View more</a></p>
+</div>
+<div class="social-share-buttons">
+<button>Share on WeChat</button>
+<button>Share on Facebook</button>
+<button>Share on Twitter</button>
+</div>
+
+<form id="newsletter-form">
+<h2>Subscribe to our electronic newspaper</h2>
+<input placeholder="输入你的邮箱地址" type="text"/>
+<button type="submit">subscription</button>
+</form>
+</article>
+<footer>
+<small>©  2022 Technology News</small>
+</footer>
+Modal Window
+<div class="modal" id="myModal">
+<div class="modal-content">
+<span class="close">×</span>
+<p>This is a modal window</p>
+<button>confirm</button>
+</div>
+</div>
+</body>
+<script>
+// 获取模态窗口
+var modal = document.getElementById("myModal");
+// 获取 <span> 元素，用于关闭模态窗口
+var span = document.getElementsByClassName("close")[0];
+// 当用户点击 <span> (x), 关闭模态窗口
+span.onclick = function() {
+  modal.style.display = "none";}
+</script>
+</html>

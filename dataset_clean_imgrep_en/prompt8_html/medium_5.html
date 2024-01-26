@@ -1,0 +1,77 @@
+html
+<html>
+<head>
+<style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eee;
+        }
+
+        #header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #news-bar {
+            margin-top: 20px;
+            font-size: 18px;
+            background-color: #ddd;
+            padding: 10px;
+        }
+
+        #sidebar {
+            float: right;
+            width: 300px;
+        }
+
+        #content {
+            width: 70%;
+            float: left;
+        }
+
+        #footer {
+            clear:both;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+<h1>Technology news website</h1>
+<ul id="breadcrumb">
+<li><a href="#">homepage</a></li>
+<li><a href="#">Technology news</a></li>
+</ul>
+</div>
+<div id="news-bar">Latest news scrollbar</div>
+<div id="content">
+<h2>Recommended articles</h2>
+<p>This is an in-depth analysis article about the latest technology news.</p>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<h2>Video content</h2>
+<video controls="">
+<source src="myVideo.mp4" type="video/mp4"/>Your browser does not support Video tags.</video>
+<h2>podcast </h2>
+<audio controls="">
+<source src="myAudio.mp3" type="audio/mpeg"/>Your browser does not support Audio tags.</audio>
+</div>
+<div id="sidebar">
+<h2>hot topic</h2>
+<p>Here we showcase the hottest technology news topics.</p>
+<h2>Subscribe to electronic newspapers</h2>
+<form action="subscribe.php" method="post">
+<label for="email">Email address:</label><br/>
+<input id="email" name="email" type="text"/><br/>
+<input type="submit" value="Subscribe"/>
+</form>
+</div>
+<div id="footer">
+<p>All rights reserved ©  two thousand and twenty-two</p>
+</div>
+</body>
+</html>

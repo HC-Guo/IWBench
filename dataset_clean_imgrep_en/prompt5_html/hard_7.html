@@ -1,0 +1,78 @@
+
+html
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Personal Blog for Travel and Food Experience" name="description"/>
+<title>My Travel &amp; Food Blog</title>
+Add Bootstrap stylesheet
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"/>
+<style>
+    body {
+      padding: 20px;
+    }
+    .carousel-inner > .item > img {
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+Navigation Bar
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">Travel &amp; Food Blog</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav">
+<li class="nav-item active">
+<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#bestblogs">Best Blogs of the Month</a>
+</li>
+Add more navigation items here
+</ul>
+</div>
+</nav>
+Carousel
+<div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators" style="margin-top: 20px;">
+<div class="carousel-inner">
+<div class="carousel-item active">
+Add your image here
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</div>
+Add more carousel items here
+</div>
+</div>
+Blog Post with accordion
+<div class="accordion" id="accordionExample">
+<div class="card">
+<div class="card-header" id="headingOne">
+<h2>
+<button aria-controls="collapseOne" aria-expanded="true" class="btn btn-link" data-target="#collapseOne" data-toggle="collapse" type="button">Blog Post Title Here</button>
+</h2>
+</div>
+<div aria-labelledby="headingOne" class="collapse show" data-parent="#accordionExample" id="collapseOne">
+<div class="card-body">
+Add your blog post content here
+</div>
+</div>
+</div>
+Add more blog posts here
+</div>
+Comments Section
+<div id="comments" style="margin-top: 20px;">
+<h3>Comments</h3>
+Implement comments system here, this is dependent on back end or third-party service
+</div>
+Footer
+<footer style="margin-top: 20px;">
+<p>© 2022 My Travel &amp; Food Blog</p>
+</footer>
+Bootstrap scripts
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

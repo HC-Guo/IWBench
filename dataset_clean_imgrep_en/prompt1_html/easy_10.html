@@ -1,0 +1,71 @@
+
+html
+<html>
+<head>
+<title>Photographer Portfolio</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+  }
+  .header {
+    text-align: center;
+    padding: 10px;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  .gallery img {
+    margin: 5px;
+    max-width: calc(100% / 3 - 10px);
+    transition: 0.3s;
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  .info, .contact {
+    margin: 20px;
+  }
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+  }
+  @media (max-width: 600px) {
+    .gallery img {
+      max-width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="header">
+<h1>[Title]</h1>
+</div>
+<div class="gallery">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+More images...
+</div>
+<div class="info">
+<h2>About the Photographer</h2>
+<p>[Professional background and artistic philosophy]</p>
+</div>
+<div class="contact">
+<h2>Contact Information</h2>
+<p>[Contact Information]</p>
+<p>
+<a href="[Facebook账户链接]">Facebook</a>|<a href="[Twitter账户链接]">Twitter</a>|<a href="[Instagram账户链接]">Instagram</a>
+More social media links...
+</p>
+</div>
+<div class="footer">
+<p>[Footer]</p>
+</div>
+</body>
+</html>

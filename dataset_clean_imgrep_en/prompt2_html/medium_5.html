@@ -1,0 +1,64 @@
+
+html
+<html>
+<head>
+<title>News homepage</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .nav-bar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        
+        .nav-bar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #weather-widget {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="nav-bar">
+<a href="#home">homepage</a>
+<a href="#local-news">Local news</a>
+<a href="#category">category</a>
+<a href="#search">search</a>
+</div>
+<h1>Welcome to our news website!</h1>
+<div id="weather-widget">
+Your weather API code
+</div>
+<div id="news-cards">
+Your relevant news API code
+</div>
+<div id="video">
+Video Code
+</div>
+<div id="personalized-dashboard">
+Users can customize personalized dashboard codes for content
+</div>
+<form id="search-form">
+<input id="search-bar" placeholder="搜索..." type="text"/>
+<button type="submit">search</button>
+</form>
+</body>
+</html>

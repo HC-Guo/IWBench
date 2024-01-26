@@ -1,0 +1,58 @@
+
+html
+<html>
+<head>
+<style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: #f2f2f2;
+        background-image: url('background_image.jpg');
+      }
+
+      #navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+    </style>
+</head>
+<body>
+<div id="navbar">
+<a href="#home">Home</a>
+<a href="#profile">Profile</a>
+<a href="#settings">Settings</a>
+</div>
+<div class="breadcrumbs">
+<a href="#home">Home</a>&gt;<a href="#profile">Profile</a>
+</div>
+<div class="card">
+<h2>User Status</h2>
+<p>This is the user's status.</p>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<div class="social-share-buttons">
+<button>Share to Facebook</button>
+<button>Share to Twitter</button>
+<button>Share to Linkedin</button>
+</div>
+</div>
+</body>
+</html>

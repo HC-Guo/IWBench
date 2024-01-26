@@ -1,0 +1,47 @@
+
+html
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Environmental Forum</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<nav>
+<ul id="breadcrumb">
+<li><a href="#">home page</a></li>
+<li><a href="#">Environmental activities and initiatives</a></li>
+</ul>
+</nav>
+<h1>Welcome to Our Environment Protection Forum</h1>
+<div id="tabs">
+<button class="tablink" onclick="openTab(event, 'Lifestyle')">Sustainable lifestyle</button>
+<button class="tablink" onclick="openTab(event, 'Law')">Environmental Protection Law</button>
+<button class="tablink" onclick="openTab(event, 'Activities')">Environmental activities and initiatives</button>
+</div>
+<div class="tabcontent" id="Lifestyle">
+<h2>Sustainable lifestyle</h2>
+</div>
+<div class="tabcontent" id="Law">
+<h2>Environmental Protection Law</h2>
+</div>
+<div class="tabcontent" id="Activities">
+<h2>Environmental activities and initiatives</h2>
+</div>
+<div id="sidebar">
+<h3>hot topic</h3>
+</div>
+<form>
+<input name="post" placeholder="在这里发表你的观点..." type="text"/>
+<input type="submit" value="发表"/>
+</form>
+<audio controls="">
+<source src="audio.mp3" type="audio/mpeg"/>Your browser does not support the audio element.</audio>
+<div id="social-share">
+<button>Share on Facebook</button>
+<button>Share on Twitter</button>
+</div>
+<div id="loader"></div>
+<script src="script.js"></script>
+</body>
+</html>

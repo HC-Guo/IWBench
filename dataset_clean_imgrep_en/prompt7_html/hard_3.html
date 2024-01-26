@@ -1,0 +1,68 @@
+
+<html>
+<head>
+<style>
+* {box-sizing: border-box}
+
+body {font-family: Verdana, sans-serif;
+background-size: cover}
+
+.breadcrumb {margin: 40px 0}
+
+.header {border: 1px solid red; padding: 10px; height: 100px}
+
+.search-container {float: right}
+
+.input-field {float: left; width: 72%; padding: 10px}
+.progress-bar {width:70%; background-color: #ddd}
+.progress-bar-fill {
+width:50%; height:15px; background-color: #4CAF50}
+
+
+</style>
+</head>
+<body>
+<div class="header">
+<h2>Your Social Network</h2>
+<div class="search-container">
+<form action="/action_page.php">
+<input name="search" placeholder="Search.." type="text"/>
+<button type="submit">Submit</button>
+</form>
+</div>
+</div>
+<ol class="breadcrumb">
+<li><a href="#">Home</a></li>
+<li><a href="#">Profile Update</a></li>
+<li class="active">Gallery</li>
+</ol>
+<h3>Upload Status</h3>
+<form action="/action_page.php">
+<div class="input-field">
+<input id="fname" name="fname" placeholder="Your status.." type="text"/>
+</div>
+<div class="input-field">
+<input type="submit" value="Submit"/>
+</div>
+</form>
+<h3>Image Upload</h3>
+<br/>
+<div>
+<input id="myFile" name="filename" type="file"/>
+</div>
+<br/>
+<div>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</div>
+<h3>Progress Bar</h3>
+<div class="progress-bar">
+<div class="progress-bar-fill"></div>
+</div>
+<h3>Loading Animation</h3>
+<div class="loader"></div>
+<script>
+const fill = document.querySelector('.progress-bar-fill');
+setTimeout(() => fill.style.width = '100%', 5000);
+</script>
+</body>
+</html>

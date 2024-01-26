@@ -1,0 +1,49 @@
+
+html
+<html>
+<head>
+<title>My Social Network</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header, .sidebar {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        .header h1, .sidebar h2 {
+            margin: 0;
+        }
+        .breadcrumbs, .social-share-buttons {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<h1>My Social Network</h1>
+<div class="breadcrumbs">
+<a href="#">Home</a>/<a href="#">Profile</a>
+</div>
+<div class="social-share-buttons">
+<button>Share on Facebook</button>
+<button>Share on Twitter</button>
+</div>
+</div>
+<main>
+<div class="sidebar">
+<h2>My Profile</h2>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<button>Edit Profile</button>
+<h2>Friends</h2>
+List of friends would be dynamic and loaded from the server
+</div>
+<div class="content">
+<h2>Status Update</h2>
+<textarea placeholder="What's on your mind?"></textarea>
+<button>Post</button>
+Status updates would be dynamic and loaded from the server
+</div>
+</main>
+</body>
+</html>

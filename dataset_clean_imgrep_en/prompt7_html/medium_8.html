@@ -1,0 +1,62 @@
+
+html
+<html>
+<head>
+<title>Social Network Platform</title>
+<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+		}
+		.navbar a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		.sidebar {
+			height: 100%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			overflow-x: hidden;
+			transition: 0.5s;
+			padding-top: 60px;
+		}
+	</style>
+</head>
+<body>
+Navigation bar
+<div class="navbar">
+<a href="#home">Home</a>
+<a href="#profile">Profile</a>
+<a href="#settings">Settings</a>
+</div>
+Breadcrumb navigation
+<ul class="breadcrumb">
+<li><a href="#home">Home</a></li>
+<li><a href="#profile">Profile</a></li>
+</ul>
+Sidebar
+<div class="sidebar" id="mySidebar">
+<a class="closebtn" href="javascript:void(0)" onclick="closeNav()">×</a>
+</div>
+Slide show / Carousel
+<div class="slideshow-container">
+</div>
+Post update
+<textarea placeholder="What's on your mind?"></textarea>
+<button>Post</button>
+Audio element
+<audio controls="">
+<source src="audio.mp3" type="audio/mpeg"/>Your browser does not support the audio element.</audio>
+</body>
+</html>

@@ -1,0 +1,72 @@
+
+html
+<html>
+<head>
+<title>Technology news</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .carousel {
+            width: 100%;
+            overflow: hidden;
+        }
+        .carousel img {
+            width: 100%;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .news-ticker {
+            height: 30px;
+            overflow: hidden;
+        }
+        .news-ticker p {
+            animation: scroll 10s linear infinite;
+        }
+        @keyframes scroll {
+            0% {transform: translateY(0);}
+            100% {transform: translateY(-100%);}
+        }
+    </style>
+</head>
+<body>
+<div class="carousel">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</div>
+<div class="card">
+<h2>Latest news</h2>
+<p>Automobile manufacturers are starting to use AI for decision-making</p>
+<button>View more</button>
+</div>
+<div class="card">
+<h2>Deep analysis</h2>
+<p>The impact of cloud computing on the technology industry</p>
+<button>View more</button>
+</div>
+<div class="card">
+<h2>hot topic</h2>
+<p>How 5G Technology Changes Our Lives</p>
+<button>View more</button>
+</div>
+<div class="news-ticker">
+<p>Scroll News Headlines</p>
+</div>
+<div class="video-section">
+<video controls="">
+<source src="video.mp4" type="video/mp4"/>Your browser does not support HTML5 videos.</video>
+</div>
+<div class="subscribe-form">
+<form>
+<label for="email">Subscribe to our electronic newspaper</label>
+<input id="email" name="email" placeholder="你的邮件..." type="email"/>
+<button type="submit">subscription</button>
+</form>
+</div>
+</body>
+</html>

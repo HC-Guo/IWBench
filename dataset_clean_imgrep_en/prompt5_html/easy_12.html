@@ -1,0 +1,86 @@
+
+html
+<html>
+<head>
+<title>Travel &amp; Food Blog</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Discover amazing travel destinations, tasty food spots, personal stories and practical tips on our blog!" name="description"/>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .sidebar {
+            width: 300px;
+            position: fixed;
+            height: 100%;
+            background-color: #333;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            display: block;
+            color: #ddd;
+            padding: 10px;
+            text-decoration: none;
+        }
+        #main-content {
+            margin-left: 320px;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card img {
+            width: 100%;
+        }
+        .comments-section {
+            background-color: #ddd;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 600px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            #main-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<aside class="sidebar">
+<a href="#"><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></a>
+<a href="#">Travel Stories</a>
+<a href="#">Food Recipes</a>
+<a href="#">Best of the Month</a>
+<a href="#">Contact</a>
+</aside>
+<div id="main-content">
+<div class="card">
+<h2>Title</h2>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<p>Travel story &amp; food tips...</p>
+</div>
+<div class="card">
+<h2>Title</h2>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<p>Travel story &amp; food tips...</p>
+</div>
+<div class="comments-section">
+<h4>Leave a Comment:</h4>
+<form>
+<textarea cols="40" name="comment" rows="5"></textarea>
+<input type="submit" value="Submit"/>
+</form>
+</div>
+</div>
+</body>
+</html>

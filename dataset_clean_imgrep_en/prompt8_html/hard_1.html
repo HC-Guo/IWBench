@@ -1,0 +1,80 @@
+
+html
+<html>
+<head>
+<title>Technology news</title>
+<style>
+           body {
+               font-family: Arial, sans-serif;
+           }
+           .sidebar {
+               width: 20%;
+               float: left;
+           }
+           .main-content {
+               width: 80%;
+               float: right;
+           }
+           .carousel {
+               width: 100%;
+               height: 200px;
+               overflow: hidden;
+           }
+           .carousel img {
+               width: 100%;
+               height: auto;
+           }
+        </style>
+</head>
+<body>
+<header>
+<h1>Technology news website</h1>
+</header>
+Sliding banner/carousel
+<div class="carousel">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</div>
+<div class="sidebar">
+Hot topic section
+<h2>hot topic</h2>
+<ul>
+<li><a href="#">Topic 1</a></li>
+<li><a href="#">Topic 2</a></li>
+<li><a href="#">Topic 3</a></li>
+</ul>
+Part for subscribing to electronic newspapers
+<h2>Subscribe to electronic newspapers</h2>
+<form action="subscribe.php" method="post">
+<label for="email">Email:</label>
+<input id="email" name="email" type="email"/>
+<button type="submit">subscription</button>
+</form>
+</div>
+<div class="main-content">
+News scrollbar
+<marquee>The latest technology news report</marquee>
+Video playback area
+<h2>Latest Video</h2>
+<video controls="">
+<source src="videos/myvideo.mp4" type="video/mp4"/>Your browser does not support Video tags.</video>
+Deep analysis article
+<h2>Deep analysis article</h2>
+<article>
+<h3>Article Title</h3>
+<p>Article content</p>
+Comment section
+<h4>comment</h4>
+<textarea></textarea>
+</article>
+Podcasts and audio content
+<h2>Latest podcast</h2>
+<audio controls="">
+<source src="audios/mypodcast.mp3" type="audio/mpeg"/>Your browser does not support Audio tags.</audio>
+</div>
+<footer>
+<p>©  2023 Technology News. All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+
+html
+<html>
+<head>
+<title>News homepage</title>
+<style>
+        body {
+            background-image: url('background.jpg'); /* 更换为实际的背景图像文件路径 */
+            font-family: Arial, sans-serif;
+        }
+        header {
+            height: 150px;
+            color: white;
+            background-color: black;
+        }
+        #news-ticker {
+            margin-top: 20px;
+            background: white;
+            overflow: hidden;
+            height: 30px;
+            line-height: 30px;
+            list-style-type: none;
+            animation: scrolling 5s infinite;
+            -webkit-animation: scrolling 5s infinite;
+        }
+        .weather-widget {
+            height: 100px;
+            width: 100px;
+            background: white;
+            margin: 20px;
+            float: right;
+        }
+        #advanced-search {
+            margin: 20px;
+        }
+        footer {
+            height: 70px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+<h1>News homepage</h1>
+<ul id="news-ticker">
+<li>News 1</li>
+<li>News 2</li>
+<li>News 3</li>
+News list, which needs to be dynamically generated here and can be implemented by JavaScript or server-side code
+</ul>
+<div class="weather-widget"></div>
+</header>
+<div id="advanced-search">
+<input id="search" placeholder="关键词..." type="text"/>
+<input id="date" placeholder="日期..." type="date"/>
+<select id="category">
+<option>news</option>
+<option>sports</option>
+<option>entertainment</option>
+Fill in more categories
+</select>
+<button type="submit">search</button>
+</div>
+<footer>Copyright information</footer>
+</body>
+</html>

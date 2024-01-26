@@ -1,0 +1,63 @@
+
+html
+<html>
+<head>
+<link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+Background image and pattern
+<div class="bg-image"></div>
+title
+<h1 class="title">Environmental Protection Theme Forum</h1>
+Tabs or foldable panels
+<div class="tab">
+<button class="tablinks" onclick="openForum(event, 'SustainableLifestyle')">Sustainable lifestyle</button>
+<button class="tablinks" onclick="openForum(event, 'EnvironmentLaw')">Environmental Protection Law</button>
+<button class="tablinks" onclick="openForum(event, 'GreenActivity')">Environmental activities and initiatives</button>
+</div>
+Card layout
+<div class="tabcontent" id="SustainableLifestyle">
+<div class="card">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<div class="container">
+<h2><b>Lifestyle 1</b></h2>
+</div>
+</div>
+</div>
+<div class="tabcontent" id="EnvironmentLaw">
+<div class="card">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<div class="container">
+<h2><b>Legal 1</b></h2>
+</div>
+</div>
+</div>
+<div class="tabcontent" id="GreenActivity">
+<div class="card">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<div class="container">
+<h2><b>Activity 1</b></h2>
+</div>
+</div>
+</div>
+form 
+<div>
+<h2>Message board</h2>
+<form action="/submit_form" method="post">
+<textarea cols="50" id="message" name="message" rows="4"></textarea>
+<input type="submit" value="Submit"/>
+</form>
+</div>
+footer
+<footer>
+<p>Copyright © 2022</p>
+</footer>
+video
+<div>
+<video controls="" height="240" width="320">
+<source src="environment_video.mp4" type="video/mp4"/>
+</video>
+</div>
+</body>
+<script src="scripts.js"></script>
+</html>

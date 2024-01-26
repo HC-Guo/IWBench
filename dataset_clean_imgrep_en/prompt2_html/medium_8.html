@@ -1,0 +1,105 @@
+
+html
+<html>
+<head>
+<title>Personalized news website</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+}
+
+#header {
+	background-color: #f8f9fa;
+	text-align: center;
+	padding: 20px;
+}
+
+#header h1 {
+	color: #212529;
+}
+
+#news {
+	float: left;
+	width: 60%;
+	padding: 10px;
+	background-color: #e9ecef;
+}
+
+#dashboard {
+	float: right;
+	width: 30%;
+	padding: 10px;
+	background-color: #e9ecef;
+}
+
+.card {
+	border: 1px solid #ced4da;
+	margin-bottom: 15px;
+}
+
+.card img {
+	width: 100%;
+}
+
+.card-content {
+	padding: 15px;
+}
+
+.card-content h3 {
+	margin: 0;
+}
+
+.card-content p {
+	margin-bottom: 10px;
+}
+
+.search-box {
+	margin-bottom: 20px;
+}
+
+.search-box input[type="text"] {
+	width: 75%;
+	padding: 10px;
+}
+
+.search-box input[type="submit"] {
+	width: 20%;
+	padding: 10px;
+	background-color: #6c757d;
+	color: #ffffff;
+	border: none;
+}
+
+</style>
+</head>
+<body>
+<div id="header">
+<h1>Personalized news website</h1>
+</div>
+<div id="content">
+<div id="news">
+<div class="search-box">
+<form>
+<input placeholder="关键词、日期、类别" type="text"/>
+<input type="submit" value="搜索"/>
+</form>
+</div>
+<div class="card">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<div class="card-content">
+<h3>News headlines</h3>
+<p>News Brief</p>
+<a class="button" href="news_page.html">Read more</a>
+</div>
+</div>
+</div>
+<div id="dashboard">
+<h2>Personalized dashboard</h2>
+<h3>Weather updates</h3>
+<p>Weather information</p>
+<h3>Urgent Notice</h3>
+<p>Notification content</p>
+</div>
+</div>
+</body>
+</html>

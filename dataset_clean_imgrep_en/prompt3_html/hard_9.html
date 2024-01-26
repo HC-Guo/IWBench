@@ -1,0 +1,103 @@
+html
+<html>
+<head>
+<style>
+body {
+  background-image: url('background.jpg');
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+}
+
+.sidebar {
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  left: 0;
+  background-color: #111;
+  overflow-y: auto;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+<a href="#news">News</a>
+<a href="#forum">Forum</a>
+<a href="#directory">Employee Directory</a>
+<a href="#tools">Workflow Tools</a>
+</div>
+<div class="breadcrumb">
+<a href="#home">Home</a>/<a href="#news">News</a>/<a href="#Forum">Forum</a>
+</div>
+<div class="sidebar">
+<h2>Sidebar</h2>
+<p>Some text..</p>
+</div>
+<div class="card">
+<h2>News Headline</h2>
+<p>Some text..</p>
+</div>
+<div class="modal" id="myModal">
+<div class="modal-content">
+<span class="close">×</span>
+<p>Some text in the Modal..</p>
+</div>
+</div>
+<div class="form">
+<form action="/submit">Name:<input name="name" type="text"/><br/>E-mail:<input name="email" type="text"/><br/>
+<input type="submit"/>
+</form>
+</div>
+</body>
+</html>

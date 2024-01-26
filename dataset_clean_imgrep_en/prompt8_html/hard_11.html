@@ -1,0 +1,99 @@
+html
+<html>
+<head>
+<title>Technology news website</title>
+<style>
+        body {
+            background: url('background.jpg') no-repeat center center fixed;
+            font-family: Arial, Helvetica, sans-serif;
+        	color: #333;
+			width: 80%;
+            margin: 0 auto;
+        }
+		header {
+			color: #fff;
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 10px;
+        }
+		#navigationBar {
+            color: #fff;
+            background-color: #333;
+        }
+        #newsFeed {
+            margin: 20px 0;
+        }
+        .newsItem {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+        #videos {
+            text-align: center;
+        }
+        #comments {
+            margin: 10px 0;
+        }
+        #subscribe {
+            text-align: center;
+            margin: 20px;
+        }
+        #searchbar {
+            margin: 10px 0;
+        }
+        .progress-bar {
+            height: 20px;
+            background-color: #4caf50;
+            width: 0;
+        }
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid #3498db;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+<header>Technology news website</header>
+<div id="navigationBar">
+<a href="#">home page</a>|<a href="#">About Us</a>|<a href="#">contact us</a>
+</div>
+<div id="searchbar">
+<input placeholder="搜索..." type="text"/>
+</div>
+<div id="newsFeed">
+<div class="newsItem">
+<h2>Title 1</h2>
+<p>This is a new news project</p>
+</div>
+<div class="newsItem">
+<h2>Title 2</h2>
+<p>This is another new news project</p>
+</div>
+<div class="progress-bar" id="progress"></div>
+</div>
+<div id="videos">
+<video controls="" width="500">
+<source src="news.mp4" type="video/mp4"/>Your browser does not support Video tags</video>
+</div>
+<div id="comments">
+<h2>comment</h2>
+<textarea></textarea>
+<button>Submit comments</button>
+</div>
+<div id="subscribe">
+<h2>Subscribe to our electronic newspaper</h2>
+<input placeholder="你的电子邮件" type="email"/>
+<button>subscription</button>
+</div>
+<div class="loader" id="loading"></div>
+</body>
+</html>

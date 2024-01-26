@@ -1,0 +1,71 @@
+
+html
+<html>
+<head>
+<style>
+            body {
+                background-image: url("background.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            h1 {
+                text-align: center;
+                color: #46a049;
+            }
+            .news-ticker{
+                overflow: hidden;
+                height: 25px;
+                margin-bottom: 20px;
+            }
+            .news-ticker h2{
+                animation: scroll 10s infinite linear;
+                white-space: nowrap;
+                padding-left: 100%;
+            }
+            @keyframes scroll{
+                0%{transform: translateX(0);}
+                100%{transform: translateX(-100%);}
+            }
+            footer {
+                background-color: #f2f2f2;
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+</head>
+<body>
+<h1>Technology news website</h1>
+<div class="news-ticker">
+<h2>Latest: Apple releases new MacBook Pro</h2>
+</div>
+<div>
+<input id="search" name="search" placeholder="搜索..." type="text"/>
+</div>
+<div id="videos">
+<h2>Latest Video</h2>
+<video controls="" height="240" width="320">
+<source src="movie.mp4" type="video/mp4"/>
+</video>
+</div>
+<div id="hot-topics">
+<h2>hot topic</h2>
+<ul>
+<li><a href="#">artificial intelligence</a></li>
+<li><a href="#">5G technology</a></li>
+<li><a href="#">Internet of Things</a></li>
+</ul>
+</div>
+<div id="subscription">
+<h2>Subscribe to our electronic newspaper</h2>
+<form>
+<label for="email">Email:</label><br/>
+<input id="email" name="email" required="" type="email"/><br/>
+<input type="submit" value="订阅"/>
+</form>
+</div>
+<footer>
+<p>All rights reserved ©  Technology news website All rights reserved</p>
+</footer>
+</body>
+</html>

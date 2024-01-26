@@ -1,0 +1,55 @@
+html
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Technology news website</title>
+<style>
+    body {
+      background-image: url("background.jpg"); /*通过URL自定义你的背景图像路径*/
+      font-family: Arial, sans-serif;
+    }
+    #title {
+      text-align: center;
+      color: #333;
+    }
+    #sidebar {
+      float: right;
+      width: 200px;
+    }
+    #main {
+      margin-right: 200px; /* Same as the width of the sidebar */
+    }
+    .fadein {
+      animation: fadeIn ease 2s;
+    }
+    form {
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+<h1 id="title">Latest technology news website</h1>
+<label for="searchbar">Search:</label>
+<input id="searchbar" name="searchbar" type="text"/>
+<div id="main">
+<div class="fadein">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/> A loading animation
+</div>
+<div id="news_bar">
+The location of the news scrollbar relies on backend code to achieve functionality here
+</div>
+<div id="video_container">
+Video playback area, where various video embedding codes are used
+</div>
+<form action="subscribe_newsletter.php" method="post">Email:<input name="email" type="text"/><br/>
+<input type="submit" value="订阅"/>
+</form>
+<div id="comments_section">
+Comment section
+</div>
+</div>
+<div id="sidebar">
+hot topic
+</div>
+</body>
+</html>The above is a request based static webpage HTML. Due to the support for interactive backend functions such as comments, news scrollbars, search functions, video playback, progress bars, and subscribing to news letters, only one static placeholder is provided here. You need to combine backend technologies such as PHP, JavaScript, etc. to create dynamic websites. For CSS styles, I have only provided some basic and universal styles that can be adjusted according to your design and needs.

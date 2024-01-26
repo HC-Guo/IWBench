@@ -1,0 +1,89 @@
+
+html
+<html>
+<head>
+<style>
+        body {
+            background: url("your-background-image.jpg");
+            background-size: cover;
+        }
+
+        #sidebar {
+            position: fixed;
+            width: 200px;
+            height: 100%;
+            background: #333;
+            color: #fff;
+            overflow: auto;
+        }
+
+        #main-content {
+            margin-left: 210px;
+            padding: 20px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: black;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 70%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div id="sidebar">
+<h2>Film and TV Drama Evaluation</h2>
+<p>Link to streaming platform</p>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<button id="btn-rate">Scoring</button>
+</div>
+<div id="main-content">
+<h1>Movie Title</h1>
+<p>Movie Introduction</p>
+<button id="btn-comment">comment</button>
+Modal Window
+<div class="modal" id="comment-modal">
+<div class="modal-content">
+<span class="close">×</span>
+<p>Fill in comments</p>
+<form>
+<label for="fname">user name</label><br/>
+<input id="fname" name="fname" type="text"/><br/>
+<label for="comment">comment</label><br/>
+<input id="comment" name="comment" type="text"/><br/>
+<input type="submit" value="提交"/>
+</form>
+</div>
+</div>
+Comment section
+<div id="comment-section">
+<h3>comment</h3>
+<p>User comments</p>
+</div>
+footer
+<div id="footer">
+<p>All rights reserved ©  20XX</p>
+</div>
+</div>
+</body>
+</html>

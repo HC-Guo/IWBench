@@ -1,0 +1,101 @@
+
+html
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: url("[背景图像和图案]") no-repeat center center / cover;
+}
+
+.header img {
+  width: 100px;
+  height: 100px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.gallery img {
+  max-width: 100%;
+  margin: 10px;
+}
+
+.section {
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+
+</style>
+</head>
+<body>
+<div class="header">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<h1>Photographer's portfolio</h1>
+</div>
+<div class="navbar">
+<a href="#gallery">gallery</a>
+<a href="#about">about</a>
+<a href="#contact">Contact information</a>
+<a href="#socials">Social media</a>
+</div>
+<div class="gallery" id="gallery">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+Add more images
+</div>
+<div class="section" id="about">
+<h2>About Me</h2>
+<p>[Insert photographer's professional background and artistic philosophy]</p>
+</div>
+<div class="section" id="contact">
+<h2>Contact information</h2>
+<p>[Insert contact information]</p>
+</div>
+<div class="section" id="socials">
+<h2>Follow me</h2>
+<a href="[社交媒体链接1]">Social Media 1</a>
+<a href="[社交媒体链接2]">Social Media 2</a>
+Add more social media links
+</div>
+</body>
+</html>

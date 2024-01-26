@@ -1,0 +1,97 @@
+html
+<html>
+<head>
+<style>
+      body {
+	        font-family: Arial, sans-serif;
+      }
+
+      /* Navigation Bar */
+      .breadcrumb {
+	        list-style-type: none;
+	        overflow: hidden;
+	        background-color: #333;
+      }
+      .breadcrumb li {
+	        float: left;
+	        padding: 16px;
+	        color: white;
+      }
+
+       /* Carousel */
+      .slider {
+	        width: 100%;
+	        display: flex;
+	        overflow-x: auto;
+       }
+
+      .slider img {
+	         width: 100%;
+	         margin: 0 16px;
+      }
+
+      /* Card Layout */
+      .card {
+	        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	        max-width: 300px;
+	        margin: auto;
+	        margin-bottom: 2rem;
+	        text-align: center;
+        font-family: arial;
+      }
+
+      /* Video Section */
+      .video-container {
+	        position: relative;
+	        overflow: hidden;
+	        width: 100%;
+	        padding-top: 56.25%;
+      }
+
+      .video-container iframe {
+	        position: absolute;
+	        top: 0;
+	        left: 0;
+	        width: 100%;
+	        height: 100%;
+      }
+    </style>
+</head>
+<body>
+Breadcrumb Navigation
+<ul class="breadcrumb">
+<li>home page</li>
+<li>Technology news</li>
+<li>Deep analysis</li>
+</ul>
+Carousel Section
+<div class="slider">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</div>
+News Card Section
+<div class="card">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<h1>Technology News Headlines</h1>
+<p>Here is the news introduction</p>
+<p><button>Read more</button></p>
+</div>
+Video Section
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+</div>
+Social Media Share Options
+<div>Share to:<a href="#"><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></a>
+<a href="#"><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></a>
+<a href="#"><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></a>
+</div>
+Subscribe Section
+<div>
+<p>Subscribe to our electronic newspaper and get the latest technology news and in-depth analysis as soon as possible!</p>
+<input placeholder="电子邮箱地址" type="text"/>
+<button>Submit</button>
+</div>
+</body>
+</html>

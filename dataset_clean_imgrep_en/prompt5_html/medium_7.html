@@ -1,0 +1,87 @@
+
+html
+<html>
+<head>
+<title>Travel and Food Blog</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #eee;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .breadcrumbs {
+            background-color: #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .column {
+            width: 65%;
+            float: left;
+        }
+        .sidebar {
+            width: 30%;
+            float: right;
+            background-color: #f8f9fa;
+            padding: 15px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+<header>
+<h1>My Travel and Food Blog</h1>
+</header>
+<nav>
+<ul>
+<li><a href="#home">homepage</a></li>
+<li><a href="#travel">travel</a></li>
+<li><a href="#food">Food</a></li>
+<li><a href="#contact">Contact me</a></li>
+</ul>
+</nav>
+<div class="breadcrumbs">
+<p>You are currently at:<a href="#home">homepage</a>&gt;<a href="#travel">travel</a></p>
+</div>
+<div class="clearfix">
+<div class="column">
+<h2>title</h2>
+<p>Blog content</p>
+<video controls="" width="500">
+<source src="video.mp4" type="video/mp4"/>Your browser does not support videos.</video>
+<button>Social sharing button</button>
+<form>
+<h2>Comment:</h2>
+<textarea cols="50" name="comment" rows="4"></textarea><br/>
+<input type="submit" value="发表评论"/>
+</form>
+</div>
+<div class="sidebar">
+<h2>Best Monthly Blog</h2>
+<p>Blog Preview</p>
+<a href="#blog">Read more</a>
+</div>
+</div>
+</body>
+</html>

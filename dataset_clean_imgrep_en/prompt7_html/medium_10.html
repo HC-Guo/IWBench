@@ -1,0 +1,50 @@
+
+html
+<html>
+<head>
+<title>Social networking platforms</title>
+<style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+      }
+      .carousel {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+      }
+      .carousel img {
+        width: 100%;
+        height: auto;
+      }
+      .content {
+        margin: 20px;
+      }
+      .content video, .content audio {
+        max-width: 100%;
+      }
+    </style>
+</head>
+<body>
+<header>
+<h1>Welcome to our social networking platform</h1>
+</header>
+<div class="carousel">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</div>
+<div class="content">
+<h2>Share your life</h2>
+<p>Here, you can share your life moments with friends, including pictures, videos, and audio.</p>
+<audio controls="">
+<source src="audio.mp3" type="audio/mpeg"/>Your browser does not support the audio element.</audio>
+<video controls="">
+<source src="video.mp4" type="video/mp4"/>Your browser does not support the video tag.</video>
+<p>Share your latest updates on social media!</p>
+<button onclick="shareOnSocialMedia()">share</button>
+</div>
+</body>
+</html>

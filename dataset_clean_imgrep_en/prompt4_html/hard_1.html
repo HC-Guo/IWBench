@@ -1,0 +1,66 @@
+
+html
+<html>
+<head>
+<title>Fashion Store</title>
+<style>
+        body { 
+            background-image: url('background.jpg'); 
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+        }
+        .card img { width: 100%; }        
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 200px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="sidebar">
+<h2>Categories</h2>
+<a href="#newArrivals">New Arrivals</a><br/>
+<a href="#hotSales">Hot Sales</a><br/>
+<a href="#discount">Discount</a><br/>
+</div>
+<div class="container">
+<div class="card" id="newArrivals">
+<h2>New Arrivals</h2>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<p>Some description here...</p>
+</div>
+<div class="card" id="hotSales">
+<h2>Hot Sales</h2>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<p>Some description here...</p>
+</div>
+<div class="card" id="discount">
+<h2>Discount</h2>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<p>Some description here...</p>
+</div>
+</div>
+<form action="checkout.html" method="post">
+<input name="size" placeholder="Enter your size" type="text"/><br/>
+<input type="submit" value="Checkout"/>
+</form>
+<audio controls="" src="background.mp3"></audio>
+<video controls="" src="fashion.mp4"></video>
+</body>
+</html>

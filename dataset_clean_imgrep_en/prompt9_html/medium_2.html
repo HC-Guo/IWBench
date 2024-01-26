@@ -1,0 +1,75 @@
+
+html
+<html>
+<head>
+<style>
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #f4f4f4;
+    left: -200px;
+    transition: all .3s;
+}
+.card {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.button {
+    background-color: #58db72;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: white; 
+    color: black; 
+}
+</style>
+</head>
+<body>
+<div class="sidebar">
+<a href="#sustainable_living">Sustainable Living</a>
+<a href="#law">Environment Protection Law</a>
+<a href="#activity">Activities and Initiatives</a>
+</div>
+<div class="content">
+<div class="card" id="sustainable_living">
+<h2>Sustainable Living</h2>
+<p>Discuss ways to live sustainably</p>
+<button class="button">New Post</button>
+</div>
+<div class="card" id="law">
+<h2>Environment Protection Law</h2>
+<p>Discuss the laws regarding environment protection</p>
+<button class="button">New Post</button>
+</div>
+<div class="card" id="activity">
+<h2>Activities and Initiatives</h2>
+<p>Discuss your activities and initiatives towards environment protection.</p>
+<button class="button">New Post</button>
+</div>
+<div class="video">
+<h2>Environment awareness video</h2>
+<video controls="" width="400">
+<source src="mov_bbb.mp4" type="video/mp4"/>
+</video>
+</div>
+</div>
+</body>
+</html>

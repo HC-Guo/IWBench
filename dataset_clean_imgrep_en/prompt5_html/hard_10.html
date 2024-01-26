@@ -1,0 +1,59 @@
+
+html
+<html>
+<head>
+<title>My Travel Food Blog</title>
+<style>
+        body {
+            background-image: url('背景图地址');
+            font-family: Arial, sans-serif;
+        }
+        #blog-posts {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .post {
+            width: 30%;
+            margin: 1%;
+            border: 1px solid #CCC;
+            padding: 1%;
+        }
+        #comments-section {
+            margin-top: 2%;
+        }
+        #submit-comment {
+            margin-top: 1%;
+        }
+    </style>
+</head>
+<body>
+<h1>My Travel Food Blog</h1>
+<nav>
+<a href="#post1">Bo Wenyi</a>|<a href="#post2">Bowen 2</a>|<a href="#comments-section">Comment section</a>
+</nav>
+<section id="blog-posts">
+<div class="post" id="post1">
+<h2>Title One</h2>
+<p>This is the content of the article</p>
+</div>
+<div class="post" id="post2">
+<h2>Title 2</h2>
+<p>This is the content of the article</p>
+</div>
+</section>
+<section id="comments-section">
+<h2>comment</h2>
+<form id="comment-form">
+<label for="name">Name:</label>
+<br/>
+<input id="name" name="name" type="text"/>
+<br/>
+<label for="comment">Comment:</label>
+<br/>
+<textarea id="comment" name="comment"></textarea>
+<button id="submit-comment" type="submit">Submit</button>
+</form>
+</section>
+</body>
+</html>

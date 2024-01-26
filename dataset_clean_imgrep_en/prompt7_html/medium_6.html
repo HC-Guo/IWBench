@@ -1,0 +1,79 @@
+html
+<html>
+<head>
+<title>Modern Social Network</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #nav-bar {
+            background-color: #333;
+            color: #fff;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+        }
+        #content {
+            margin: 10px;
+        }
+        .profile, .status-update, .images, .videos {
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        .video-content {
+            width: 320px;
+            height: 240px;
+        }
+        .share-buttons {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="nav-bar">
+<div id="website-title">Modern Social Network</div>
+<div id="navigation-links">
+<a class="btn" href="#profile">Profile</a>
+<a class="btn" href="#status-update">Status</a>
+<a class="btn" href="#images">Images</a>
+<a class="btn" href="#videos">Videos</a>
+</div>
+</div>
+<div id="content">
+<div class="profile" id="profile">
+<h2>Profile</h2>
+<p>Welcome to your profile! Customize it here.</p>
+</div>
+<div class="status-update" id="status-update">
+<h2>Status Update</h2>
+<textarea placeholder="What's on your mind?"></textarea>
+<button class="btn" type="submit">Post</button>
+</div>
+<div class="images" id="images">
+<h2>Images</h2>
+<button class="btn" type="button">Upload Image</button>
+</div>
+<div class="videos" id="videos">
+<h2>Videos</h2>
+<video class="video-content" controls="">
+<source src="video.mp4" type="video/mp4"/>Your browser does not support the video tag.</video>
+<button class="btn" type="button">Upload Video</button>
+</div>
+<div class="share-buttons">
+<button class="btn" type="button">Share on Facebook</button>
+<button class="btn" type="button">Share on Twitter</button>
+<button class="btn" type="button">Share on Instagram</button>
+</div>
+</div>
+</body>
+</html>

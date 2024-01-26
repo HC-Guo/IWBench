@@ -1,0 +1,56 @@
+html
+<html>
+<head>
+<title>Internal enterprise portal website</title>
+<style>
+        body {font-family: Arial, sans-serif; background-image: url('background.jpg');}
+        header {text-align: center;}
+        nav {background-color: #f5f5f5; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd;}
+        footer {background-color: #f5f5f5; padding: 10px; border-top: 1px solid #ddd; text-align: center;}
+        .sidebar {float: right; width: 25%; background-color: #f5f5f5; padding: 10px; border: 1px solid #ddd;}
+        .main {float: left; width: 75%;}
+        .modal {display: none;}
+    </style>
+</head>
+<body>
+<header>
+<h1>Welcome to our internal enterprise portal website</h1>
+<input id="search" placeholder="搜索..." type="text"/>
+<button>search</button>
+</header>
+<nav>
+<a href="#">Dynamic news release section</a>|<a href="#">Employee directory</a>|<a href="#">Internal forums</a>|<a href="#">Workflow management tools</a>|<a href="#">Document sharing and collaboration platform</a>
+</nav>
+<div class="sidebar">
+<h3>Social sharing</h3>
+<button>Share on Facebook</button>
+<button>Share on Twitter</button>
+<button>Share on LinkedIn</button>
+</div>
+<div class="main">
+<h2>Dynamic news</h2>
+Sliding banner/carousel
+<div class="carousel">
+Images, news content, etc
+</div>
+<h2>Employee communication area</h2>
+Content area, such as messages, post lists, etc
+</div>
+<footer>All rights reserved ©  Internal enterprise portal website</footer>
+<div class="modal" id="myModal">
+<div class="modal-content">
+<span class="close">×</span>
+<p>The content of some modal windows/pop ups</p>
+</div>
+</div>
+<script>
+        //当用户点击模态窗口内容之外的区域，模态窗口关闭
+        var modal = document.getElementById("myModal");
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>This is a basic HTML architecture, and specific content such as news, posts, employee information, workflow tools, document sharing and collaboration platforms need to be filled with corresponding databases. Slides, modal windows, etc. require specific JavaScript frameworks or libraries to implement.

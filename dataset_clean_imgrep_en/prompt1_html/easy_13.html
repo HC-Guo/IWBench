@@ -1,0 +1,91 @@
+html
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Photographer Portfolio</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        #image-gallery {
+            width: 100%;
+            overflow: auto;
+        }
+        #image-gallery img {
+            width: 100%;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            margin: 15px;
+            background-color: #fff;
+        }
+        .card img {
+            width: 100%;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        @media (min-width: 600px) {
+            .card {
+                width: calc(50% - 30px);
+                float: left;
+            }
+        }
+        @media (min-width: 900px) {
+            .card {
+                width: calc(33% - 30px);
+            }
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<header>
+<h1>Photographer's Portfolio</h1>
+<p>Exquisite Snapshots of Life</p>
+</header>
+<main>
+<section id="image-gallery">
+Replace # with the actual image source
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</section>
+<section id="about">
+<div class="card">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<div class="card-content">
+<h2>About</h2>
+Replace with actual content
+<p>Photographer's background and artistic philosophy</p>
+</div>
+</div>
+</section>
+</main>
+<footer>
+Replace # with actual link
+<a href="#">Contact</a>
+<div>
+Social Media Links, Replace # with actual link
+<a href="#"><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></a>
+<a href="#"><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></a>
+<a href="#"><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></a>
+<a href="#"><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></a>
+</div>
+</footer>
+<div class="clear"></div>
+</body>
+</html>

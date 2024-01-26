@@ -1,0 +1,91 @@
+
+html
+<html>
+<head>
+<title>Geographically specific news websites</title>
+<style>
+        body {
+            background-image: url('background.jpg');
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #header {
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            height: 50px; 
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+
+        #breadcrumb {
+            display: flex;
+            gap: 10px;
+        }
+
+        #breadcrumb > a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #search-box {
+            height: 30px;
+            padding: 5px;
+        }
+
+        #news-panels {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .news-card {
+            width: calc(33% - 30px);
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .news-card > h3 {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+<div id="breadcrumb">
+<a href="#">home page</a>
+<span>&gt;</span>
+<a href="#">Local news</a>
+</div>
+<input id="search-box" placeholder="高级搜索" type="text"/>
+</div>
+<div id="news-slider"></div>
+<div id="news-panels">
+<div class="news-card">
+<h3>News headlines</h3>
+<p>News content</p>
+</div>
+<div class="news-card">
+<h3>News headlines</h3>
+<p>News content</p>
+</div>
+More news cards
+</div>
+<div id="footer">
+<a href="#">Website Agreement</a>
+<a href="#">Privacy Policy</a>
+<a href="#">contact us</a>
+</div>
+</body>
+</html>

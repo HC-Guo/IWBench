@@ -1,0 +1,53 @@
+
+html
+<html>
+<head>
+<title>Film and TV Drama Evaluation Website</title>
+<style>
+body {
+    background-image: url('backgroundimage.jpg');
+}
+.bread-crumb{
+    margin: 10px;
+}
+.card-layout{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    border: 1px solid #ccc;
+    width: 300px;
+    margin: 20px;
+}
+img.card-img {
+    width: 100%;
+    height: 200px;
+}
+.card-content {
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="bread-crumb">
+<a href="#">home page</a>&gt;<a href="#">film</a>&gt;<a href="#">Latest movies</a>
+</div>
+<div class="card-layout">
+<div class="card">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<div class="card-content">
+<h3>Movie Title</h3>
+<p>Movie Introduction</p>
+<a href="#">View link</a>
+<div>User rating:<input max="10" min="0" type="number"/>
+<button name="submit">Submit</button>
+</div>
+</div>
+</div>
+More movie cards
+</div>
+<audio controls="">
+<source src="backgroundmusic.mp3" type="audio/mpeg"/>Text replacement content</audio>
+</body>
+</html>

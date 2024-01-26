@@ -1,0 +1,115 @@
+html
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.carousel {
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.carousel img {
+  height: 200px;
+  margin: 20px;
+}
+
+.news_ticker {
+  background-color: #ddd;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.video_section {
+  display: flex;
+  gap: 20px;
+}
+
+.video_section iframe {
+  flex: 1;
+}
+
+.newsletter_subscription {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<h1>Technology News Station</h1>
+<div class="navbar">
+<a href="#">Latest news</a>
+<a href="#">Deep analysis</a>
+<a href="#">podcast </a>
+<a href="#">video</a>
+</div>
+<div class="carousel">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</div>
+<div class="news_ticker">
+<marquee>Here is the latest rolling news</marquee>
+</div>
+<div class="video_section">
+<iframe height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY" width="420">
+</iframe>
+</div>
+<div class="newsletter_subscription">
+<h2>Subscribe to our electronic newspaper</h2>
+<form action="#">
+<label for="email">Email:</label><br/>
+<input id="email" name="email" type="email"/><br/>
+<input class="button" type="submit" value="订阅"/>
+</form>
+</div>
+<div class="footer">
+<p>Copyright ©  Company name from 2023 to 2025</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+html
+<html>
+<head>
+<title>Movie and TV Drama Evaluation Aggregation Website</title>
+<style>
+        body {font-family: Arial, sans-serif;}
+        header {background-color: #f8f9fa; padding: 20px; text-align: center; font-size: 30px; color: #333;}
+        footer {background-color: #f8f9fa; padding: 10px; text-align: center; color: #333;}
+        .carousel-container {width:100%; margin-top: 10px;}
+        .carousel-container img {width:100%;}
+        .review-container {width: 80%; margin: auto; margin-top: 30px;}
+        .review-container h2 {text-align: center;}
+        .user-review {margin-bottom: 20px;}        
+        .user-review strong {color: #333;}
+        .user-review p {margin: 0;}
+        .modal {display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);}
+        .modal-content {background-color: #f8f9fa; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%;}         
+        .close {color: #333; float: right; font-size: 28px; font-weight: bold;}
+        .close:hover, .close:focus {color: #000; text-decoration: none; cursor: pointer;}
+    </style>
+</head>
+<body>
+<header>
+<h1>Movie and TV drama aggregation website</h1>
+<p>Search for your favorite movies and TV shows and view reviews</p>
+<form action="/search">
+<label for="gsearch">Search:</label>
+<input id="gsearch" name="gsearch" type="search"/>
+<input type="submit"/>
+</form>
+</header>
+<div class="carousel-container">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</div>
+<div class="review-container">
+<h2>Latest comments</h2>
+<div class="user-review">
+<strong>User1:</strong>
+<p>When he is in pain, he is considered to be helpful.</p>
+</div>
+<div class="user-review">
+<strong>User2:</strong>
+<p>When he is in pain, he is considered to be helpful.</p>
+</div>
+<button id="review-btn">More comments</button>
+</div>
+<div class="modal" id="review-modal">
+<div class="modal-content">
+<span class="close">×</span>
+<p>More comments</p>
+</div>
+</div>
+<footer>
+<p>Website audio:<audio controls=""><source src="audio.mp3" type="audio/mpeg"/></audio></p>
+<p>Copyright © 2022</p>
+</footer>
+<script>
+document.getElementById("review-btn").onclick = function() {
+  document.getElementById("review-modal").style.display = "block";
+}
+
+document.getElementsByClassName("close")[0].onclick = function() {
+  document.getElementById("review-modal").style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == document.getElementById("review-modal")) {
+    document.getElementById("review-modal").style.display = "none";
+  }
+}
+</script>
+</body>
+</html>

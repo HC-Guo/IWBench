@@ -1,0 +1,62 @@
+html
+<html>
+<head>
+<title>Movie and TV Drama Evaluation Aggregation Website</title>
+<style>
+    body {
+      background-color: #F0F0F0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      margin: auto;
+      width: 60%;
+    }
+    .card {
+      margin: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.1);
+    }
+    .breadcrumb {
+      margin: 20px 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    .breadcrumb li {
+      display: inline;
+      margin-right: 10px;
+    }
+    .breadcrumb li+li:before {
+      content: "| ";
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+<h1>Latest movie and TV drama reviews</h1>
+Breadcrumb Navigation
+<ul class="breadcrumb">
+<li><a href="#/">homepage</a></li>
+<li>Latest review</li>
+</ul>
+Card Layout
+<div class="card">
+<h2>[Movie/TV Series Title]</h2>
+<p>[Evaluation Content]</p>
+<div>User rating:<select>
+<option>five</option>
+<option>four</option>
+<option>three</option>
+<option>two</option>
+<option>one</option>
+</select>
+</div>
+Streaming Options
+<button><a href="[链接到流媒体平台]">watch</a></button>
+Social Sharing Button
+<button><a href="http://www.facebook.com/sharer/sharer.php?u=[当前网页链接]">Share on Facebook</a></button>
+</div>
+</div>
+</body>
+</html>

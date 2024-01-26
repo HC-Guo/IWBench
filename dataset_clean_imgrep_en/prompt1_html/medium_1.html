@@ -1,0 +1,99 @@
+html
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header/Site title styles */
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: #000;
+            color: white;
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            display: flex;
+            background-color: #333;
+        }
+
+        /* Navigation links */
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        /* Styles for gallery */
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 33.33%;
+            padding: 5px;
+        }
+
+        .column img {
+            width: 100%;
+            height: auto;
+            transition: all .5s;
+        }
+
+        .column img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<h1>Photographer's Portfolio</h1>
+<p>Discover my work, vision and feel free to get in touch.</p>
+</div>
+<div class="navbar">
+<a href="#">About</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
+<a href="#">Media</a>
+</div>
+<div class="row">
+<div class="column">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</div>
+<div class="column">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</div>
+<div class="column">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</div>
+</div>
+<div class="footer">
+<h2>Contact Me</h2>
+<p>Email: photographer@example.com</p>
+<a href="http://facebook.com/photographer"><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></a>
+<a href="http://twitter.com/photographer"><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></a>
+<a href="http://instagram.com/photographer"><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></a>
+</div>
+</body>
+</html>Note: Although the above code is correct, you need to replace image links such as "img1. jpg" and "img2. jpg" with actual content. Moreover, you also need to replace the actual email and social media connection of the photographer at the bottom.

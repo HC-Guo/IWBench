@@ -1,0 +1,62 @@
+html
+<html>
+<head>
+<title>Movie and TV Drama Evaluation Aggregation Website</title>
+<style>
+        body {
+            background-image: url('url-to-your-image');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .container { 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            padding: 16px;
+            margin: 16px;
+            text-align: center;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            height: 50px;
+            width: 100%;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<nav>
+<a href="/home">homepage</a>&gt;<a href="/movies">film</a>&gt;<a href="/series">TV play</a>
+</nav>
+<form action="/search" method="get">
+<input name="query" placeholder="搜索电影或电视剧" type="text"/>
+<input type="submit" value="搜索"/>
+</form>
+<section class="container">
+<div class="card">
+<video controls="" src="movie-sample.mp4"></video>
+<h2>Movie title</h2>
+<p>Movie Description</p>
+<a href="streaming-service-link">Watch on streaming platforms</a>
+<form action="/rate" method="post">
+<input max="10" min="1" name="rating" type="number"/>
+<input type="submit" value="提交评分"/>
+</form>
+</div>
+</section>
+<footer>
+<p>All rights reserved © two thousand and twenty-three</p>
+</footer>
+</body>
+</html>

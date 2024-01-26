@@ -1,0 +1,98 @@
+
+html
+<html>
+<head>
+Meta Tags for Responsiveness
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Photographer's portfolio</title>
+<style>
+        /* CSS样式 */
+        body {
+            background-color: #f3f3f3;
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .image-gallery img {
+            width: 30%;
+            margin: 1%;
+            transition: all .2s ease-in-out;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .card {
+            margin: 2%;
+            background-color: #fff;
+            padding: 2%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-links a {
+            margin: 0 1%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1% 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<header class="header">
+<h1>Photographer's portfolio</h1>
+</header>
+<div class="image-gallery">
+Replace link with high-resolution image link
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</div>
+<div class="bio">
+<h2>About photographers</h2>
+<p class="card">Here is a detailed introduction to the professional background and artistic concepts of photographers</p>
+</div>
+<div class="contact">
+<h2>Contact information</h2>
+<p class="card">Here is the contact information of the photographer</p>
+</div>
+<div class="social-links">
+<h2>Social media</h2>
+<a href="SOCIAL_MEDIA_LINK_1"><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></a>
+<a href="SOCIAL_MEDIA_LINK_2"><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></a>
+<a href="SOCIAL_MEDIA_LINK_3"><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></a>
+</div>
+</div>
+<footer>
+<p>All rights reserved ©  2022 Photographer Name</p>
+</footer>
+</body>
+</html>

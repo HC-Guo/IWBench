@@ -1,0 +1,96 @@
+
+html
+<html lang="en">
+<head>
+<title>social networks</title>
+<style>
+        body {
+            background-image: url('background.jpg');
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        .carousel {
+            width: 50%;
+            margin: auto;
+        }
+        .carousel img {
+            width: 100%;
+            height: auto;
+        }
+        .comment-section {
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+<a href="#home">home page</a>
+<a href="#profile">personal data</a>
+<a href="#settings">set up</a>
+</div>
+<div class="modal" id="modal">
+<div class="modal-content">
+<p>This is a pop-up box.</p>
+</div>
+</div>
+<div class="carousel">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</div>
+<div class="comment-section">
+<p>This is the comment section.</p>
+</div>
+<button onclick="document.getElementById('modal').style.display='block'">Open pop-up box</button>
+<script>
+    var slideIndex = 0;
+    var slides = document.getElementsByClassName("carousel")[0].getElementsByTagName("img");
+    carousel();
+
+    function carousel() {
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000);
+    }
+</script>
+</body>
+</html>

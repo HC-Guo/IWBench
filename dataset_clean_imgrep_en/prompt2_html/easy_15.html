@@ -1,0 +1,54 @@
+
+html
+<html>
+<head>
+<title>Personalized news website</title>
+</head>
+<body style="margin:0; padding:0; font-family: Arial, sans-serif;">
+<div style="width:100%; height:60px; background-color:#333; color:#fff; padding:10px; box-sizing:border-box;">
+<h1 style="margin:0;">News website</h1>
+</div>
+Sliding banner/rotating display area
+<div id="slider" style="width:100%; height:300px; background-color:#eee; margin-bottom:20px;">Sliding banner/carousel</div>
+Main content areas
+<div style="width:80%; margin:auto; overflow:hidden;">
+Left sidebar: Weather and emergency notifications
+<div style="width:20%; float:left; background-color:#f4f4f4; padding:10px; box-sizing:border-box;">
+<h2>Weather updates</h2>
+Weather widget display area
+<div id="weather-widget"> </div>
+<hr/>
+<h2>Urgent Notice</h2>
+Emergency notification display area
+<div id="alert"> </div>
+</div>
+Middle section: Local news and news search
+<div style="width:60%; float:left; background-color:#fff; padding:10px; margin-left:10px; box-sizing:border-box;">
+Dynamic news scrollbar
+<div id="news-ticker" style="width:100%; height:40px; background-color:#333; color:#fff; overflow:hidden;"> </div>
+News display area
+<div id="local-news"> </div>
+Advanced search function
+<div id="search-box">
+<form id="search-form" method="post" style="margin-top:20px;">
+<label for="keyword">Keywords:</label>
+<input id="keyword" name="keyword" type="text"/>
+<label for="date">Date:</label>
+<input id="date" name="date" type="date"/>
+<label for="category">Classification:</label>
+<select id="category" name="category">
+<option>--Select classification--</option>
+</select>
+<input type="submit" value="搜索"/>
+</form>
+</div>
+</div>
+Right column: Personalized dashboard
+<div id="dashboard" style="width:20%; float:right; background-color:#fafafa; margin-left:10px; padding:10px; box-sizing:border-box;">
+Personalized dashboard display area
+</div>
+</div>
+Footer information
+<div style="width:100%; height:50px; background-color:#333; color:#fff; text-align:center; padding-top:15px; box-sizing:border-box; clear:both;">footer</div>
+</body>
+</html>

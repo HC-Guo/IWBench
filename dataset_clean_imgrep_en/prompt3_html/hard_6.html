@@ -1,0 +1,37 @@
+
+html
+<html>
+<head>
+<title>Internal enterprise portal</title>
+<link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="header">
+<h1>Internal enterprise portal</h1>
+<div>
+<a href="#">home page</a>&gt;<a href="#">News Release</a>
+</div>
+<div id="search">
+<form action="search.php" method="get">
+<input name="query" type="text"/>
+<input type="submit" value="搜索"/>
+</form>
+</div>
+</div>
+<div id="tabs">
+<button class="tablink" id="defaultTab" onclick="openPage('News', this)">News Release</button>
+<button class="tablink" onclick="openPage('Directory', this)">Employee directory</button>
+</div>
+</body>
+<body>
+<div class="tabcontent" id="forum">
+<h2>Internal forums</h2></div>
+<div class="tabcontent" id="workflow">
+<h2>Workflow Management</h2></div>
+<div class="tabcontent" id="document">
+<h2>Document sharing</h2></div>
+<div id="footer">
+<a href="about.html">About Us</a>|<a href="contact.html">contact us</a>|<a href="sitemap.html">Website Map</a>
+</div>
+</body>
+</html>

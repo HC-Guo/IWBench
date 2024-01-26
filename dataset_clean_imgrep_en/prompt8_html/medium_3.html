@@ -1,0 +1,80 @@
+html
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Technology news</title>
+<style>
+        body {
+            background: url("background.jpg") no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .video {
+            width: 700px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        #subscribe {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f1f3f4;
+        }
+        
+        .socials {
+            display: flex;
+            justify-content: end;
+        }
+        .socials a {
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<nav>
+<div class="logo">
+<h1>Technology news</h1>
+</div>
+<div class="menu">
+<a href="#news">news</a>
+<a href="#topics">hot topic</a>
+<a href="#video">video</a>
+</div>
+</nav>
+<section class="news" id="news">
+<marquee>This is a rolling news consultation</marquee>
+</section>
+<section class="hot-topics" id="topics">
+<h2>hot topic</h2>
+</section>
+<section class="video" id="video">
+<video class="video-player" controls="">
+<source src="path_to_video.mp4" type="video/mp4"/>
+</video>
+</section>
+<section id="subscribe">
+<p>Subscribe to our electronic newspaper:</p>
+<form action="">
+<input placeholder="Email address" type="email"/>
+<button type="submit">subscription</button>
+</form>
+</section>
+<footer>
+<div class="socials">
+<a href=""><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></a>
+<a href=""><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></a>
+<a href=""><img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/></a>
+</div>
+</footer>
+</body>
+</html>

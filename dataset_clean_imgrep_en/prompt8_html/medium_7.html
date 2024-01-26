@@ -1,0 +1,82 @@
+
+html
+<html>
+<head>
+<title>Technology news</title>
+<link href="styles.css" rel="stylesheet" type="text/css"/>
+<style>
+        body {
+            background-image: url('tech-background.jpg');
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            color: white;
+            padding: 15px;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px;
+        }
+        .news-ticker {
+            background-color: #f1f1f1;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .subscribe {
+            background-color: #f1f1f1;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        #videoplayer {
+           width: 80%;
+           height: 480px;
+           margin: 15px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+<a href="#news">news</a>
+<a href="#analysis">Deep analysis</a>
+<a href="#podcast">podcast </a>
+<a href="#video">video</a>
+</div>
+<div class="news-ticker">
+<marquee>The latest technology news scrolls here</marquee>
+</div>
+<div id="videoplayer">
+<video controls="" src="tech-video.mp4"></video>
+</div>
+<div class="hot-topics">
+<h2>hot topic</h2>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+</div>
+<div class="subscribe">
+<h2>Subscribe to our news electronic newspaper</h2>
+<form action="/submit_email">
+<input placeholder="输入电子邮件.." type="email"/>
+<input type="submit"/>
+</form>
+</div>
+<footer>
+<p>Technology News - All rights reserved ©  20XX</p>
+</footer>
+</body>
+</html>

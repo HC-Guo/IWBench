@@ -1,0 +1,49 @@
+
+html
+<html>
+<head>
+<style>
+body {
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+<h1>Environmental Forum</h1>
+Breadcrumb navigation
+<div id="navbar">
+<a href="#home">home page</a>
+<a href="#sustainable">Sustainable lifestyle</a>
+<a href="#law">Environmental Protection Law</a>
+<a href="#action">Environmental protection activities</a>
+</div>
+Tabs or foldable panels
+<button class="tablink" id="defaultOpen" onclick="openPage('Home', this, 'red')">home page</button>
+<button class="tablink" onclick="openPage('Sust', this, 'green')">Sustainable lifestyle</button>
+<button class="tablink" onclick="openPage('Law', this, 'blue')">Environmental Protection Law</button>
+<button class="tablink" onclick="openPage('Action', this, 'orange')">Environmental protection activities</button>
+audio frequency
+<audio controls="">
+<source src="music.ogg" type="audio/ogg"/>
+<source src="music.mp3" type="audio/mpeg"/>Your browser does not support the audio element.</audio>
+footer
+<footer>
+<p>All rights reserved ©  2023 Environmental Forum. All rights reserved.</p>
+</footer>
+</body>
+</html>

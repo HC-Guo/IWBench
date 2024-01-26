@@ -1,0 +1,61 @@
+
+html
+<html>
+<head>
+<title>Social networking platforms</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #header {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #content {
+            margin: 20px;
+        }
+
+        .tab {
+            cursor: pointer;
+        }
+
+        .modal {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+<h1>Welcome to social media platforms</h1>
+<input id="searchbar" placeholder="搜索..." type="text"/>
+</div>
+<div id="content">
+<div id="tabs">
+<div class="tab">personal data</div>
+<div class="tab">Release status</div>
+<div class="tab">Share pictures and videos</div>
+</div>
+<form id="publishStatus">
+<textarea placeholder="更新您的状态..."></textarea>
+<button type="submit">Submit</button>
+</form>
+<div id="socialShareButtons">
+<button>Share on Weibo</button>
+<button>Share on WeChat</button>
+</div>
+<div id="loadingAnimation">
+<progress value="0"></progress>
+</div>
+<div class="modal" id="myModal">
+<span id="close">×</span>
+<p>Some text</p>
+</div>
+</div>
+Hyperlinks and buttons
+<button>Log out</button>
+<a href="#">About Us</a>
+</body>
+</html>

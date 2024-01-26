@@ -1,0 +1,93 @@
+html
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Personal Travel and Food Blog</title>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(background.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .card {
+            width: 300px;
+            margin: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .breadcrumb {
+            background-color: transparent;
+            overflow: auto;
+        }
+
+        .breadcrumb li {
+            display: inline-block;
+        }
+
+        #main-content img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #comment-section {
+            margin-top: 50px;
+        }
+
+        #best-blog {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<div class="breadcrumb">
+<ul>
+<li><a href="home.html">home page</a></li>
+<li><a href="travel.html">travel</a></li>
+<li><a href="food.html">Food</a></li>
+</ul>
+</div>
+<section id="main-content">
+<div class="card">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<div class="container">
+<h2>Travel destination: xxx</h2>
+<p>Here is a description of travel</p>
+<p>Food recommendation: xxx</p>
+</div>
+</div>
+<div class="card">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<div class="container">
+<h2>Food sharing: xxx</h2>
+<p>Here is a description of food</p>
+</div>
+</div>
+<video controls="">
+<source src="travel-video.mp4" type="video/mp4"/>
+</video>
+<div id="personal-story">
+<h2>My Travel Story</h2>
+<p>Here is your travel story</p>
+</div>
+</section>
+<section id="comment-section">
+<h2>Message board</h2>
+<form>
+<label for="comment">Please leave your comment here:</label><br/>
+<textarea cols="50" id="comment" name="comment" rows="4"></textarea><br/>
+<input type="submit" value="提交"/>
+</form>
+</section>
+<section id="best-blog">
+<h2>Monthly Best Blog</h2>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<p>Here is a preview of the monthly best blog content</p>
+<a href="best_blog_full.html">Read the full text</a>
+</section>
+</body>
+</html>

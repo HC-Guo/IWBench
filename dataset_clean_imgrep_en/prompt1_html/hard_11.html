@@ -1,0 +1,46 @@
+
+html
+<html>
+<head>
+<title>Photographer's portfolio</title>
+<style>
+    body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    .container { max-width: 1200px; margin: auto; padding: 20px; }
+    .sidebar { float: left; width: 30%; }
+    .main { float: right; width: 70%; }
+    .slider { width: 100%; height: calc(100vh-50px); overflow: hidden;}
+    .slider img { width: 100%; height: auto; }
+    .social-links { list-style-type: none; padding: 0; }
+    .social-links li { display: inline-block; margin-right: 10px; }
+    .comment-form input, .comment-form textarea {
+      width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #4F4F4F;}
+  </style>
+</head>
+<body>
+<div class="container">
+<div class="sidebar">
+<h2>Photographer Information</h2>
+<p>A detailed introduction to the photographer of Hoy Polinetan</p>
+<ul class="social-links">
+<li><a href="#" target="_blank">Facebook</a></li>
+<li><a href="#" target="_blank">Instagram</a></li>
+<li><a href="#" target="_blank">Twitter</a></li>
+</ul>
+<h2>comment</h2>
+<form class="comment-form">
+<input name="username" placeholder="用户名" type="text"/>
+<textarea name="comment" placeholder="留言"></textarea>
+<input type="submit" value="提交"/>
+</form>
+</div>
+<div class="main">
+<div class="slider">
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<img alt="Image" src="https://picsum.photos/seed/picsum/200/300"/>
+<a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank">Share on Facebook</a>
+</div>
+</div>
+</div>
+</body>
+</html>

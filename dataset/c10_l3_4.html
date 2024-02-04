@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie and TV Reviews Aggregator</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .header, .footer {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .movie-review {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 10px 0;
+  }
+  .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .streaming-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #0066cc;
+  }
+  .user-interaction {
+    margin-top: 10px;
+  }
+  .rating-system, .comments-section {
+    margin-top: 20px;
+  }
+</style>
+<script>
+  //Example JS function for user rating
+  function rateMovie(rating, movieId) {
+    // You would need to call a backend API or use a JavaScript library to dynamically rate a movie
+    console.log('Rating ' + rating + ' for movieId ' + movieId);
+  }
+  // Additional JavaScript functions can be added here as needed
+</script>
+</head>
+<body>
+
+<div class="container">
+  <header class="header">
+    <h1>Movie and TV Reviews Aggregator</h1>
+  </header>
+  
+  <main class="content">
+  
+    <!-- Movie Review Block - Repeat this block for each movie -->
+    <div class="movie-review">
+      <div class="title">Latest Movie Title</div>
+      <div>Summary of the movie...</div>
+      <div class="streaming-links">
+        <span>Watch on:</span>
+        <a href="#" target="_blank">Netflix</a>
+        <a href="#" target="_blank">Amazon Prime</a>
+        <a href="#" target="_blank">Hulu</a>
+      </div>
+      <div class="user-interaction">
+        <button onclick="rateMovie(5, 'movieId')">Rate 5 Stars</button>
+        <!-- More Rating Buttons can be added here -->
+      </div>
+      <div class="rating-system">
+        <!-- User rating system would be included here -->
+      </div>
+      <div class="comments-section">
+        <!-- Live-updating comments section would be included here -->
+      </div>
+    </div>
+    <!-- End of Movie Review Block -->
+    
+  </main>
+  
+  <footer class="footer">
+    <p>&copy; 2023 Movie and TV Reviews Aggregator. All rights reserved.</p>
+  </footer>
+</div>
+
+</body>
+</html>

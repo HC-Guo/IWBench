@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美食烹饪网站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 背景图像 -->
+    <div class="background-image"></div>
+
+    <!-- 网站标题 -->
+    <header>
+        <h1>美食烹饪网站</h1>
+    </header>
+
+    <!-- 菜单/分类 -->
+    <nav>
+        <ul class="recipe-categories">
+            <li onclick="categoryClicked()">家常菜</li>
+            <li ondblclick="categoryDoubleClicked()">快手菜</li>
+            <li onfocus="categoryFocused()" tabindex="0">素食</li>
+            <li onmousedown="categoryMouseDown()">甜品</li>
+            <!-- 更多分类 -->
+        </ul>
+    </nav>
+
+    <!-- 食谱卡片布局 -->
+    <section class="recipe-cards">
+        <!-- 示例卡片 -->
+        <div class="card" onerror="handleError()" onload="handleLoad()">
+            <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+            <h2>美味红烧肉</h2>
+            <p>描述...点击查看更多</p>
+            <audio controls>您的浏览器不支持音频元素。</audio>
+            <button onclick="shareRecipe()">分享</button>
+        </div>
+        <!-- 更多食谱卡片 -->
+    </section>
+
+    <!-- 用户提交食谱表单 -->
+    <section>
+        <form onsubmit="submitRecipeForm(event)">
+            <input type="text" name="recipeName" required placeholder="食谱名称">
+            <textarea name="recipeDescription" required placeholder="食谱描述"></textarea>
+            <input type="file" name="recipeImage" accept="image/*">
+            <button type="submit">上传食谱</button>
+        </form>
+    </section>
+
+    <!-- 评论区 -->
+    <section class="comments" onfocus="commentFocused()" tabindex="0">
+        <!-- 示例评论 -->
+        <div>真棒！</div>
+        <!-- 更多评论 -->
+    </section>
+
+    <!-- 页面底部 -->
+    <footer>
+        <p>&copy; 2023 美食烹饪网站</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

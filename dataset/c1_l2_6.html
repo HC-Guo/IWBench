@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photographer's Portfolio</title>
+<style>
+    body { font-family: Arial, sans-serif; color: #333; margin: 0; padding: 0; }
+    .container { max-width: 1200px; margin: auto; padding: 20px; }
+    header { background: #333; color: #fff; padding: 10px 20px; text-align: center; }
+    .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+    .gallery img { max-width: 100%; height: auto; vertical-align: middle; }
+    .introduction, .contact, .social-media { margin-bottom: 20px; }
+    @media (max-width: 600px) {
+        .gallery { flex-direction: column; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Photographer's Name</h1>
+</header>
+
+<div class="container">
+    
+    <section class="gallery">
+        <!-- Images will be inserted here by JS -->
+    </section>
+    
+    <section class="introduction">
+        <h2>About the Photographer</h2>
+        <p>Professional background and artistic philosophy.</p>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Information</h2>
+        <p>Email: email@example.com</p>
+        <p>Phone: 123-456-7890</p>
+    </section>
+
+    <section class="social-media">
+        <h2>Connect with Me</h2>
+        <ul>
+            <li><a href="http://instagram.com">Instagram</a></li>
+            <li><a href="http://facebook.com">Facebook</a></li>
+            <li><a href="http://twitter.com">Twitter</a></li>
+            <li><a href="http://linkedin.com">LinkedIn</a></li>
+        </ul>
+    </section>
+    
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const gallery = document.querySelector('.gallery');
+        // [JS functions to be included]
+        // You can implement functions like fetch images, handle gallery transitions etc.
+        // For now, let's just add a few sample images:
+        
+        for(let i = 1; i <= 6; i++) {
+            let img = document.createElement('img');
+            img.src = `https://via.placeholder.com/600x400?text=Photo+${i}`;
+            img.alt = `Photographer's work number ${i}`;
+            // img.onload = function() {} // You can use it to handle the smooth transitions or loading state
+            gallery.appendChild(img);
+        }
+    });
+</script>
+
+</body>
+</html>

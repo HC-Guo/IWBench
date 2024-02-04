@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美食烹饪网站</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="pageLoaded()">
+    <header>
+        <div id="carousel" ontouchstart="touchStart(event)" class="carousel">
+            <!-- 滑动横幅/轮播 -->
+            <div class="slide" style="background-image: url('image1.jpg');"></div>
+            <div class="slide" style="background-image: url('image2.jpg');"></div>
+            <div class="slide" style="background-image: url('image3.jpg');"></div>
+        </div>
+    </header>
+    <nav>
+        <a href="#">首页</a> |
+        <a href="#">最新食谱</a> |
+        <a href="#">视频教程</a> |
+        <a href="#" onfocus="this.style.backgroundColor='lightgreen';" onblur="this.style.backgroundColor='';">上传食谱</a>
+    </nav>
+    <main>
+        <section class="recipes">
+            <h2>食谱分类</h2>
+            <!-- 示例食谱分类 -->
+            <div><a href="#">川菜</a></div>
+            <div><a href="#">粤菜</a></div>
+            <div><a href="#">湘菜</a></div>
+        </section>
+        <section class="shopping-links">
+            <h2>食材购买</h2>
+            <!-- 示例购买链接 -->
+            <div><a href="#">食材1购买链接</a></div>
+            <div><a href="#">食材2购买链接</a></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 美食烹饪网站</p>
+    </footer>
+</body>
+</html>

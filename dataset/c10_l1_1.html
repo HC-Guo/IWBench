@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie & TV Series Reviews</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+  }
+  .movie-listing {
+    margin-bottom: 30px;
+  }
+  .movie {
+    margin-bottom: 20px;
+  }
+  .comment-section {
+    margin-top: 20px;
+  }
+  .user-rating {
+    margin-top: 10px;
+  }
+  .streaming-links {
+    margin-top: 10px;
+  }
+</style>
+<script>
+  // Add your JavaScript functions here. Example:
+  function addRating(movieId, rating) {
+    // Placeholder function to add a rating.
+    console.log('Rating for', movieId, 'is', rating);
+  }
+  
+  function addComment(movieId, comment) {
+    // Placeholder function to add a comment.
+    console.log('Comment for', movieId, ':', comment);
+  }
+  
+  // More JS functions can be added below as per your requirements.
+</script>
+</head>
+<body>
+
+<header>
+  <h1>Movie & TV Series Reviews Hub</h1>
+</header>
+
+<div class="container">
+
+  <!-- Movie/Tv Show Listing - Repeat this section for each movie/TV show -->
+  <div class="movie-listing">
+    <h2>Latest Reviews</h2>
+    <div class="movie">
+      <h3>Movie Title</h3>
+      <p>Description...</p>
+      <div class="user-rating">User Rating: <span id="movie-rating">4.5</span></div>
+      <div class="streaming-links">
+        <!-- Links to streaming platforms go here -->
+        <a href="#" target="_blank">Watch on Platform A</a> | 
+        <a href="#" target="_blank">Watch on Platform B</a>
+      </div>
+    </div>
+  
+    <!-- Comments Section -->
+    <div class="comment-section">
+      <h4>Comments</h4>
+      <div id="comments-area">
+        <!-- User comments will be loaded here -->
+      </div>
+      <textarea id="comment-input" placeholder="Write a comment..."></textarea>
+      <button onclick="addComment('movieId', document.getElementById('comment-input').value)">Post Comment</button>
+    </div>
+  </div>
+
+  <!-- Custom Content Preferences Section -->
+  <div class="content-preferences">
+    <h2>Customize Content Preferences</h2>
+    <!-- Form elements to set preferences -->
+    <form id="preferences-form">
+      <!-- Include the elements to customize content preferences here -->
+    </form>
+  </div>
+
+</div>
+
+</body>
+</html>

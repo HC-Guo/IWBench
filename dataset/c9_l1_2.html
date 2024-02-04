@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environment Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9f5db;
+        }
+        header {
+            background-color: #4c9a2a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        } 
+        .container {
+            padding: 20px;
+        }
+        .forum-section {
+            margin-bottom: 30px;
+            padding: 10px;
+            border: 1px solid #c3cfd9;
+            background-color: #f1f8e9;
+        }
+        .forum-section h2 {
+            color: #4c9a2a;
+        }
+        .post-button {
+            background-color: #8bc34a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        .post-button:disabled {
+            background-color: #cfd8dc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Environment Forum</h1>
+    </header>
+    
+    <div class="container">
+        <section class="forum-section" id="sustainable-lifestyle">
+            <h2>Sustainable Lifestyle</h2>
+            <!-- Placeholder for forum posts -->
+            <button class="post-button">New Post</button>
+        </section>
+
+        <section class="forum-section" id="environmental-protection-laws">
+            <h2>Environmental Protection Laws</h2>
+            <!-- Placeholder for forum posts -->
+            <button class="post-button">New Post</button>
+        </section>
+
+        <section class="forum-section" id="environmental-activities-initiatives">
+            <h2>Environmental Activities and Initiatives</h2>
+            <!-- Placeholder for forum posts -->
+            <button class="post-button">New Post</button>
+        </section>
+    </div>
+
+    <script>
+        // Example JavaScript function for enabling a button
+        function enablePostButton() {
+            document.querySelectorAll('.post-button').forEach(function(button) {
+                button.disabled = false;
+            });
+        }
+
+        // Call the function to enable the buttons
+        enablePostButton();
+
+        // Placeholder functions for other actions
+        // Add JavaScript code for publishing, editing posts, voting, etc.
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>美食烹饪网站</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .sidebar {
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #f1f1f1;
+    overflow: auto;
+  }
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+  }
+  .carousel {
+    width: 100%;
+    margin: auto;
+  }
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+  .form-control {
+    margin: 10px 0;
+  }
+  .tab {
+    display: none;
+  }
+
+  .tab.active {
+    display: block;
+  }
+  .recipe-categories {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recipe-categories div {
+    padding: 10px;
+    margin: 5px;
+    background: #ddd;
+    cursor: pointer;
+  }
+  .recipe-categories div.active {
+    background: #bbb;
+  }
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .social-buttons button {
+    margin: 0 5px;
+  }
+</style>
+</head>
+<body onload="onPageLoaded()" onunload="onPageUnloaded()" onscroll="onScrollEvent()">
+<div class="sidebar" oncontextmenu="handleContextMenu(event)">
+  <h2>菜谱分类</h2>
+  <div class="recipe-categories" onclick="toggleCategory(event)">
+    <div>中式料理</div>
+    <div>西式料理</div>
+    <div>甜品</div>
+    <div>快餐</div>
+  </div>
+</div>
+
+<div class="carousel">
+  <!-- 轮播图放这里 -->
+</div>
+
+<div class="tab" id="recipeTab">
+  <!-- 食谱列表或详情放这里 -->
+</div>
+
+<button onclick="showModal()">上传食谱</button>
+
+<div class="modal" id="myModal">
+  <!-- 模态窗口内容 -->
+  <div>
+    <span onclick="closeModal()">关闭</span>
+    <h2>上传你的食谱</h2>
+    <form onsubmit="submitRecipeForm()">
+      <input class="form-control" type="text" placeholder="食谱名称" required />
+      <textarea class="form-control" placeholder="食谱详情" required></textarea>
+      <input class="form-control" type="submit" value="上传" />
+    </form>
+  </div>
+</div>
+
+<div class="social-buttons">
+  <!-- 社交分享按钮 -->
+  <button onclick="shareOnSocialMedia('facebook')">Facebook</button>
+  <button onclick="shareOnSocialMedia('twitter')">Twitter</button>
+</div>
+
+<script>
+document.onkeydown = function(event) {
+  if(event.keyCode == 27) {
+    // Escape key - close modal or other interactive elements
+    closeModal();
+  }
+};
+
+function handleContextMenu(event) {
+  event.preventDefault();
+  // Custom context menu logic
+}
+
+function onScrollEvent() {
+  // Handle scrolling events
+}
+
+function onPageLoaded() {
+  // Page load initialization
+}
+
+function onPageUnloaded() {
+  // Page unload logic
+}
+
+function showModal() {
+  document.getElementById('myModal').style.display = 'block';
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = 'none';
+}
+
+function submitRecipeForm() {
+  // Handle recipe form submission
+}
+
+function shareOnSocialMedia(platform) {
+  // Social media sharing logic
+}
+
+function toggleCategory(event) {
+  var categories = document.querySelector('.recipe-categories').children;
+  for (var i = 0; i < categories.length; i++) {
+    categories[i].classList.remove('active');
+  }
+  event.target.classList.add('active');
+  // Load recipes for the selected category
+}
+
+</script>
+</body>
+</html>

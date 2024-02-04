@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅游天地</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 1200px; margin: auto; }
+        .card { margin: 20px; padding: 20px; box-shadow: 0 0 5px #ccc; }
+        .breadcrumb { margin: 20px 0; }
+        .breadcrumb a { text-decoration: none; }
+        .video { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body onload="console.log('页面已加载')">
+
+<div class="container">
+    <div class="breadcrumb"><a href="#">首页</a> > <a href="#">旅游目的地</a></div>
+
+    <div class="card">
+        <h2>目的地精选</h2>
+        <video class="video" controls onerror="console.log('视频加载失败')">
+            <source src="destination.mp4" type="video/mp4">
+            您的浏览器不支持视频标签。
+        </video>
+        <div>
+            <button onclick="share()">分享此地</button>
+        </div>
+        <script>
+            function share() {
+                console.log("分享功能待实现。");
+            }
+        </script>
+    </div>
+
+    <div class="card">
+        <h2>旅游路线规划</h2>
+        <div id="routePlanner">
+            <label for="destination">选择目的地: </label>
+            <select name="destination" id="destination" onchange="updateRoute()">
+                <option value="beijing">北京</option>
+                <option value="shanghai">上海</option>
+                <option value="guangzhou">广州</option>
+            </select>
+        </div>
+        <script>
+            function updateRoute() {
+                console.log("路线更新待实现。");
+            }
+        </script>
+    </div>
+
+    <div class="card">
+        <h2>用户评论</h2>
+        <div id="comments"></div>
+        <script>
+            document.getElementById("comments").onmouseup = function() { console.log("显示评论功能待实现。") };
+            document.getElementById("comments").ontouchstart = function() { console.log("移动端显示评论功能待实现。") };
+        </script>
+    </div>
+
+    <div class="card">
+        <h2>旅游攻略生成器</h2>
+        <button id="generateStrategy">生成攻略</button>
+        <script>
+            document.getElementById("generateStrategy").onclick = function() { console.log("生成旅游攻略功能待实现。") };
+        </script>
+    </div>
+</div>
+
+</body>
+</html>

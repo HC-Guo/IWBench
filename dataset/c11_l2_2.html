@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Health & Fitness Hub</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image path */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+  }
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .banner-carousel {
+    /* Add styles for your banner-carousel/slider */
+  }
+  .card-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    border-radius: 8px;
+  }
+</style>
+<script>
+  window.onunload = function() {
+    // Handle the unload event
+  };
+  window.onload = function() {
+    // Handle the load event
+  };
+  document.onkeydown = function(event) {
+    // Handle the keydown event
+  };
+  document.onmousedown = function(event) {
+    // Handle the mousedown event
+  };
+  function handleSubmit(event) {
+    event.preventDefault();
+    // Handle the submit event
+  }
+</script>
+</head>
+<body>
+<header class="navbar">
+  <div class="title">Health & Fitness Hub</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#nutrition">Nutrition</a>
+    <a href="#workouts">Workouts</a>
+    <a href="#progress">Progress</a>
+  </nav>
+</header>
+
+<div class="banner-carousel">
+  <!-- Place your banner slider/carousel here -->
+</div>
+
+<section id="home" class="card-layout">
+  <div class="card">Welcome to the Health & Fitness Hub!</div>
+  <div class="card">Get the latest health tips and tricks!</div>
+  <div class="card">Join our community now!</div>
+</section>
+
+<section id="nutrition" class="card-layout">
+  <div class="card">Healthy Recipes</div>
+  <div class="card">Nutrition Facts</div>
+  <div class="card">Diet Plans</div>
+</section>
+
+<section id="workouts" class="card-layout">
+  <div class="card">Beginner Workouts</div>
+  <div class="card">Advanced Routines</div>
+  <div class="card">Yoga Sessions</div>
+</section>
+
+<section id="progress">
+  <form onsubmit="handleSubmit(event)">
+    <label for="weight">Enter your weight:</label>
+    <input type="number" id="weight" name="weight">
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer class="navbar">
+  <div>© 2023 Health & Fitness Hub</div>
+  <div>
+    <a href="#" onclick="window.print(); return false;">Print Page</a>
+    <span class="social-share">Share on Social Media</span>
+  </div>
+</footer>
+
+</body>
+</html>

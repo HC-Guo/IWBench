@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅游探险家</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>欢迎来到旅游探险家</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#destinations">目的地</a></li>
+            <li><a href="#plans">路线规划</a></li>
+            <li><a href="#strategies">旅游攻略</a></li>
+            <li><a href="#gallery">画廊</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="destinations">
+            <h2>旅游目的地</h2>
+            <div class="card">
+                <!-- [图像, 图标, 卡片布局] -->
+                <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+                <h3>目的地名称</h3>
+                <p>这里是目的地的简短介绍。</p>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>旅游景点画廊</h2>
+            <div>
+                <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+            </div>
+        </section>
+
+        <section id="plans">
+            <h2>旅游路线规划</h2>
+            <form onsubmit="event.preventDefault(); generatePlan();">
+                <label for="start">出发点：</label>
+                <input type="text" id="start" name="start" required>
+                <label for="end">目的地：</label>
+                <input type="text" id="end" name="end" required>
+                <button type="submit">生成路线</button>
+            </form>
+            <div id="planOutput"></div>
+        </section>
+
+        <section id="strategies">
+            <h2>旅游攻略</h2>
+            <p>在此查看最新攻略或共享你的旅游经验。</p>
+            <textarea onkeypress="enableSubmit()" placeholder="分享你的攻略..."></textarea>
+            <button id="submitStrategy" disabled>提交</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 旅游探险家. 所有权利保留。</p>
+    </footer>
+</body>
+</html>

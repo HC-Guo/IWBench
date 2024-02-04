@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photographer's Portfolio</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  header, footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  nav {
+    text-align: center;
+    padding: 10px 0;
+  }
+  nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  .bio, .contact-info, .social-links {
+    padding: 20px;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    .gallery {
+      flex-direction: column;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Photographer's Portfolio</h1>
+</header>
+
+<nav>
+  <a href="#gallery">Gallery</a>
+  <a href="#bio">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div id="gallery" class="container">
+  <!-- Gallery Images Here -->
+</div>
+
+<div id="bio" class="bio container">
+  <h2>About the Photographer</h2>
+  <p><!-- Photographer's professional background --></p>
+  <p><!-- Photographer's artistic philosophy --></p>
+</div>
+
+<div id="contact" class="contact-info container">
+  <h2>Contact Information</h2>
+  <p><!-- Contact info here --></p>
+  <div class="social-links">
+    <!-- Social Media Links Here -->
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2023 Photographer's Name</p>
+</footer>
+
+<script>
+  // [JS functions to be included]
+</script>
+</body>
+</html>

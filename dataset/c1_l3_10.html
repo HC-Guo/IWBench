@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photographer Portfolio</title>
+<style>
+/* Basic CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.introduction {
+    text-align: center;
+    padding: 4em;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.footer {
+    text-align: center;
+    padding: 2em;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .gallery img {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<header class="introduction">
+    <h1>John Doe Photography</h1>
+    <p>Welcome to my professional portfolio. I am passionate about capturing life's moments.</p>
+</header>
+
+<div class="container gallery">
+    <!-- Static image gallery example -->
+    <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+    <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+    <!-- Add more images as needed -->
+</div>
+
+<footer class="footer">
+    <p>Contact me at: <a href="mailto:contact@email.com">contact@email.com</a></p>
+    <p>Follow me on social media:</p>
+    <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+        <!-- More social media links -->
+    </ul>
+</footer>
+
+<script>
+// JS Functions
+/* Your JavaScript functions will go here. For example: */
+function toggleImageSize(imageElement) {
+    if (imageElement.style.width === '100%') {
+        imageElement.style.width = '80%';
+    } else {
+        imageElement.style.width = '100%';
+    }
+}
+
+// Example usage: on the gallery images add onclick="toggleImageSize(this)"
+</script>
+
+</body>
+</html>

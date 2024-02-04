@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Healthy Life - Fitness & Diet</title>
+<style>
+    body { font-family: Arial, sans-serif; }
+    header { background: url('header-background.jpg'); color: white; padding: 20px; text-align: center; }
+    nav.breadcrumbs { background-color: #f4f4f4; padding: 10px; }
+    .social-share { position: fixed; top: 50px; right: 10px;}
+    .social-share button { margin-bottom: 5px; cursor: pointer;}
+    #sidebar { position: fixed; left: 0; top: 50px; width: 200px; background-color: #f9f9f9; padding: 10px; }
+    #content { margin-left: 220px; padding: 20px; }
+    .interactive-calculator, .personal-plan-generator { margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; }
+    .video-tutorial { margin-bottom: 20px; }
+    footer { background-color: #333; color: white; text-align: center; padding: 10px 0; }
+</style>
+<script>
+    document.onmouseup = function() {
+        console.log('Mouse button released.');
+    };
+    document.oncontextmenu = function(event) {
+        event.preventDefault();
+        alert('Right-click is disabled.');
+    };
+    window.onresize = function() {
+        console.log('Window is resized.');
+    };
+    window.onscroll = function() {
+        console.log('Window is scrolled.');
+    };
+    function focusAlert(input) {
+        alert(input.getAttribute('data-message'));
+    }
+</script>
+</head>
+<body>
+<header>
+    <h1>Healthy Life - Fitness & Diet</h1>
+</header>
+
+<nav class="breadcrumbs">
+    <a href="/">Home</a> > <a href="/fitness">Fitness</a> > <span>Workout Plan</span>
+</nav>
+
+<div class="social-share">
+    <button onclick="alert('Share on Facebook!')">Share on FB</button>
+    <button onclick="alert('Share on Twitter!')">Share on Twitter</button>
+</div>
+
+<aside id="sidebar">
+    <nav>
+        <a href="#diet">Diet Advice</a>
+        <a href="#workouts">Workout Plans</a>
+        <a href="#videos">Video Tutorials</a>
+        <a href="#tracking">Progress Tracking</a>
+    </nav>
+</aside>
+
+<section id="content">
+    <article id="diet">
+        <h2>Diet Advice</h2>
+        <p>Healthy eating tips and dietitian-curated meal plans.</p>
+    </article>
+
+    <article id="workouts">
+        <h2>Workout Plans</h2>
+        <div class="interactive-calculator">
+            <label for="age">Age:</label>
+            <input type="number" id="age" onfocus="focusAlert(this)" data-message="Enter your age.">
+            <button onclick="generatePlan()">Generate Plan</button>
+        </div>
+    </article>
+
+    <article id="videos">
+        <h2>Video Tutorials</h2>
+        <div class="video-tutorial">
+            <video width="320" height="240" controls>
+                <source src="workout-tutorial.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Follow along our expert-guided workout videos.</p>
+        </div>
+    </article>
+
+    <article id="tracking">
+        <h2>Progress Tracking</h2>
+        <p>Track your fitness progress and set new goals.</p>
+    </article>
+</section>
+
+<footer>
+    <p>&copy; 2023 Healthy Life</p>
+</footer>
+<script>
+    function generatePlan() {
+        const age = document.getElementById('age').value;
+        if (age) {
+            // Placeholder for generating plan logic:
+            alert('Your personalized plan will be generated based on your age: ' + age);
+        } else {
+            alert('Please enter your age.');
+        }
+    }
+</script>
+</body>
+</html>

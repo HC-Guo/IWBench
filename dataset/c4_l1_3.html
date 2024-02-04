@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Store</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  nav {
+    background: #555;
+    padding: 10px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .product-item {
+    flex-basis: 30%;
+    margin-bottom: 25px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .product-detail {
+    background-color: #f7f7f7;
+    padding: 10px;
+  }
+  #customer-service-chat {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+<script>
+  // Add your JavaScript functions here
+  function initChat() {
+    // Simulate opening chat
+    alert("Customer service chat opened!");
+  }
+</script>
+</head>
+<body>
+
+<header>
+  <h1>Fashion Store</h1>
+</header>
+
+<nav>
+  <a href="#new-products">New Products</a>
+  <a href="#hot-items">Hot-Selling Items</a>
+  <a href="#discounts">Discount Area</a>
+</nav>
+
+<main class="container">
+  <section id="new-products">
+    <h2>New Products</h2>
+    <div class="product-grid">
+      <!-- Products will go here -->
+    </div>
+  </section>
+
+  <section id="hot-items">
+    <h2>Hot-Selling Items</h2>
+    <div class="product-grid">
+      <!-- Products will go here -->
+    </div>
+  </section>
+
+  <section id="discounts">
+    <h2>Discount Area</h2>
+    <div class="product-grid">
+      <!-- Products will go here -->
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2023 Fashion Store</p>
+</footer>
+
+<div id="customer-service-chat" onclick="initChat()">
+  Chat with us!
+</div>
+
+</body>
+</html>

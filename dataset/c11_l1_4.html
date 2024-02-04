@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>健康与健身之道</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+    }
+    #sidebar {
+        width: 250px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: #333;
+        color: #fff;
+        padding: 20px;
+    }
+    .content {
+        margin-left: 250px;
+        padding: 20px;
+    }
+    header {
+        background: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+    }
+    h1 {
+        margin: 0;
+    }
+    button {
+        background: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+    .panel {
+        background: white;
+        margin-bottom: 20px;
+        padding: 20px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    input[type="range"] {
+        width: 100%;
+    }
+</style>
+</head>
+<body ontouchmove="handleTouchMove(event)" onscroll="handleScroll(event)" 
+      onmousedown="handleMouseDown(event)">
+
+<div id="sidebar">
+    <!-- Sidebar content -->
+    <header>
+        <h1>健康 & 健身</h1>
+    </header>
+    <nav>
+        <button onclick="navigateTo('home')">首页</button>
+        <button onclick="navigateTo('nutrition')">营养建议</button>
+        <button onclick="navigateTo('workouts')">锻炼计划</button>
+        <button onclick="navigateTo('videos')">视频教程</button>
+        <button onclick="navigateTo('progress')">健身进展</button>
+    </nav>
+</div>
+
+<div class="content">
+    <!-- Main content -->
+    <div id="home" class="panel">
+        <h2>欢迎来到健康与健身之道</h2>
+        <!-- Content goes here -->
+    </div>
+    <div id="nutrition" class="panel">
+        <h2>营养建议</h2>
+        <!-- Nutrition advice content goes here -->
+    </div>
+    <div id="workouts" class="panel">
+        <h2>锻炼计划</h2>
+        <!-- Workouts plans content goes here -->
+    </div>
+    <div id="videos" class="panel">
+        <h2>视频教程</h2>
+        <!-- Video tutorials content goes here -->
+    </div>
+    <div id="progress" class="panel">
+        <h2>健身进展</h2>
+        <!-- Fitness progress content goes here -->
+        <!-- Example: range input for progress tracking -->
+        <input type="range" min="0" max="100" value="50">
+    </div>
+</div>
+
+<script>
+    function navigateTo(sectionId) {
+        const section = document.getElementById(sectionId);
+        window.scrollTo(0, section.offsetTop);
+    }
+    
+    function handleTouchMove(event) {
+        console.log("Swiped on touch device!");
+    }
+    
+    function handleScroll(event) {
+        console.log("User scrolled the page!");
+    }
+    
+    function handleMouseDown(event) {
+        console.log("User clicked down on the page!");
+    }
+</script>
+
+</body>
+</html>

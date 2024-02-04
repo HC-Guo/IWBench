@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美味佳肴</title>
+    <style>
+        /* 简单的CSS样式 */
+        body { font-family: Arial, sans-serif; }
+        .header, .footer { text-align: center; padding: 20px; background-color: #f3f3f3; }
+        .recipe-card { margin: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 5px; transition: box-shadow 0.3s; }
+        .recipe-card:hover { box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2); }
+        .carousel { display: flex; overflow-x: auto; }
+        .carousel img { margin: 20px; }
+        .video-container { text-align: center; margin: 20px; }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <h1>美味佳肴</h1>
+    <!-- 滑动横幅/轮播 -->
+    <div class="carousel">
+        <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+        <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+        <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+    </div>
+</header>
+
+<main>
+    <!-- 食谱分类，这里使用了卡片布局 -->
+    <div class="recipe-card" onmouseover="handleMouseOver()" onmouseout="handleMouseOut()">
+        <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+        <h3>食谱名称</h3>
+        <p>食谱简介。</p>
+    </div>
+
+    <!-- 视频教程 -->
+    <div class="video-container">
+        <video src="cooking-tutorial.mp4" controls></video>
+        <p>烹饪视频教程</p>
+    </div>
+
+    <!-- 用户上传食谱表单 (简化显示) -->
+    <form onsubmit="handleSubmit()">
+        <label for="recipeName">食谱名称</label>
+        <input type="text" id="recipeName" name="recipeName">
+        <label for="recipeImage">食谱图片</label>
+        <input type="file" id="recipeImage" name="recipeImage">
+        <label for="recipeDescription">食谱描述</label>
+        <textarea id="recipeDescription" name="recipeDescription"></textarea>
+        <button type="submit">上传食谱</button>
+    </form>
+</main>
+
+<footer class="footer">
+    <p>联系我们 | 隐私政策</p>
+</footer>
+
+<script>
+    // 简单的JavaScript示例
+    function handleMouseOver() {
+        console.log('鼠标悬停在卡片上');
+    }
+    function handleMouseOut() {
+        console.log('鼠标离开卡片');
+    }
+    window.onscroll = function() { console.log('页面滚动'); };
+    // 更多的功能需要根据具体需求进一步实现
+</script>
+
+</body>
+</html>

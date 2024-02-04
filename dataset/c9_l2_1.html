@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f2ff;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background: #333;
+            padding: 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .main-content {
+            margin: 15px;
+        }
+
+        .discussion-category {
+            margin-bottom: 30px;
+        }
+
+        .discussion-category > h2 {
+            border-bottom: 2px solid #ccc;
+        }
+
+        .post {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .post:hover {
+            background-color: #f0f0f0;
+        }
+
+        footer {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Green Forum</h1>
+    </header>
+
+    <nav>
+        <a href="#sustainable-lifestyle">Sustainable Lifestyle</a>
+        <a href="#environmental-laws">Environmental Protection Laws</a>
+        <a href="#activities-initiatives">Activities & Initiatives</a>
+    </nav>
+
+    <div class="main-content">
+        <section id="sustainable-lifestyle" class="discussion-category">
+            <h2>Sustainable Lifestyle</h2>
+            <!-- Placeholder for posts -->
+            <div id="sustainable-posts" class="posts">
+                <!-- Backend code will generate and insert the posts here -->
+            </div>
+        </section>
+
+        <section id="environmental-laws" class="discussion-category">
+            <h2>Environmental Protection Laws</h2>
+            <!-- Placeholder for posts -->
+            <div id="laws-posts" class="posts">
+                <!-- Backend code will generate and insert the posts here -->
+            </div>
+        </section>
+
+        <section id="activities-initiatives" class="discussion-category">
+            <h2>Environmental Activities & Initiatives</h2>
+            <!-- Placeholder for posts -->
+            <div id="activities-posts" class="posts">
+                <!-- Backend code will generate and insert the posts here -->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Green Forum © 2023</p>
+    </footer>
+
+    <script>
+        // Example JavaScript functions to include
+        
+        // Function to handle editing a post
+        function editPost(postId) {
+            // JavaScript to open a post editing interface could go here
+            alert('Edit post: ' + postId);
+        }
+
+        // Function to handle voting on a post
+        function voteOnPost(postId, voteType) {
+            // JavaScript to process the voting could go here
+            alert(`Voted ${voteType} on post: ${postId}`);
+        }
+
+        // Function to handle user submitting a new post
+        function submitPost(category) {
+            // JavaScript to add a post to the category could go here
+            alert(`Submitted post to ${category}`);
+        }
+        
+        // Dummy initialization for demonstration
+        window.onload = function() {
+            // Backend code should populate posts on load
+            // addDemoPosts(); Function that should be implemented by backend to load posts dynamically
+        };
+    </script>
+</body>
+
+</html>

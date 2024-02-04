@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Environment Forum</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #e9f7ef; }
+  header, footer { background: #2ecc71; padding: 10px; text-align: center; }
+  nav { background: #58d68d; padding: 10px; }
+  nav ul { list-style-type: none; }
+  nav ul li { display: inline; margin-right: 20px; }
+  nav a { text-decoration: none; color: white; }
+  .container { width: 95%; margin: 0 auto; }
+  .forum-section { background: white; margin: 10px 0; padding: 10px; border-radius: 8px; }
+  .forum-post { background: #f7f9f9; padding: 10px; border-left: 4px solid #58d68d; margin-top: 5px; }
+  .forum-post p { margin: 5px 0; }
+  .vote-buttons { cursor: pointer; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to the Environment Forum</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#sustainable-lifestyle">Sustainable Lifestyle</a></li>
+    <li><a href="#environmental-laws">Environmental Protection Laws</a></li>
+    <li><a href="#activities-initiatives">Environmental Activities and Initiatives</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <section id="sustainable-lifestyle" class="forum-section">
+    <h2>Sustainable Lifestyle</h2>
+    <!-- Forum posts go here -->
+  </section>
+
+  <section id="environmental-laws" class="forum-section">
+    <h2>Environmental Protection Laws</h2>
+    <!-- Forum posts go here -->
+  </section>
+
+  <section id="activities-initiatives" class="forum-section">
+    <h2>Environmental Activities and Initiatives</h2>
+    <!-- Forum posts go here -->
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2023 Environment Forum. All rights reserved.</p>
+</footer>
+
+<script>
+// Example JavaScript to toggle a forum post's visibility
+function togglePostVisibility(postId) {
+  var post = document.getElementById(postId);
+  if (post.classList.contains('hidden')) {
+    post.classList.remove('hidden');
+  } else {
+    post.classList.add('hidden');
+  }
+}
+</script>
+
+</body>
+</html>

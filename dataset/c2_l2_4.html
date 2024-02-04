@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geo-Targeted News Homepage</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  .header {
+    background: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+  }
+  .news-scroller {
+    background: #f2f2f2;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .news-item {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .weather-widget, .emergency-alert, .user-dashboard {
+    margin: 20px 0;
+  }
+  .search-bar {
+    margin: 20px 0;
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <h1>Local News Network</h1>
+</header>
+
+<!-- Dynamic News Scroller -->
+<div class="news-scroller">
+  <!-- News items will be populated here via JavaScript -->
+</div>
+
+<!-- Weather Updates -->
+<div class="weather-widget">
+  <!-- Weather widget will update based on user's IP address -->
+</div>
+
+<!-- Emergency Alerts -->
+<div class="emergency-alert">
+  <!-- Emergency alerts can be dynamically loaded here -->
+</div>
+
+<!-- User-customizable Dashboard -->
+<div class="user-dashboard">
+  <!-- Users can add and organize their preferred content here -->
+</div>
+
+<!-- Advanced Search Function -->
+<div class="search-bar">
+  <input type="text" id="search-input" placeholder="Search news...">
+  <button type="button" onclick="searchNews()">Search</button>
+</div>
+
+<script>
+  // [JS functions to be included]
+
+  // Example function for searching news (to be implemented)
+  function searchNews() {
+    var searchTerm = document.getElementById('search-input').value;
+    // Logic to search news based on keywords, dates or categories
+  }
+
+  // Example function to populate news scroller (to be implemented)
+  function populateNewsScroller() {
+    // Fetch and display news in the scroller based on user location
+  }
+
+  // Example function to update weather widget (to be implemented)
+  function updateWeatherWidget() {
+    // Fetch and display weather updates based on user's IP address
+  }
+
+  // Initial calls to populate the homepage (to be implemented)
+  populateNewsScroller();
+  updateWeatherWidget();
+</script>
+
+</body>
+</html>

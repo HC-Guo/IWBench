@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eco-Friendly Forum</title>
+<style>
+  body { font-family: Arial, sans-serif; background-color: #e6f2ff; }
+  .container { width: 80%; margin: auto; }
+  header { text-align: center; padding: 10px 0; }
+  nav { background-color: #333; padding: 0 20px; }
+  nav ul { list-style-type: none; padding: 0; }
+  nav ul li { display: inline; margin-right: 20px; }
+  nav a { color: white; text-decoration: none; }
+  .content { margin: 20px 0; }
+  .forum-section { margin-bottom: 20px; }
+  .post { background-color: white; border: 1px solid #ccc; padding: 20px; margin-bottom: 10px; }
+  .post-title { font-size: 18px; font-weight: bold; }
+  .footer { text-align: center; padding: 20px 0; border-top: 1px solid #ccc; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Eco-Friendly Forum</h1>
+    <p>Welcome to the community dedicated to sustainability and the environment.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#sustainable-lifestyle">Sustainable Lifestyle</a></li>
+      <li><a href="#environmental-protection-laws">Environmental Protection Laws</a></li>
+      <li><a href="#environmental-activities-initiatives">Environmental Activities & Initiatives</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <section id="sustainable-lifestyle" class="forum-section">
+      <h2>Sustainable Lifestyle</h2>
+      <article class="post">
+        <h3 class="post-title">Topic 1</h3>
+        <p>Description for the topic 1...</p>
+      </article>
+    </section>
+
+    <section id="environmental-protection-laws" class="forum-section">
+      <h2>Environmental Protection Laws</h2>
+      <article class="post">
+        <h3 class="post-title">Topic 2</h3>
+        <p>Description for the topic 2...</p>
+      </article>
+    </section>
+
+    <section id="environmental-activities-initiatives" class="forum-section">
+      <h2>Environmental Activities & Initiatives</h2>
+      <article class="post">
+        <h3 class="post-title">Topic 3</h3>
+        <p>Description for the topic 3...</p>
+      <!-- More posts go here -->
+      </article>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2023 Eco-Friendly Forum. All rights reserved.</p>
+  </footer>
+</div>
+
+<script>
+  // Example JavaScript to show/hide forum sections
+  document.addEventListener('DOMContentLoaded', function() {
+    var links = document.querySelectorAll('nav a');
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', function(event) {
+        event.preventDefault();
+        var section = document.querySelector(this.getAttribute('href'));
+        var sections = document.querySelectorAll('.forum-section');
+        for (var j = 0; j < sections.length; j++) {
+          if (sections[j] !== section) {
+            sections[j].classList.add('hidden');
+          } else {
+            sections[j].classList.remove('hidden');
+          }
+        }
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

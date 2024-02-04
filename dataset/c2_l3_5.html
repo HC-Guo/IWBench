@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geo-Targeted News Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Your Local News</h1>
+        <div id="weatherWidget"></div>
+    </div>
+    
+    <div id="userDashboard" class="dashboard">
+        <h2>Custom Dashboard</h2>
+        <!-- User customizable content will go here -->
+    </div>
+
+    <div class="newsScroller">
+        <h2>Latest News</h2>
+        <!-- Dynamic news scroller content will go here -->
+    </div>
+
+    <div class="newsSearch">
+        <input type="text" id="searchInput" placeholder="Search News">
+        <button onclick="searchNews()">Search</button>
+    </div>
+    
+    <div id="emergencyAlerts" class="alerts">
+        <h2>Emergencies</h2>
+        <!-- Emergency notifications based on user's location will go here -->
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

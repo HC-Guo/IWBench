@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>健康与健身网站</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url('background-pattern.jpg') repeat;
+    }
+    .banner-carousel {
+        width: 100%;
+        overflow: hidden;
+    }
+    .banner-slide {
+        display: none;
+    }
+    .banner-slide.active {
+        display: block;
+    }
+    footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .social-share-buttons {
+        text-align: center;
+        padding: 10px;
+    }
+    .social-share-buttons a {
+        margin: 0 10px;
+    }
+    /* Add additional CSS styling as needed */
+</style>
+<script>
+window.onload = function() {
+    // Logic for onload event
+};
+
+// Add JavaScript functions to handle onresize, onchange, and other events
+</script>
+</head>
+<body>
+
+<div class="banner-carousel">
+    <!-- Slider / Carousel -->
+    <div class="banner-slide active">
+        <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+    </div>
+    <div class="banner-slide">
+        <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+    </div>
+    <!-- You can add more slides as needed -->
+</div>
+
+<!-- Social Share Buttons -->
+<div class="social-share-buttons">
+    <a href="#" onclick="onSocialShare('facebook')">分享到Facebook</a>
+    <a href="#" onclick="onSocialShare('twitter')">分享到Twitter</a>
+    <a href="#" onclick="onSocialShare('weibo')">分享到微博</a>
+    <!-- Add more social share links as required -->
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>版权所有 &copy; 2023 健康与健身网站</p>
+</footer>
+
+<script>
+    // Sample JavaScript for demo purposes
+
+    // Function to handle social sharing
+    function onSocialShare(platform) {
+        // Logic to share content on social media
+        console.log('Sharing on ' + platform);
+    }
+
+    // Example using onresize event
+    window.onresize = function() {
+        // Logic to handle window resize
+        console.log('Window resized.');
+    };
+
+    // Detect touch move for carousel interaction on mobile devices
+    document.querySelector('.banner-carousel').ontouchmove = function(event) {
+        // Logic for touch move on carousel
+        console.log('Slide touched.');
+    };
+
+    // Example using onchange event
+    document.getElementById('mySelect').onchange = function(event) {
+        // Logic to handle changes in a select box
+        console.log('Selection changed.');
+    };
+
+    // Detect keydown event for keyboard interactions
+    window.onkeydown = function(event) {
+        // Logic to handle keydown events
+        console.log('Key pressed: ' + event.key);
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photographer's Portfolio</title>
+<style>
+  /* Include your CSS styles here */
+  body { font-family: 'Arial', sans-serif; line-height: 1.6; margin: 0; }
+  .container { width: 80%; margin: auto; overflow: hidden; }
+  header { background: #333; color: #fff; padding: 20px; text-align: center; }
+  nav { background: #555; color: #fff; padding: 10px 0; text-align: center; }
+  nav a { color: #fff; text-decoration: none; margin: 0 10px; }
+  nav a:hover { text-decoration: underline; }
+  #gallery { display: flex; flex-wrap: wrap; justify-content: center; }
+  #gallery img { max-width: 100%; margin: 10px; box-shadow: 3px 3px 5px rgba(0,0,0,0.5); }
+  @media(max-width: 600px) {
+    .container, nav { width: 100%; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Photographer's Name</h1>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div id="about" class="container">
+  <h2>About The Photographer</h2>
+  <p>
+    Short introduction about the photographer's professional background and artistic philosophy.
+  </p>
+</div>
+
+<div id="gallery" class="container">
+  <h2>Gallery</h2>
+  <!-- Your images go here -->
+  <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+  <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+  <!-- Add more images as needed -->
+</div>
+
+<div id="contact" class="container">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:photographer@example.com">photographer@example.com</a></p>
+  <!-- Social media links go here -->
+  <a href="http://twitter.com/photographer" target="_blank">Twitter</a>
+  <a href="http://facebook.com/photographer" target="_blank">Facebook</a>
+  <!-- other social media accounts -->
+</div>
+
+<script>
+  // Add your JavaScript functions here
+</script>
+
+</body>
+</html>

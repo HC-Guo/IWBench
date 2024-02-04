@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technology News</title>
+<style>
+  /* Basic Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+
+  /* Header Styles */
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  /* News Scroller Styles */
+  .news-scroller {
+    background: #555;
+    color: #fff;
+    padding: 0.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  /* Main Content Styles */
+  .container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .video-playback,
+  .hot-topics,
+  .newsletter {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Video Playback Styles */
+  .video-playback iframe {
+    width: 100%;
+    max-height: 500px;
+  }
+
+  /* Subscription Form Styles */
+  .newsletter input[type="email"],
+  .newsletter button {
+    padding: 10px;
+    width: 300px;
+  }
+
+  .newsletter button {
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    border: none;
+  }
+
+  /* Responsive Styles */
+  @media only screen and (max-width: 600px) {
+    .newsletter input[type="email"],
+    .newsletter button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+</style>
+<script>
+  // [JS functions to be included]
+  function startNewsScroller() {
+    // Start news scroller animation
+  }
+
+  function playVideo(videoId) {
+    // JS to play video by ID
+  }
+
+  function subscribeNewsletter(email) {
+    // JS to handle newsletter subscription
+  }
+
+  // DOM Content Loaded Event
+  document.addEventListener('DOMContentLoaded', (event) => {
+    startNewsScroller();
+  });
+</script>
+</head>
+<body>
+
+<header>
+  <h1>Technology News</h1>
+  <p>Latest updates and insights in tech</p>
+</header>
+
+<div class="news-scroller" id="newsScroller">
+  <!-- Placeholder for news scroller -->
+</div>
+
+<main class="container">
+  <section class="video-playback" id="videoPlayback">
+    <!-- Placeholder for video content -->
+    <iframe src=" " frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section class="hot-topics" id="hotTopics">
+    <!-- Placeholder for hot topics content -->
+  </section>
+
+  <section class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form id="newsletterForm">
+      <input type="email" name="email" placeholder="Enter your email address">
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+</main>
+
+<script>
+  // Additional inline JavaScript if needed
+  document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const email = this.querySelector('input[name="email"]').value;
+    subscribeNewsletter(email);
+  });
+</script>
+
+</body>
+</html>

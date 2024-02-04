@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Explorer</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .sidebar { width: 250px; height: 100%; position: fixed; background-color: #f2f2f2; }
+        .banner-slider { width: 100%; overflow: hidden; }
+        .banner-slide { display: none; }
+        .active-slide { display: block; }
+        .route-planner { background-color: #e2e2e2; padding: 10px; }
+        .route-planner input, .route-planner button { padding: 5px; }
+        .user-reviews, .travel-guides { margin: 20px 0; }
+        .header { background-color: #007bff; color: white; padding: 10px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <!-- Sidebar content goes here -->
+    </div>
+    <div class="header">
+        <!-- Website Title -->
+        <h1>Travel Explorer</h1>
+    </div>
+    <div class="banner-slider" ontouchstart="touchStart()" ontouchend="touchEnd()">
+        <!-- Sliding Banner / Carousel -->
+        <div class="banner-slide active-slide">
+            <!-- Slide Content -->
+        </div>
+        <!-- Additional slides... -->
+    </div>
+    <div class="main-content">
+        <section class="route-planner">
+            <!-- Travel Route Planner -->
+            <input type="text" id="from" placeholder="From" onkeydown="checkInput(event)">
+            <input type="text" id="to" placeholder="To" onkeydown="checkInput(event)">
+            <button onclick="planRoute()">Plan Route</button>
+        </section>
+        <section class="user-reviews">
+            <h2>User Reviews</h2>
+            <!-- Reviews -->
+        </section>
+        <section class="travel-guides">
+            <h2>Travel Guides</h2>
+            <!-- Guides -->
+        </section>
+    </div>
+    
+    <script>
+        function touchStart() {
+            // Code to handle touch start event
+        }
+
+        function touchEnd() {
+            // Code to handle touch end event
+        }
+
+        function checkInput(event) {
+            if(event.key === "Enter") {
+                // Trigger route planning or other actions
+            }
+        }
+
+        function planRoute() {
+            // Function to plan the route with given inputs
+            var fromLocation = document.getElementById('from').value;
+            var toLocation = document.getElementById('to').value;
+            console.log('Planning route from ' + fromLocation + ' to ' + toLocation);
+            // Implement route planning logic or API call here
+        }
+
+        window.onload = function() {
+            // Optional: Initialize banner slider or other dynamic content on page load
+        };
+    </script>
+</body>
+</html>

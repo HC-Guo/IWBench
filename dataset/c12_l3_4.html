@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>旅游天堂</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  .header, .footer { text-align: center; padding: 1rem; background-color: #f2f2f2; }
+  .card { margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+  .comment-section, .sidebar { margin-top: 20px; }
+  img, video { max-width: 100%; height: auto; }
+  .breadcrumb { padding: 10px 0; list-style: none; }
+  .breadcrumb li { display: inline; margin-right: 5px; }
+  .social-buttons { list-style: none; padding: 0; }
+  .social-buttons li { display: inline; margin-right: 5px; }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <h1>欢迎来到旅游天堂</h1>
+  <ul class="breadcrumb">
+    <li>首页</li>
+    <li>&gt;</li>
+    <li>旅游目的地</li>
+  </ul>
+</header>
+
+<main>
+  <section class="card">
+    <h2>美丽海滩</h2>
+    <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+    <p>详细介绍美丽的海滩...</p>
+    <video controls>
+      <source src="beach.mp4" type="video/mp4">
+      您的浏览器不支持视频标签。
+    </video>
+  </section>
+
+  <aside class="sidebar">
+    <h3>旅游攻略</h3>
+    <button onmouseover="highlight(this)" onfocus="highlight(this)" onmouseleave="unhighlight(this)" >查看攻略</button>
+  </aside>
+
+  <div class="comment-section">
+    <h3>用户评论</h3>
+    <p>暂无评论</p>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2023 旅游天堂</p>
+</footer>
+
+<ul class="social-buttons">
+  <li onmouseover="highlightButton(this)"><a href="#">Facebook分享</a></li>
+  <li onmouseover="highlightButton(this)"><a href="#">Twitter分享</a></li>
+</ul>
+
+<script>
+document.onmouseup = () => console.log('Mouse button released.');
+document.oncontextmenu = () => console.log('Right-click menu opened.');
+document.ontouchstart = () => console.log('Screen touched.');
+document.onmousedown = () => console.log('Mouse button pressed.');
+document.onkeypress = (e) => console.log(`Key pressed: ${e.key}`);
+window.onresize = () => console.log('Window resized.');
+
+function highlight(element) {
+  element.style.backgroundColor = '#f0f0f0';
+}
+
+function unhighlight(element) {
+  element.style.backgroundColor = '';
+}
+
+function highlightButton(element) {
+  element.style.color = 'blue';
+}
+</script>
+
+</body>
+</html>

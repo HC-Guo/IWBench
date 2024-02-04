@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Fitness Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body onload="pageLoaded()">
+    <header>
+        <div id="loadingBar" class="loading-bar"></div>
+        <nav>
+            <input type="search" id="searchBar" placeholder="Search..." onfocus="searchFocus()" ondblclick="searchDoubleClick()">
+            <button type="submit" onclick="submitSearch()">Search</button>
+        </nav>
+        <div class="banner">
+            <div class="slideshow-container" ontouchstart="slideTouchStart()" ontouchend="slideTouchEnd()">
+                <!-- Slideshow images -->
+                <div class="mySlides fade">
+                    <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+                </div>
+                <!-- more slides -->
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="fitnessCalculator">
+            <h2>Personal Fitness Calculator</h2>
+            <form onsubmit="return calculateFitness()">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                <label for="weight">Weight:</label>
+                <input type="number" id="weight" name="weight" required>
+                <!-- More inputs -->
+                <input type="submit" value="Calculate">
+            </form>
+        </section>
+        <section id="exercisePlans">
+            <h2>Exercise Plans</h2>
+            <article onmouseover="planHover()">
+                <h3>Beginner</h3>
+                <p>This plan is designed for those new to fitness...</p>
+                <!-- More details -->
+            </article>
+            <article oncontextmenu="return planInfo();">
+                <h3>Advanced</h3>
+                <p>This plan is for seasoned fitness enthusiasts...</p>
+                <!-- More details -->
+            </article>
+            <!-- More articles -->
+        </section>
+        <section id="dietAdvice">
+            <h2>Diet Advice</h2>
+            <audio controls>
+                <source src="healthy_eating_tips.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </section>
+        <section id="progressTracker">
+            <h2>Track Your Progress</h2>
+            <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+            <!-- Progress tracking elements -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Health & Fitness</p>
+        <div class="social-buttons">
+            <!-- Social sharing buttons -->
+        </div>
+    </footer>
+</body>
+</html>

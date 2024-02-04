@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobeTrotter - Your Ultimate Travel Companion</title>
+    <style>
+        /* CSS样式 */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            margin: 1rem;
+            background: #f9f9f9;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .breadcrumb {
+            padding: 1rem 1.5rem;
+            list-style: none;
+            background-color: #e9ecef;
+            border-radius: 0.25rem;
+        }
+
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: ">";
+            padding: 0 0.5rem;
+            color: #6c757d;
+        }
+
+        /* 其他样式 */
+    </style>
+    <script>
+        // JavaScript 函数
+        function onResizeEvent() {
+            // 窗口调整大小时的逻辑
+        }
+
+        function onMouseOverEvent(element) {
+            // 鼠标悬停逻辑
+        }
+
+        function onKeyPressEvent(event) {
+            // 键盘按键逻辑
+        }
+
+        window.onresize = onResizeEvent;
+        document.onunload = function() {
+            // 页面卸载逻辑
+        };
+    </script>
+</head>
+<body onmousemove="onMouseMoveEvent(event)">
+
+    <!-- 面包屑导航 (Breadcrumb Navigation) -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+    </nav>
+
+    <!-- 目的地卡片布局 (Destination Cards Layout) -->
+    <section id="destinations">
+        <div class="card" onmouseover="onMouseOverEvent(this)">
+            <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+            <h3>Maldives</h3>
+            <p>Escape to the tropical paradise!</p>
+        </div>
+        <!-- 更多目的地卡片 -->
+    </section>
+
+    <!-- 用户评论区 -->
+    <section id="user-reviews">
+        <!-- 用户评论卡片 -->
+    </section>
+
+    <!-- 旅游路线规划器 (Travel Route Planner) - 这一功能需要后端逻辑来实际规划路线，这里只提供前端结构 -->
+    <section id="route-planner">
+        <h2>Plan Your Route</h2>
+        <!-- 路线规划表单 -->
+        <!-- 接入后端API或使用JavaScript处理用户输入 -->
+    </section>
+
+    <!-- 旅游攻略生成器 (Travel Guide Generator) - 同样需要后端支持，这里仅提供界面 -->
+    <section id="guide-generator">
+        <h2>Create Your Travel Guide</h2>
+        <!-- 攻略生成表单 -->
+    </section>
+
+    <!-- 音频集成音轨 -->
+    <audio controls>
+        <source src="ambient_music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- 社交分享按钮 -->
+    <div class="social-share">
+        <button onclick="shareToSocialMedia('facebook')">Share on Facebook</button>
+        <button onclick="shareToSocialMedia('twitter')">Share on Twitter</button>
+        <!-- 更多社交平台按钮 -->
+    </div>
+
+    <script>
+        function onMouseMoveEvent(event) {
+            // 鼠标移动逻辑
+        }
+
+        function shareToSocialMedia(platform) {
+            // 分享逻辑
+        }
+
+        document.addEventListener('keypress', onKeyPressEvent);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>美食天堂 - 享受烹饪乐趣</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <nav class="breadcrumb">
+        <a href="#">首页</a> > <span>所有食谱</span>
+    </nav>
+    <h1 class="title">美食天堂 - 享受烹饪乐趣</h1>
+    <aside class="sidebar">
+        <!-- 可能会包含过滤功能、用户链接或其它辅助性导航 -->
+    </aside>
+</header>
+<section class="recipe-categories" onscroll="handleScroll()">
+    <a href="#">中式菜肴</a>
+    <a href="#">西式美食</a>
+    <a href="#">快餐简食</a>
+    <!-- 更多分类 -->
+</section>
+<section class="featured-recipes">
+    <article>
+        <h2>精选食谱</h2>
+        <div class="recipe" oncontextmenu="handleContextMenu(event)">
+            <!-- 食谱内容 -->
+        </div>
+        <div class="recipe">
+            <!-- 另一食谱内容 -->
+        </div>
+        <!-- 更多精选食谱 -->
+    </article>
+</section>
+<section class="uploader">
+    <h2>分享你的食谱</h2>
+    <form onsubmit="return validateForm()">
+        <input type="text" name="recipeName" placeholder="食谱名称" onfocus="handleFocus(event)" required>
+        <textarea name="recipeDescription" placeholder="食谱描述"></textarea>
+        <input type="submit" value="上传食谱">
+    </form>
+</section>
+<footer>
+    <button ontouchend="handleTouchEnd()">联系我们</button>
+    <button onmouseup="handleMouseUp()">订阅新食谱</button>
+</footer>
+</body>
+</html>

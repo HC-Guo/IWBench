@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photographer's Portfolio</title>
+<style>
+    /* Add basic CSS styles here */
+    body { font-family: 'Arial', sans-serif; }
+    .gallery img { width: 100%; max-width: 300px; }
+    .responsive { padding: 0 6px; float: left; width: 24.99999%; }
+    @media only screen and (max-width: 700px) {
+        .responsive { width: 49.99999%; margin: 6px 0; }
+    }
+    @media only screen and (max-width: 500px) {
+        .responsive { width: 100%; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Photography by [Photographer Name]</h1>
+    <nav>
+        <!-- Add your nav links here -->
+    </nav>
+</header>
+
+<section class="introduction">
+    <h2>About the Photographer</h2>
+    <p>[Professional background and artistic philosophy]</p>
+</section>
+
+<section class="gallery">
+    <h2>Image Gallery</h2>
+    <!-- Gallery images will be inserted here by JS -->
+</section>
+
+<section class="contact-info">
+    <h2>Contact Information</h2>
+    <p>[Email, Phone number, etc.]</p>
+</section>
+
+<footer>
+    <p>Connect with me on social media:</p>
+    <!-- Social media links will go here -->
+</footer>
+
+<script>
+    // Add your JavaScript functions here
+    document.addEventListener('DOMContentLoaded', function() {
+        // For example, load gallery images dynamically
+    });
+</script>
+
+</body>
+</html>

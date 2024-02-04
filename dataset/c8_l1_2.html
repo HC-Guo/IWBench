@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .news-scroller {
+            background: #ddd;
+            padding: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .video-playback {
+            text-align: center;
+            padding: 20px;
+        }
+        .hot-topics {
+            padding: 20px;
+        }
+        .subscribe-section {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .subscribe-section input[type=email] {
+            padding: 10px;
+            margin-right: 10px;
+        }
+        .subscribe-section input[type=submit] {
+            padding: 10px;
+            background-color: #007bff;
+            border: 0;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Technology News</h1>
+    </header>
+
+    <div class="news-scroller">
+        <!-- News items will scroll here -->
+        News item 1 | News item 2 | News item 3
+    </div>
+
+    <div class="video-playback">
+        <!-- Video playback area -->
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="hot-topics">
+        <!-- Hot topics listed here -->
+        <h2>Hot Topics</h2>
+        <ul>
+            <li>Topic 1</li>
+            <li>Topic 2</li>
+            <li>Topic 3</li>
+        </ul>
+    </div>
+
+    <div class="subscribe-section">
+        <!-- Subscribe to Newsletter -->
+        <h3>Subscribe to our Newsletter</h3>
+        <form id="subscribeForm">
+            <input type="email" placeholder="Enter your email address" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+
+    <script>
+        // JS functions will go here
+    </script>
+
+</body>
+
+</html>

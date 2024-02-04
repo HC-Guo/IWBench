@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo-Targeted News Portal</title>
+    <style>
+        /* Simple CSS for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .news-scroller {
+            background-color: #f2f2f2;
+            padding: 10px;
+            white-space: nowrap;
+            overflow-x: auto;
+        }
+        .weather-widget, .emergencies-widget, .news-widget {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .search-box {
+            padding: 20px;
+            text-align: center;
+        }
+        .search-box input[type='text'] {
+            padding: 10px;
+            margin-right: 5px;
+            width: 250px;
+        }
+        .search-box input[type='submit'] {
+            padding: 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        // Placeholder for JavaScript functions
+        function updateWeatherWidget() {
+            // Function to update weather widget based on user's IP address
+        }
+
+        function updateEmergencyAlerts() {
+            // Function to display emergencies based on user's location
+        }
+
+        function updateNewsScroller() {
+            // Function to update news scroller with latest local news
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            updateWeatherWidget();
+            updateEmergencyAlerts();
+            updateNewsScroller();
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Geo-Targeted News Portal</h1>
+    </div>
+    <div class="news-scroller" id="news-scroller">
+        <!-- Dynamic news scroller content will be loaded here -->
+    </div>
+    <div class="weather-widget" id="weather-widget">
+        <!-- Real-time weather widget content will be updated here -->
+    </div>
+    <div class="emergencies-widget" id="emergencies-widget">
+        <!-- Emergency alerts content will be updated based on user's IP -->
+    </div>
+    <div class="search-box">
+        <input type="text" id="search-field" placeholder="Search news...">
+        <input type="submit" value="Search" onclick="performSearch()">
+    </div>
+    <div class="footer">
+        <p>&copy; Geo-Targeted News Portal</p>
+    </div>
+
+    <script>
+        function performSearch() {
+            var searchTerm = document.getElementById('search-field').value;
+            // Implement the search functionality using searchTerm
+        }
+    </script>
+</body>
+</html>

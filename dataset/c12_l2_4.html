@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Explorer</title>
+<style>
+    body { font-family: Arial, sans-serif; }
+    .navbar { background-color: #333; overflow: hidden; }
+    .navbar a { float: left; display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
+    .sidebar { height: 100%; width: 250px; position: fixed; z-index: 1; top: 0; left: 0; background-color: #111; overflow-x: hidden; padding-top: 20px; }
+    .sidebar a { padding: 6px 8px 6px 16px; text-decoration: none; font-size: 25px; color: #818181; display: block; }
+    .sidebar a:hover { color: #f1f1f1; }
+    .content { margin-left: 250px; padding: 1px 16px; height: 1000px; }
+    .footer { position: fixed; bottom: 0; width: 100%; background-color: #333; color: white; text-align: center; padding: 10px; }
+</style>
+</head>
+<body onload="onPageLoad()">
+
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#trips">Trips</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div class="sidebar">
+    <a href="#search">Search</a>
+    <a href="#top-destinations">Top Destinations</a>
+    <a href="#offers">Special Offers</a>
+</div>
+
+<div class="content">
+    <h1>Welcome to Travel Explorer</h1>
+    <video width="320" height="240" controls onerror="videoError()">
+        <source src="path_to_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <audio controls onerror="audioError()">
+        <source src="path_to_audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="destination-details">
+        <!-- Destination details will be loaded here -->
+    </div>
+    <form id="trip-planner" onsubmit="planTrip(event)">
+        <!-- Inputs for trip planning -->
+        <input type="text" id="location" name="location" placeholder="Enter a location">
+        <input type="date" id="date" name="date">
+        <button type="submit">Plan My Trip</button>
+    </form>
+    <div id="trip-itinerary">
+        <!-- Generated trip plans will be displayed here -->
+    </div>
+</div>
+
+<div class="footer">
+    <p>Travel Explorer - Explore the world with us!</p>
+</div>
+
+<script>
+function onPageLoad() {
+    // Function called when page is loaded
+    console.log("Page is loaded");
+}
+
+function planTrip(event) {
+    event.preventDefault();
+    // Function called to plan a trip
+    const location = document.getElementById('location').value;
+    const date = document.getElementById('date').value;
+    // You can expand this function to generate trip itineraries
+    console.log(`Trip to ${location} on ${date} is planned.`);
+}
+
+function videoError() {
+    alert("The video could not be loaded.");
+}
+
+function audioError() {
+    alert("The audio could not be loaded.");
+}
+
+// Adding event listeners for interaction events
+document.addEventListener('mouseup', function(event) {
+    console.log('Mouse button released: ', event.button);
+});
+
+document.addEventListener('touchend', function(event) {
+    console.log('Touch end detected');
+});
+
+// You can implement other onerror event handlers for specific elements if needed
+// The same applies to ontouchend or other JS functionalities based on the website's need
+
+</script>
+
+</body>
+</html>

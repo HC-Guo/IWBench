@@ -1,0 +1,6 @@
+GITHUB_USERNAME="knediny"
+GITHUB_REPO="ImageStorage"
+GITHUB_PATH="Image2HTML-Benchmark"
+GITHUB_TOKEN="github_pat_xxxx"
+IMG_PLACEHOLDER = "https://picsum.photos/seed/picsum/200/300"
+OPENAI_API_KEY = "sk-xxx"

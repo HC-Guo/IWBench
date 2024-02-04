@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>健康与健身网站</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('background-pattern.jpg');
+}
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.sidebar {
+    float: left;
+    width: 200px;
+    background-color: #f2f2f2;
+    height: 100vh;
+    padding: 20px;
+}
+.content {
+    padding: 20px;
+    float: left;
+    width: calc(100% - 220px);
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.tab-content {
+    display: none;
+    padding: 20px;
+    border-top: none;
+}
+/* 更多的 CSS 样式可以根据需要添加 */
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#home" onclick="openTab(event, 'Home');">主页</a>
+    <a href="#health" onclick="openTab(event, 'Health');">健康饮食</a>
+    <a href="#fitness" onclick="openTab(event, 'Fitness');">锻炼计划</a>
+    <a href="#progress" onclick="openTab(event, 'Progress');">进度追踪</a>
+</div>
+
+<div class="sidebar">
+    <!-- 括号内为要包含的元素 -->
+    <!-- 导航栏 -->
+    <nav>
+        <a href="#home" onclick="openTab(event, 'Home');">首页</a>
+        <a href="#nutrition" onclick="openTab(event, 'Nutrition');">健康饮食</a>
+        <a href="#workouts" onclick="openTab(event, 'Workouts');">锻炼教程</a>
+        <a href="#track" onclick="openTab(event, 'Track');">健身跟踪</a>
+    </nav>
+</div>
+
+<div class="content" id="main-content">
+    <!-- 选项卡或折叠面板 -->
+    <div id="Home" class="tab-content">
+        <h2>欢迎来到健康与健身网站</h2>
+        <p>这里是您的最佳健身指南。</p>
+    </div>
+    <div id="Health" class="tab-content">
+        <h2>健康饮食建议</h2>
+        <!-- 这里添加具体内容 -->
+    </div>
+    <div id="Fitness" class="tab-content">
+        <h2>锻炼计划</h2>
+        <!-- 这里添加具体内容 -->
+    </div>
+    <div id="Progress" class="tab-content">
+        <h2>用户进度跟踪</h2>
+        <!-- 这里添加具体内容 -->
+    </div>
+</div>
+
+<div class="footer">
+<!-- 页脚 -->
+    <p>版权 © 2023 健康与健身网站</p>
+</div>
+
+<script>
+// JavaScript功能实现
+function openTab(evt, tabName) {
+    // 获取所有带 class="tab-content" 的元素并隐藏它们
+    let i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    // 获取所有带 class="navbar a" 的元素并删除它们的 "active" 类
+    tablinks = document.getElementsByClassName("navbar a");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    // 显示当前标签页，并添加 "active" 类到被点击的链接上
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+    // 防止默认点击事件
+    evt.preventDefault();
+}
+
+// 更多JavaScript功能可以根据需要添加
+document.getElementById('main-content').onscroll = function() {
+    // 滚动时触发的功能
+};
+
+// 其他指定的事件可以按照以下格式绑定:
+// element.onfocus = function() { /* 做一些东西 */ };
+// element.oncontextmenu = function() { /* 做一些东西 */ };
+// element.onerror = function() { /* 做一些东西 */ };
+// element.onmouseout = function() { /* 做一些东西 */ };
+// element.ondblclick = function() { /* 做一些东西 */ };
+// element.onmousedown = function() { /* 做一些东西 */ };
+</script>
+
+</body>
+</html>

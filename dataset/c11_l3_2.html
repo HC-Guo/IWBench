@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>健康与健身之路</title>
+<style>
+    /* CSS样式 */
+    body {
+        font-family: 'Arial', sans-serif;
+    }
+    .sidebar {
+        width: 250px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: #f4f4f4;
+        padding: 20px;
+    }
+    .main-content {
+        margin-left: 270px;
+        padding: 20px;
+    }
+    .breadcrumb {
+        background: #eee;
+        padding: 5px;
+        list-style: none;
+        overflow:hidden;
+        margin-top: 0;
+    }
+    .breadcrumb > li {
+        float: left;
+    }
+    .breadcrumb li+li:before {
+        content: ">";
+        padding: 0 5px;
+    }
+    .progress-container {
+        width: 100%;
+        background: #ddd;
+    }
+    .progress-bar {
+        height: 10px;
+        background: #4caf50;
+        width: 0%;
+    }
+    /* 模态窗口样式 */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; 
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+    }
+    /* 模态内容框 */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+    }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>健康与健身</h2>
+    <input type="search" id="search-bar" placeholder="搜索...">
+</div>
+
+<div class="main-content">
+    <ul class="breadcrumb">
+        <li>首页</li>
+        <li>健身计划</li>
+    </ul>
+
+    <h1>欢迎来到健康与健身之路</h1>
+    <p>在这里，你会找到最个性化的健康饮食建议、锻炼计划和丰富的视频教程。</p>
+
+    <button id="myBtn">打开视频库</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>健身视频教程</h2>
+            <p>观看我们精心准备的健身视频，跟随着锻炼吧！</p>
+            <!-- 这里可以通过JS动态加载视频 -->
+        </div>
+    </div>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <!-- 模拟一些进度条更新 -->
+    <!-- 用户信息和健身进展 -->
+    <!-- 这里可以插入具体的用户进展数据 -->
+
+    <!-- 评论区 -->
+    <div id="comments-section">
+        <h3>用户评论</h3>
+        <!-- 这里可以通过JS动态加载评论 -->
+    </div>
+</div>
+
+<script>
+// JavaScript 功能代码示例
+window.oncontextmenu = function(event) {
+    // 阻止默认的右键点击菜单
+    event.preventDefault();
+};
+
+window.onblur = function() {
+    console.log('Window is not in focus');
+};
+
+window.onfocus = function() {
+    console.log('Window is in focus');
+};
+
+window.onmousemove = function(event) {
+    // 可用于追踪鼠标移动，例如在游戏中
+};
+
+window.onunload = function() {
+    // 在用户离开页面时执行操作
+};
+
+document.getElementById('search-bar').oninput = function(event) {
+    // 在用户键入搜索栏时执行操作
+};
+
+document.getElementById('myBtn').onclick = function(event) {
+    // 点击打开模态框
+    document.getElementById('myModal').style.display = "block";
+};
+
+document.getElementsByClassName('close')[0].onclick = function() {
+    // 点击关闭模态框
+    document.getElementById('myModal').style.display = "none";
+};
+
+window.onclick = function(event) {
+    // 点击窗口外部关闭模态框
+    if (event.target == document.getElementById('myModal')) {
+        document.getElementById('myModal').style.display = "none";
+    }
+};
+
+// 假设的进度条更新函数
+function move() {
+    var elem = document.getElementById("myBar"); 
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width++; 
+            elem.style.width = width + '%'; 
+        }
+    }
+}
+// 在一些动作后调用move()来更新进度条
+
+// 表单提交
+document.getElementById('form').onsubmit = function(event) {
+    // 处理提交逻辑
+};
+
+// 表单数据变更
+document.getElementById('input').onchange = function(event) {
+    // 处理数据变更逻辑
+};
+</script>
+
+</body>
+</html>

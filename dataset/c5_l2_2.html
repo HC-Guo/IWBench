@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel & Food Experiences</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #ddd;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+        }
+        article {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+        .comments {
+            margin-top: 20px;
+            padding: 10px;
+        }
+        .comment-form input, .comment-form textarea {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel & Food Experiences</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#!">Home</a></li>
+            <li><a href="#!">About</a></li>
+            <li><a href="#!">Best Blogs</a></li>
+            <li><a href="#!">Contact</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h2>Travel Destination One</h2>
+        <p>Detailed introduction to the travel destination...</p>
+        <img src="https://picsum.photos/seed/picsum/600x400" alt="Image">
+        <p>Personal stories and travel tips...</p>
+    </article>
+    
+    <div class="comments">
+        <h3>Comments</h3>
+        <div id="comment-list">
+            <!-- Comments will be loaded here by JavaScript -->
+        </div>
+        <div class="comment-form">
+            <input type="text" id="name" placeholder="Your Name">
+            <textarea id="comment" placeholder="Enter your comment"></textarea>
+            <button type="button" id="submit-comment">Post Comment</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Travel & Food Experiences</p>
+    </footer>
+
+    <script>
+        // JavaScript functions for interactivity (submitting comments, etc.)
+        document.getElementById('submit-comment').addEventListener('click', function(){
+            // Code to handle the comment submission
+            alert('Comment submitted!'); // Placeholder action
+            // You would typically want to validate and then submit the comment to a server here.
+        });
+
+        // Other JS functions to be included as needed
+
+        // Example of a JS function to load "best blogs of the month"
+        // Currently, this is just a mock function with alert. In practice, you'll want to fetch this data from a server.
+        function loadBestBlogs() {
+            // fetch and display best blogs
+            alert('Loading best blogs of the month...');
+        }
+        
+        // Call the function on page load
+        loadBestBlogs();
+    </script>
+</body>
+</html>

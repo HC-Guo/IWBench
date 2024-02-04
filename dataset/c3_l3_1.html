@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Company Intranet</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  header, nav, section, footer { margin-bottom: 20px; }
+  nav ul { list-style: none; }
+  nav ul li { display: inline; margin-right: 10px; }
+  h1 { color: #333; }
+  .content { margin: 20px 0; }
+  .search-box { margin-bottom: 20px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Company Intranet</h1>
+  <nav>
+    <ul>
+      <li><a href="#news">Press Releases</a></li>
+      <li><a href="#directory">Employee Directory</a></li>
+      <li><a href="#forum">Internal Forum</a></li>
+      <li><a href="#workflow">Workflow Management</a></li>
+      <li><a href="#documents">Documents</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="news">
+  <h2>Press Releases</h2>
+  <!-- Dynamic press releases would be loaded here -->
+</section>
+
+<section id="directory">
+  <h2>Employee Directory</h2>
+  <div class="search-box">
+    <!-- Search box for the employee directory -->
+    <input type="text" id="directorySearch" placeholder="Search employees...">
+    <button onclick="searchDirectory()">Search</button>
+  </div>
+  <!-- Employee directory list would be loaded here -->
+</section>
+
+<section id="forum">
+  <h2>Internal Forum</h2>
+  <!-- Forum threads would be loaded here -->
+</section>
+
+<section id="workflow">
+  <h2>Workflow Management</h2>
+  <!-- Workflow management tools would be loaded here -->
+</section>
+
+<section id="documents">
+  <h2>Secure Document Sharing</h2>
+  <!-- Document sharing platform would be loaded here -->
+</section>
+
+<footer>
+  <p>&copy; 2023 Company Intranet</p>
+</footer>
+
+<script>
+// Placeholder JavaScript functions
+function searchDirectory() {
+  var input = document.getElementById('directorySearch').value;
+  alert('Search for ' + input);
+  // You would execute search logic here instead of an alert
+}
+// Additional JavaScript functions would be added here
+</script>
+</body>
+</html>

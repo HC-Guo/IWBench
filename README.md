@@ -1,8 +1,34 @@
-# Image2HTML-Benchmark
-[ICML 2024] Benchmark for Evaluating Large Language Models for Converting Images to HTML Code 
+# IW-Bench: Evaluating Large Multimodal Models for Converting Image-to-Web
+
+----
+
+## [🗂Project Page](https://iw-bench-page.vercel.app/) 
+<!-- | [![GitHub Repo Stars](https://img.shields.io/github/stars/HC-Guo/Image2HTML-Benchmark?label=stars&logo=github&color=brightgreen)](https://github.com/HC-Guo/Image2HTML-Benchmark) | [![arXiv](https://img.shields.io/badge/arXiv-xxxx-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/xxxx) -->
+
+# ✨Introduction
+👋 Welcome, this is a benchmark for evaluating large language models for Converting Images to HTML Code. 😊 We welcome everyone to participate and contribute 🌟. 
+
+# 🛠Environment
+We recommend using conda
+```
+conda create -n iwbench
+conda activate iwbench
+pip install -r requirements.txt
+```
+
+# 📈Evaluation
+<!-- code -->
+
+# 📊Result
+Accuracy scores on our IW-bench. Element Accuracy is employed to gauge the comprehensiveness of elements, while Layout Accuracy is utilized to evaluate the effectiveness of webpage layout. These metrics are categorized into three difficulty levels: simple, medium, and complex. Each level is accompanied by corresponding scores and contributes to the final overall average score.
+![image](document/result.png)
+
+# 🗓ToDO List
+✅ 1. Released version V1 of the dataset with 370 web pages.
+
+🔘 2. Released version V2 of the dataset, a total of 1000 web pages.
 
 
-👋 Welcome, this is a benchmark for evaluating large language models for Converting Images to HTML Code. 😊 We welcome everyone to participate and contribute 🌟.
 
 # Updates
 
@@ -24,10 +50,12 @@
 
 
 
-## Citation
+## 📜Citation
 
 Feel free to cite us if you like our work.
-
+```
+xxx
+```
 
 ## Contact
 

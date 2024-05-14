@@ -1,0 +1,55 @@
+CSS, and JavaScript.
+
+Here is an example of the HTML code for a simple table structure:
+```html
+<table>
+  <thead>
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Row 1, Column 1</td>
+      <td>Row 1, Column 2</td>
+      <td>Row 1, Column 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Column 1</td>
+      <td>Row 2, Column 2</td>
+      <td>Row 2, Column 3</td>
+    </tr>
+    <!-- Add more rows -->
+  </tbody>
+</table>
+```
+To style the table using CSS, you can add the following code:
+```css
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+```
+Finally, to add interactivity to the table using JavaScript, you can use the following code to make the table sortable:
+```javascript
+function sortTable(table, column) {
+  var sortDirection = "asc";
+  var tbody = table.getElementsByTagName("tbody")[0];
+  var rows = tbody.getElementsByTagName("tr");
+  for (var i = 0; i < rows.length; i++) {
+    var row = rows[i];
+    var cells = row.getElementsByTagName("td");
+    for (var j = 0; j < cells.length; j++) {
+      var cell = cells[j];

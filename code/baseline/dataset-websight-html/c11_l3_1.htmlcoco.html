@@ -1,0 +1,108 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#logo {
+    height: 30px;
+    width: 30px;
+    background-color: #999;
+}
+
+#search-form {
+    display: flex;
+}
+
+#search-input {
+    margin-right: 10px;
+}
+
+#sidebar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+.icon {
+    height: 10px;
+    width: 10px;
+    background-color: #999;
+    margin-bottom: 10px;
+}
+
+#content {
+    margin-left: 200px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.plan, .tutorial {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.plan h2, .tutorial h2 {
+    margin-bottom: 10px;
+}
+
+.plan button, .tutorial button {
+    margin-top: 10px;
+}
+</style>
+<body>
+    <div id="header">
+        <img src="logo.png" alt="Healthy Fitness" id="logo">
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div id="sidebar">
+        <div class="icon">1</div>
+        <div class="icon">2</div>
+        <div class="icon">3</div>
+        <div class="icon">4</div>
+        <div class="icon">5</div>
+        <div class="icon">6</div>
+        <div class="icon">7</div>
+        <div class="icon">8</div>
+        <div class="icon">9</div>
+        <div class="icon">10</div>
+        <div class="icon">11</div>
+        <div class="icon">12</div>
+        <div class="icon">13</div>
+    </div>
+    <div id="content">
+        <div class="plan">
+            <h2>Personalized Fitness Plan</h2>
+            <p>Create a personalized fitness plan based on your goals and fitness level.</p>
+            <button>Create Plan</button>
+        </div>
+        <div class="tutorial">
+            <h2>Exercise Video Tutorials</h2>
+            <p>Learn how to perform various exercises with our detailed video tutorials.</p>
+            <button>View Tutorials</button>
+        </div>
+    </div>
+</body>
+</html>

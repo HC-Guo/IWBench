@@ -1,0 +1,79 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#gallery img {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+}
+
+#about, #contact {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+<body>
+    <header>
+        <div id="logo">Photographer's Name</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Gallery</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="gallery">
+            <img src="image1.jpg" alt="Image">
+            <img src="image2.jpg" alt="Image">
+            <img src="image3.jpg" alt="Image">
+            <!-- Add more images as needed -->
+        </section>
+        <section id="about">
+            <h2>About the Photographer</h2>
+            <p>Professional background and artistic philosophy content goes here.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>Email: photographer@example.com</p>
+            <p>Phone: 123-456-7890</p>
+            <div id="social-media">
+                <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a>
+            </div>
+        </section>
+    </main>
+    <footer>© 2023 Photographer's Name</footer>
+</body>
+</html>

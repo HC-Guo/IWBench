@@ -1,0 +1,48 @@
+background.
+
+The corresponding web code for this login form could be written in HTML and CSS as follows:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<style>
+		body {
+			background-color: white;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 0 auto;
+			max-width: 400px;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		label {
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+		input[type="text"], input[type="password"] {
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 20px;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label for="username">用户名</label>
+		<input type="text" id="username" name="username" required>
+
+		<label for="password">密码</label>
+		<input type="password" id="password" name="password" required>
+
+		<button type="submit">登录</button>
+	</form>
+</body>
+</html>
+```
+This code will create a login form with a username field, a password field, and a submit button. The form will be displayed on a white background, and the fields will have a border and padding. The labels for the fields will be displayed above the fields, and the form will be centered on the page.

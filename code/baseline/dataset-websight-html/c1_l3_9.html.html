@@ -1,0 +1,66 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.about, .contact, .social {
+    margin: 50px auto;
+    width: 30%;
+    text-align: center;
+}
+</style>
+<body>
+    <div class="navbar">
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="gallery" id="gallery">
+        <img src="image1.jpg" alt="Image">
+        <img src="image2.jpg" alt="Image">
+        <img src="image3.jpg" alt="Image">
+        <!-- Add more images as needed -->
+    </div>
+    <div class="about" id="about">
+        <h1>About the Photographer</h1>
+        <p>Professional background summary and details go here.</p>
+        <p>Artistic philosophy summary and details go here.</p>
+    </div>
+    <div class="contact" id="contact">
+        <h2>Contact Information</h2>
+        <p>Email: photographer@example.com</p>
+        <p>Phone: 123-456-7890</p>
+    </div>
+    <div class="social">
+        <h2>Follow Me</h2>
+        <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+    </div>
+</body>
+</html>

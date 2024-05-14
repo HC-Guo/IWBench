@@ -1,0 +1,40 @@
+corresponding web code, you would need to create an HTML file with the following structure:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<style>
+		body {
+			background-color: white;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		.green-line {
+			position: horizontal;
+			width: 100%;
+			height: 100%;
+			background-color: green;
+			z-index: 1;
+		}
+		.pink-line {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: pink;
+			z-index: 2;
+		}
+	</style>
+</head>
+<body>
+	<div class="green-line"></div>
+	<div class="pink-line"></div>
+	<div class="foreign-text">
+		<p>Foreign text goes here</p>
+	</div>
+</body>
+</html>
+```
+This code creates a simple HTML page with a white background, a green horizontal line, a pink vertical line, and some foreign text. You can replace the "Foreign text goes here" section with your desired foreign text.

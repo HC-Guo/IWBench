@@ -42,7 +42,7 @@ httpx==0.13.3
 hyperframe==5.2.0
 idna==2.10
 inquirer==3.2.2
-ipython==8.20.0
+ipython==8.13.0
 jedi==0.19.1
 loguru==0.7.2
 lxml==5.0.0

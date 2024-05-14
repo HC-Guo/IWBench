@@ -1,0 +1,119 @@
+<html>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #00478A;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin: 20px;
+}
+
+.course, .resource, .forum {
+    margin: 10px 0;
+}
+
+.course::before, .resource::before, .forum::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #00478A;
+}
+
+.course::before {
+    color: #AED6F1;
+}
+
+.resource::before {
+    color: #AED6F1;
+}
+
+.forum::before {
+    color: #AED6F1;
+}
+
+.course::after, .resource::after, .forum::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #00478A;
+}
+
+.course::after {
+    color: #AED6F1;
+}
+
+.resource::after {
+    color: #AED6F1;
+}
+
+.forum::after {
+    color: #AED6F1;
+}
+</style>
+<body>
+    <header>
+        <h1>Welcome to EduPlatform</h1>
+        <p>Learn programming online and advance your career</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#forum">Forum</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="courses">
+            <h2>Featured Programming Courses</h2>
+            <div class="course">Course 1</div>
+            <div class="course">Course 2</div>
+            <div class="course">Course 3</div>
+        </section>
+        <section id="resources">
+            <h2>Resources</h2>
+            <div class="resource">Resource 1</div>
+            <div class="resource">Resource 2</div>
+            <div class="resource">Resource 3</div>
+        </section>
+        <section id="forum">
+            <h2>Community Forum</h2>
+            <div class="forum">Forum 1</div>
+            <div class="forum">Forum 2</div>
+            <div class="forum">Forum 3</div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 EduPlatform</p>
+    </footer>
+</body>
+</html>

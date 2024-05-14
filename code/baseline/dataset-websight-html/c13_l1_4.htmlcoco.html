@@ -1,0 +1,158 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 16px;
+}
+
+.timeline {
+    margin: 0 auto;
+}
+
+.timeline .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline .container::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    right: -17px;
+    background-color: #4CAF50;
+    top: 0;
+}
+
+.timeline .container.left {
+    left: 0;
+}
+
+.timeline .container.right {
+    left: 50%;
+}
+
+.timeline .container.right::after {
+    left: -16px;
+}
+
+.timeline .container.left::after {
+    right: -15px;
+}
+
+.timeline .container.left::after {
+    background-color: #9C27B0;
+}
+
+.timeline .container.right::after {
+    background-color: #3F51B5;
+}
+
+.timeline .container.left::after {
+    background-color: #2196F3;
+}
+</style>
+<body>
+    <div class="navbar">
+        <a href="#home">首頁</a>
+        <a href="#about">關於</a>
+        <a href="#contact">聯繫信息</a>
+    </div>
+    <div class="sidebar">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a>
+        <a href="#">10</a>
+        <a href="#">11</a>
+        <a href="#">12</a>
+        <a href="#">13</a>
+        <a href="#">14</a>
+        <a href="#">15</a>
+        <a href="#">16</a>
+        <a href="#">17</a>
+        <a href="#">18</a>
+        <a href="#">19</a>
+        <a href="#">20</a>
+        <a href="#">21</a>
+        <a href="#">22</a>
+        <a href="#">23</a>
+        <a href="#">24</a>
+    </div>
+    <div class="content">
+        <h1>首頁</h1>
+        <p>這是首頁的內容。</p>
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h2>2015</h2>
+                    <p>這是2015年的時間線。</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>2016</h2>
+                    <p>這是2016年的時間線。</p>
+                </div>
+            </div>
+            <!-- Add more timeline items as needed -->
+        </div>
+    </div>
+</body>
+</html>

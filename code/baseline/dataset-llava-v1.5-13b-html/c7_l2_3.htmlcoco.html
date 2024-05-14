@@ -1,0 +1,37 @@
+"View" option is on the right side. The menu bar is displayed in a black background, and the screen is empty, with no content visible.
+
+To generate the corresponding web code for this image, you would need to create an HTML file with a `<nav>` element containing the menu bar. The `<nav>` element should have a class or an ID to style it with CSS. Inside the `<nav>` element, you would add three `<a>` elements for each menu option, with the appropriate text and CSS styles. The `<a>` elements should have `href` attributes pointing to the corresponding pages or functions.
+
+Here's an example of the web code:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu Bar Example</title>
+  <style>
+    nav {
+      background-color: black;
+      color: white;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+      margin: 5px;
+    }
+    nav a:hover {
+      background-color: gray;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">File</a>
+    <a href="#">Edit</a>
+    <a href="#">View</a>
+  </nav>
+</body>
+</html>
+```
+This code creates a simple menu bar with the three options "File," "Edit," and "View." The CSS styles are applied to the `<nav>` and `<a>` elements to achieve the desired appearance.

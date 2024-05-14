@@ -1,0 +1,85 @@
+<html>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header, .dashboard, .news, .emergencies {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.emergencies {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-item, .dashboard-item, .news-item, .emergency-item {
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+}
+
+.header-item {
+    color: #ff0066;
+}
+
+.dashboard-item {
+    color: #00ff00;
+}
+
+.news-item {
+    color: #006600;
+}
+
+.emergency-item {
+    color: #ffff00;
+}
+</style>
+<body>
+    <div class="header">
+        <h1>Your Local News</h1>
+        <input type="text" placeholder="Search">
+    </div>
+    <div class="dashboard">
+        <h2>Custom Dashboard</h2>
+        <div class="dashboard-item">1</div>
+        <div class="dashboard-item">2</div>
+        <div class="dashboard-item">3</div>
+    </div>
+    <div class="news">
+        <h2>Latest News</h2>
+        <div class="news-item">
+            <h3>Story 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="news-item">
+            <h3>Story 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    <div class="emergencies">
+        <h2>Emergencies</h2>
+        <div class="emergency-item">1</div>
+        <div class="emergency-item">2</div>
+    </div>
+</body>
+</html>

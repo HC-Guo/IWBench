@@ -1,0 +1,169 @@
+<html>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+}
+
+#search input {
+    margin-right: 10px;
+}
+
+#workout {
+    display: flex;
+    flex-direction: column;
+}
+
+#workout .plan {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#workout .plan .plan-name {
+    width: 20%;
+    background-color: #6c757d;
+    color: #fff;
+}
+
+#workout .plan .plan-description {
+    width: 80%;
+    background-color: #6c757d;
+    color: #fff;
+}
+
+#advice {
+    display: flex;
+    flex-direction: column;
+}
+
+#advice .advice {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#advice .advice .advice-name {
+    width: 20%;
+    background-color: #6c757d;
+    color: #fff;
+}
+
+#advice .advice .advice-description {
+    width: 80%;
+    background-color: #6c757d;
+    color: #fff;
+}
+
+#progress {
+    display: flex;
+    flex-direction: column;
+}
+
+#progress .progress-tracker {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#progress .progress-tracker .tracker-name {
+    width: 20%;
+    background-color: #6c757d;
+    color: #fff;
+}
+
+#progress .progress-tracker .tracker-progress {
+    width: 80%;
+    background-color: #6c757d;
+    color: #fff;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Workout Plans</a>
+            <a href="#">Diet Advice</a>
+            <a href="#">Track Your Progress</a>
+        </nav>
+    </header>
+    <main>
+        <section id="search">
+            <form>
+                <input type="text" placeholder="Search for plans">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section id="workout">
+            <div class="plan">
+                <div class="plan-name">1</div>
+                <div class="plan-description">This is a plan designed for beginners.</div>
+            </div>
+            <div class="plan">
+                <div class="plan-name">2</div>
+                <div class="plan-description">This plan is designed for those who want to build muscle fast.</div>
+            </div>
+            <div class="plan">
+                <div class="plan-name">3</div>
+                <div class="plan-description">This plan is for seasoned fitness enthusiasts.</div>
+            </div>
+        </section>
+        <section id="advice">
+            <h2>Diet Advice</h2>
+            <div class="advice">
+                <div class="advice-name">1</div>
+                <div class="advice-description">This is a tip for those who want to eat healthy.</div>
+            </div>
+            <div class="advice">
+                <div class="advice-name">2</div>
+                <div class="advice-description">This is a tip for those who want to eat less.</div>
+            </div>
+        </section>
+        <section id="progress">
+            <h2>Track Your Progress</h2>
+            <div class="progress-tracker">
+                <div class="tracker-name">Weight</div>
+                <div class="tracker-progress">10</div>
+            </div>
+            <div class="progress-tracker">
+                <div class="tracker-name">Calorie</div>
+                <div class="tracker-progress">10</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 Health & Fitness</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<html>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid blue;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav a {
+    color: blue;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    color: green;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+form input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid blue;
+}
+
+form button {
+    padding: 5px;
+    border: none;
+    background-color: yellow;
+    color: blue;
+}
+
+main {
+    margin-top: 50px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid blue;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">Sports</a>
+            <a href="#">Weather</a>
+            <a href="#">Technology</a>
+        </nav>
+        <form>
+            <input type="text" placeholder="Search news by keyword">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <main>
+        <h1>Your Local News</h1>
+        <p>Stay informed with the latest local news. Check out our website for the latest updates.</p>
+    </main>
+    <footer>
+        <p>© 2023 Your Local News. All rights reserved.</p>
+    </footer>
+</body>
+</html>

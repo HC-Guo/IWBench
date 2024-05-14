@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Users and Posts</title>
+</head>
+<body>
+<h1>Users and Posts</h1>
+<h2>New Post</h2>
+<form action="/submit_post" method="POST" enctype="multipart/form-data">
+  <label for="title">Title:</label><br>
+  <input type="text" id="title" name="title"><br>
+  <label for="content">Content:</label><br>
+  <textarea id="content" name="content"></textarea><br>
+  <label for="image">Image:</label><br>
+  <input type="file" id="image" name="image"><br>
+  <input type="submit" value="Submit">
+</form>
+<h2>Existing Posts</h2>
+{% for post in site.posts %}
+  <div>
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.content }}</p>
+    <img src="{{ post.image }}" alt="{{ post.title }}">
+    <p>{{ post.user.name }} - {{ post.user.description }}</p>
+    <p>{{ post.date | date:"%B %d, %Y" }}</p>
+    <a href="{{ post.url }}">Read More</a>
+  </div>
+{% endfor %}
+</body>
+</html>

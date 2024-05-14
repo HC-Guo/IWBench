@@ -1,0 +1,75 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+section {
+    margin: 2em;
+}
+
+#gallery, #about, #contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#gallery img, #about p, #contact form {
+    margin: 1em;
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+}
+</style>
+<body>
+    <header>
+        <h1>Photographer's Portfolio</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="gallery">
+        <!-- Gallery images will be here -->
+    </section>
+    <section id="about">
+        <h2>About the Photographer</h2>
+        <!-- About paragraph will be here -->
+    </section>
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <!-- Contact form will be here -->
+    </section>
+    <footer>
+        <p>&copy; 2023 Photographer's Name</p>
+    </footer>
+</body>
+</html>

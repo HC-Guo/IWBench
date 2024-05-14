@@ -1,0 +1,118 @@
+<html>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.photographer-info, .contact-info, .social-media {
+    border: 1px dashed #333;
+    padding: 10px;
+}
+
+.photographer-info {
+    color: #333;
+}
+
+.contact-info {
+    color: #333;
+}
+
+.social-media {
+    color: #333;
+}
+
+.photographer-info img, .contact-info img, .social-media img {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #333;
+}
+
+.photographer-info img:nth-child(odd) {
+    background-color: #f44336;
+}
+
+.contact-info img:nth-child(odd) {
+    background-color: #4caf50;
+}
+
+.social-media img:nth-child(odd) {
+    background-color: #2196f3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+</style>
+<body>
+    <header>
+        <h1>Photographer's Portfolio</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="photographer-info">
+            <h2>About the Photographer</h2>
+            <p>[Professional background and artistic philosophy]</p>
+            <img src="photographer1.jpg" alt="Photographer 1 Image">
+            <img src="photographer2.jpg" alt="Photographer 2 Image">
+            <img src="photographer3.jpg" alt="Photographer 3 Image">
+        </section>
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>[Contact details]</p>
+            <img src="contact.jpg" alt="Contact Image">
+        </section>
+        <section class="social-media">
+            <h2>Follow Me</h2>
+            <a href="#"><img src="facebook.jpg" alt="Facebook"></a>
+            <a href="#"><img src="instagram.jpg" alt="Instagram"></a>
+            <a href="#"><img src="twitter.jpg" alt="Twitter"></a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Photographer's Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

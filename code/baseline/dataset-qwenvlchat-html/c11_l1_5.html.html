@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健身与健康网站</title>
+</head>
+<body>
+    <h1>健身与健康网站</h1>
+    <p>你将能够制作你的健身计划，记录饮食和锻炼情况。</p>
+    <form>
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">邮箱:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">电话:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="plan">健身计划:</label>
+        <select id="plan" name="plan" required>
+            <option value="0">请选择</option>
+            <option value="1">健身计划1</option>
+            <option value="2">健身计划2</option>
+        </select>
+        <button type="submit">提交</button>
+    </form>
+    <p>你的健身计划将被保存在这里:</p>
+    <ul>
+        <li>健身计划: {{ plan }}</li>
+        <li>体重: {{ weight }}</li>
+        <li>身高: {{ height }}</li>
+    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core"></script>
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const name = document.querySelector('#name').value;
+            const email = document.querySelector('#email').value;
+            const phone = document.querySelector('#phone').value;
+            const plan = document.querySelector('#plan').value;
+            if (plan === '0') {
+                alert('请选择健身计划');
+                return;
+            }
+            fetch('/api/fitness-plan', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name,
+                    email,
+                    phone,
+                    plan,
+                }),
+            }).then(() => {
+                alert('健身计划已成功提交');
+            });
+        });
+    </script>
+</body>
+</html>

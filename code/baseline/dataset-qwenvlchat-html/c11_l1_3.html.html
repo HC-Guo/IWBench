@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageとImageMagick</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gijgo@3.1.0/css/gijgo.min.css" type="text/css">
+</head>
+<body>
+    <h1>ImageとImageMagick</h1>
+    <p>这是第一段文字。</p>
+    <p>这是第二段文字。</p>
+    <img src="https://cdn.jsdelivr.net/npm/gijgo@3.1.0/img/jigsaw.png" alt="Jigsaw" width="200">
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@3.1.0/js/gijgo.min.js"></script>
+    <script>
+        var image = new Image();
+        image.src = "https://cdn.jsdelivr.net/npm/gijgo@3.1.0/img/jigsaw.png";
+        image.onload = function() {
+            var image = new Image();
+            image.src = "https://cdn.jsdelivr.net/npm/gijgo@3.1.0/img/puzzle.png";
+            image.onload = function() {
+                var image = new Image();
+                image.src = "https://cdn.jsdelivr.net/npm/gijgo@3.1.0/img/earth.png";
+                image.onload = function() {
+                    var image = new Image();
+                    image.src = "https://cdn.jsdelivr.net/npm/gijgo@3.1.0/img/space.png";
+                    image.onload = function() {
+                        var image = new Image();
+                        image.src = "https://cdn.jsdelivr.net/npm/gijgo@3.1.0/img/sun.png";
+                        image.onload = function() {
+                            var image = new Image();
+                            image.src = "https://cdn.jsdelivr.net/npm/gijgo@3.1.0/img/moon.png";
+                            image.onload = function() {
+                                var image = new Image();
+                                image.src = "https://cdn.jsdelivr.net/npm/gijgo@3.1.0/img/heart.png";
+                                image.onload = function() {
+                                    var image = new Image();
+                                    image.src = "https://cdn.jsdelivr.net/npm/gijgo@3.1.0/img/clock.png";
+                                    image.onload = function() {

@@ -1,0 +1,106 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    background: linear-gradient(to right, #e63946, #d32f2f);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 3em;
+}
+
+.header-button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.portfolio, .contact {
+    padding: 20px;
+    background-color: #ececec;
+}
+
+.portfolio-title, .contact-title {
+    text-align: center;
+    font-size: 2em;
+}
+
+.portfolio-item, .contact-item {
+    width: 33.33%;
+    float: left;
+    padding: 20px;
+}
+
+.portfolio-item img, .contact-item img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-form {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #ececec;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    font-size: 1em;
+}
+
+.contact-form button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+}
+</style>
+<body>
+    <div class="header">
+        <p class="header-title">John Smith</p>
+        <a href="#portfolio" class="header-button">View Portfolio</a>
+        <a href="#contact" class="header-button">Hire Me</a>
+    </div>
+    <div class="portfolio" id="portfolio">
+        <p class="portfolio-title">I can help.</p>
+        <div class="portfolio-item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Praesent vitae diam vitae libero ultrices pharetra. Aenean faucibus nibh et justo cursus lorem id rutrum. Nunc ut sem sit amet.</p>
+            <img src="https://via.placeholder.com/350x150?text=WEB+DESIGN" alt="Web Design">
+        </div>
+        <div class="portfolio-item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Praesent vitae diam vitae libero ultrices pharetra. Aenean faucibus nibh et justo cursus lorem id rutrum. Nunc ut sem sit amet.</p>
+            <img src="https://via.placeholder.com/350x150?text=UI+DESIGN" alt="UI Design">
+        </div>
+        <div class="portfolio-item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Praesent vitae diam vitae libero ultrices pharetra. Aenean faucibus nibh et justo cursus lorem id rutrum. Nunc ut sem sit amet.</p>
+            <img src="https://via.placeholder.com/350x150?text=MOBILE+APPS" alt="Mobile Apps">
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <p class="contact-title">Hire me</p>
+        <p>Let's work together. Submit your details in this form and I will get back to you as soon as possible.</p>
+        <div class="contact-form">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email Address">
+            <textarea placeholder="Message"></textarea>
+            <button>Send</button>
+        </div>
+    </div>
+</body>
+</html>

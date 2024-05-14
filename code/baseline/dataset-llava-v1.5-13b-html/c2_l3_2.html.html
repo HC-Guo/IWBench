@@ -1,0 +1,18 @@
+1>Local News & Weather Dashboard</h1>
+	<p>Latest News:</p>
+	<p>Latest Weather:</p>
+	<p>Search News:</p>
+	<input type="text" id="search-input">
+	<button onclick="searchNews()">Search</button>
+	<script>
+		function searchNews() {
+			const searchInput = document.getElementById("search-input");
+			const searchTerm = searchInput.value;
+			const searchUrl = `https://www.google.com/search?q=${searchTerm}`;
+			window.open(searchUrl, "_blank");
+		}
+	</script>
+</body>
+</html>
+```
+This code creates a simple web page with a title, two paragraphs, and a search input field. When the user clicks the "Search" button, the search term entered in the input field is used to open a new browser tab with a Google search for that term.

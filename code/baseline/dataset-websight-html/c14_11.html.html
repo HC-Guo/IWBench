@@ -1,0 +1,86 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #FFF;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    background-color: #FFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.product-image {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+.product-title {
+    color: #000;
+    font-size: 20px;
+}
+
+.product-description {
+    color: #222;
+    font-size: 16px;
+}
+
+.add-to-cart {
+    background-color: #DDD;
+    color: #000;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+</style>
+<body>
+    <div class="header">
+        <h1>NextJ's and Azure Database for MySQL Quickstart</h1>
+        <p>Shop from the hottest items in the world 🔥</p>
+    </div>
+    <div class="product-container">
+        <div class="product">
+            <img src="https://source.unsplash.com/random" alt="Image">
+            <h2 class="product-title">Cool helmet.</h2>
+            <p class="product-description">A nice helmet to wear on your head</p>
+            <p class="price">$19.95</p>
+            <a href="#" class="add-to-cart">Hats</a>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/random" alt="Image">
+            <h2 class="product-title">Grey T-Shirt</h2>
+            <p class="product-description">A nice shirt that you can wear on your body</p>
+            <p class="price">$22.95</p>
+            <a href="#" class="add-to-cart">Shirts</a>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/random" alt="Image">
+            <h2 class="product-title">Sweatshirt</h2>
+            <p class="product-description">Cool sweatshirt that you can wear on your body</p>
+            <p class="price">$12.95</p>
+            <a href="#" class="add-to-cart">Shirts</a>
+        </div>
+    </div>
+</body>
+</html>

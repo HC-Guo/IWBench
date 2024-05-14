@@ -1,0 +1,86 @@
+<html>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.gallery img {
+    margin: 8px;
+    vertical-align: top;
+    width: 100%;
+}
+</style>
+<body>
+    <header>
+        <h1>Photographer Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="gallery-item"><div style="background-color: #6c5ce7;">1</div></div>
+            <div class="gallery-item"><div style="background-color: #c2185b;">2</div></div>
+            <div class="gallery-item"><div style="background-color: #28a745;">3</div></div>
+            <div class="gallery-item"><div style="background-color: #6c5ce7;">4</div></div>
+            <div class="gallery-item"><div style="background-color: #c2185b;">5</div></div>
+            <div class="gallery-item"><div style="background-color: #28a745;">6</div></div>
+            <div class="gallery-item"><div style="background-color: #6c5ce7;">7</div></div>
+            <div class="gallery-item"><div style="background-color: #c2185b;">8</div></div>
+            <div class="gallery-item"><div style="background-color: #28a745;">9</div></div>
+            <div class="gallery-item"><div style="background-color: #6c5ce7;">10</div></div>
+        </div>
+    </main>
+    <footer>
+        <p>© Photographer's Name - All rights reserved</p>
+    </footer>
+</body>
+</html>

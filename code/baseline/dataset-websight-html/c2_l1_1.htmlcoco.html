@@ -1,0 +1,100 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.breaking-news, .search-bar, .weather, .customizable {
+    border: 1px dashed;
+    margin: 5px;
+}
+
+.breaking-news {
+    background-color: #f2f2f2;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+.search-bar button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+}
+
+.weather {
+    background-color: #e6e6e6;
+}
+
+.customizable .option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+}
+
+.customizable .option .active {
+    background-color: #666;
+    color: #fff;
+}
+</style>
+<body>
+    <header>Geo-Targeted News Website</header>
+    <main>
+        <section class="breaking-news">
+            <div class="news">
+                <div class="news-item">
+                    <div class="news-number">1</div>
+                    <div class="news-text">Breaking News: Example headline...</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-number">2</div>
+                    <div class="news-text">Breaking News: Example headline...</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-number">3</div>
+                    <div class="news-text">Breaking News: Example headline...</div>
+                </div>
+            </div>
+        </section>
+        <section class="search-bar">
+            <input type="text" placeholder="Search news...">
+            <button>Search</button>
+        </section>
+        <section class="weather">
+            <div class="weather-item">
+                <div class="weather-day">Weather: Sunny, 75°F...</div>
+            </div>
+        </section>
+        <section class="customizable">
+            <div class="option">
+                <div class="option-number">10</div>
+                <div class="option-text">Customizable content...</div>
+            </div>
+        </section>
+    </main>
+    <footer>2023 © Geo-Targeted News Website</footer>
+</body>
+</html>

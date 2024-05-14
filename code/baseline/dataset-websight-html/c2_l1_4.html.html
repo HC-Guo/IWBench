@@ -1,0 +1,90 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #dc3545;
+    padding: 10px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    margin: 20px;
+}
+
+#news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.news-item {
+    background-color: #6c757d;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    width: calc(33.33% - 20px);
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#search-form input, #search-form select {
+    padding: 5px;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+<body>
+    <header>
+        <h1>Local News Dashboard</h1>
+    </header>
+    <nav>
+        <a href="#">Breaking News Item 1</a>
+        <a href="#">Breaking News Item 2</a>
+    </nav>
+    <main>
+        <form id="search-form">
+            <input type="text" id="keyword" placeholder="Keyword">
+            <input type="date" id="date" placeholder="Date">
+            <select id="category">
+                <option value="all">All Categories</option>
+                <option value="politics">Politics</option>
+                <option value="business">Business</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+        <div id="news-container">
+            <div class="news-item">Weather Widget: Sunny, 23°C</div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 Local News Dashboard</p>
+    </footer>
+</body>
+</html>

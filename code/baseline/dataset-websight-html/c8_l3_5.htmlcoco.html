@@ -1,0 +1,654 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.news-item, .news-item img {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+}
+
+.news-item h2 {
+    color: #333;
+}
+
+.news-item p {
+    color: #666;
+}
+
+.social-icon {
+    color: #3b5998;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #55acee;
+}
+
+.social-icon:active {
+    color: #77b9ff;
+}
+
+.social-icon:visited {
+    color: #9b59b6;
+}
+
+.social-icon:link {
+    color: #c0392b;
+}
+
+.social-icon:target {
+    color: #e74c3c;
+}
+
+.social-icon:checked {
+    color: #27ae60;
+}
+
+.social-icon:not-checked {
+    color: #1abc9c;
+}
+
+.social-icon:focus {
+    color: #3498db;
+}
+
+.social-icon:hover {
+    color: #2ecc71;
+}
+
+.social-icon:active {
+    color: #34495e;
+}
+
+.social-icon:visited {
+    color: #9b59b6;
+}
+
+.social-icon:link {
+    color: #c0392b;
+}
+
+.social-icon:target {
+    color: #e74c3c;
+}
+
+.social-icon:checked {
+    color: #27ae60;
+}
+
+.social-icon:not-checked {
+    color: #1abc9c;
+}
+
+.social-icon:focus {
+    color: #3498db;
+}
+
+.social-icon:hover {
+    color: #2ecc71;
+}
+
+.social-icon:active {
+    color: #34495e;
+}
+
+.social-icon:visited {
+    color: #9b59b6;
+}
+
+.social-icon:link {
+    color: #c0392b;
+}
+
+.social-icon:target {
+    color: #e74c3c;
+}
+
+.social-icon:checked {
+    color: #27ae60;
+}
+
+.social-icon:not-checked {
+    color: #1abc9c;
+}
+
+.social-icon:focus {
+    color: #3498db;
+}
+
+.social-icon:hover {
+    color: #2ecc71;
+}
+
+.social-icon:active {
+    color: #34495e;
+}
+
+.social-icon:visited {
+    color: #9b59b6;
+}
+
+.social-icon:link {
+    color: #c0392b;
+}
+
+.social-icon:target {
+    color: #e74c3c;
+}
+
+.social-icon:checked {
+    color: #27ae60;
+}
+
+.social-icon:not-checked {
+    color: #1abc9c;
+}
+
+.social-icon:focus {
+    color: #3498db;
+}
+
+.social-icon:hover {
+    color: #2ecc71;
+}
+
+.social-icon:active {
+    color: #34495e;
+}
+
+.social-icon:visited {
+    color: #9b59b6;
+}
+
+.social-icon:link {
+    color: #c0392b;
+}
+
+.social-icon:target {
+    color: #e74c3c;
+}
+
+.social-icon:checked {
+    color: #27ae60;
+}
+
+.social-icon:not-checked {
+    color: #1abc9c;
+}
+
+.social-icon:focus {
+    color: #3498db;
+}
+
+.social-icon:hover {
+    color: #2ecc71;
+}
+
+.social-icon:active {
+    color: #34495e;
+}
+
+.social-icon:visited {
+    color: #9b59b6;
+}
+
+.social-icon:link {
+    color: #c0392b;
+}
+
+.social-icon:target {
+    color: #e74c3c;
+}
+
+.social-icon:checked {
+    color: #27ae60;
+}
+
+.social-icon:not-checked {
+    color: #16a085;
+}
+
+.social-icon:focus {
+    color: #3498db;
+}
+
+.social-icon:hover {
+    color: #2ecc71;
+}
+
+.social-icon:active {
+    color: #34495e;
+}
+
+.social-icon:visited {
+    color: #9b59b6;
+}
+
+.social-icon:link {
+    color: #c0392b;
+}
+
+.social-icon:target {
+    color: #e74c3c;
+}
+
+.social-icon:checked {
+    color: #27ae60;
+}
+
+.social-icon:not-checked {
+    color: #16a085;
+}
+
+.social-icon:focus {
+    color: #3498db;
+}
+
+.social-icon:hover {
+    color: #2ecc71;
+}
+
+.social-icon:active {
+    color: #34495e;
+}
+
+.social-icon>:visited {
+    color: #9b59b6;
+}
+
+.social-icon>:link {
+    color: #c0392b;
+}
+
+.social-icon>:target {
+    color: #e74c3c;
+}
+
+.social-icon>:checked {
+    color: #27ae60;
+}
+
+.social-icon>:not-checked {
+    color: #16a085;
+}
+
+.social-icon>:focus {
+    color: #34985;
+}
+
+.social-icon>:hover {
+    color: #2ecc71;
+}
+
+.social-icon>:active {
+    color: #34495e;
+}
+
+.social-icon>:visited {
+    color: "#9b59b6";
+}
+
+.social-icon>:link {
+    color: "#c0392b";
+}
+
+.social-icon>:target {
+    color: "#e74c3c";
+}
+
+.social-icon>:checked {
+    color: "#27ae60";
+}
+
+.social-icon>:focus {
+    color: "#34985";
+}
+
+.social-icon>:hover {
+    color: "#2ecc71";
+}
+
+.social-icon>:active {
+    color: "#34985";
+}
+
+.social-icon>:visited {
+    color: "#9b59b6";
+}
+
+.social-icon>:link {
+    color: "#c0392b";
+}
+
+.social-icon>:target {
+    color: "#e74c3c";
+}
+
+.social-icon>:checked {
+    color: "#27ae60";
+}
+
+.social-icon>:focus {
+    color: "#34985";
+}
+
+.social-icon>:hover {
+    color: "#2ecc71";
+}
+
+.social-icon>:active {
+    color: "#34985";
+}
+
+.social-icon>:visited {
+    color: "#9b59b6";
+}
+
+.social-icon>:link {
+    color: "#c0392b";
+}
+
+.social-icon>:target {
+    color: "#e74c3c";
+}
+
+.social-icon>:checked {
+    color: "#27ae60";
+}
+
+.social-icon>:focus {
+    color: "#34985";
+}
+
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+
+.social-icon>:active {
+    color: "#34985";
+}
+
+.social-icon>:visited {
+    color: "#9b59b6";
+}
+
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+
+.social-icon>:active {
+    color: "#34985";
+}
+
+.social-icon>:focus {
+    color: "#34985";
+}
+
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+
+.social-icon>:active {
+    color: "#34985";
+}
+
+.social-icon>:VISited {
+    color: "#9b59b6";
+}
+
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#34985";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#34985";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#34985";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:hover {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71";
+}
+.social-icon>:↵ {
+    color: "#2﻿cc71

@@ -1,0 +1,561 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.timeline-item:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+.timeline-item:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+.timeline-item-icon {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+.icon-1 {
+    background-color: #3498db;
+}
+
+.icon-2 {
+    background-color: #2ecc71;
+}
+
+.icon-3 {
+    background-color: #9b59b6;
+}
+
+.icon-4 {
+    background-color: #e74c3c;
+}
+
+.icon-5 {
+    background-color: #7f8c8d;
+}
+
+.icon-6 {
+    background-color: #95a5a6;
+}
+
+.icon-7 {
+    background-color: #3498db;
+}
+
+.icon-8 {
+    background-color: #2ecc71;
+}
+
+.icon-9 {
+    background-color: #9b59b6;
+}
+
+.icon-10 {
+    background-color: #e74c3c;
+}
+
+.icon-11 {
+    background-color: #3498db;
+}
+
+.icon-12 {
+    background-color: #2ecc71;
+}
+
+.icon-13 {
+    background-color: #9b59b6;
+}
+
+.icon-14 {
+    background-color: #e74c3c;
+}
+
+.icon-15 {
+    background-color: #3498db;
+}
+
+.icon-16 {
+    background-color: #2ecc71;
+}
+
+.icon-17 {
+    background-color: #9b59b6;
+}
+
+.icon-18 {
+    background-color: #e74c3c;
+}
+
+.icon-19 {
+    background-color: #3498db;
+}
+
+.icon-20 {
+    background-color: #2ecc71;
+}
+
+.icon-21 {
+    background-color: #9b59b6;
+}
+
+.icon-22 {
+    background-color: #e74c3c;
+}
+
+.icon-23 {
+    background-color: #3498db;
+}
+
+.icon-24 {
+    background-color: #2ecc71;
+}
+
+.icon-25 {
+    background-color: #9b59b6;
+}
+
+.icon-26 {
+    background-color: #e74c3c;
+}
+
+.icon-27 {
+    background-color: #3498db;
+}
+
+.icon-28 {
+    background-color: #2ecc71;
+}
+
+.icon-29 {
+    background-color: #9b59b6;
+}
+
+.icon-30 {
+    background-color: #e74c3c;
+}
+
+.icon-31 {
+    background-color: #3498db;
+}
+
+.icon-32 {
+    background-color: #2ecc71;
+}
+
+.icon-33 {
+    background-color: #9b59b6;
+}
+
+.icon-34 {
+    background-color: #e74c3c;
+}
+
+.icon-35 {
+    background-color: #3498db;
+}
+
+.icon-36 {
+    background-color: #2ecc71;
+}
+
+.icon-37 {
+    background-color: #9b59b6;
+}
+
+.icon-38 {
+    background-color: #e74c3c;
+}
+
+.icon-39 {
+    background-color: #3498db;
+}
+
+.icon-40 {
+    background-color: #2ecc71;
+}
+
+.icon-41 {
+    background-color: #9b59b6;
+}
+
+.icon-42 {
+    background-color: #e74c3c;
+}
+
+.icon-43 {
+    background-color: #3498db;
+}
+
+.icon-44 {
+    background-color: #2ecc71;
+}
+
+.icon-45 {
+    background-color: #9b59b6;
+}
+
+.icon-46 {
+    background-color: #e74c3c;
+}
+
+.icon-47 {
+    background-color: #3498db;
+}
+
+.icon-48 {
+    background-color: #2ecc71;
+}
+
+.icon-49 {
+    background-color: #9b59b6;
+}
+
+.icon-50 {
+    background-color: #e74c3c;
+}
+
+.icon-51 {
+    background-color: #3498db;
+}
+
+.icon-52 {
+    background-color: #2ecc71;
+}
+
+.icon-53 {
+    background-color: #9b59b6;
+}
+
+.icon-54 {
+    background-color: #e74c3c;
+}
+
+.icon-55 {
+    background-color: #3498db;
+}
+
+.icon-56 {
+    background-color: #2ecc71;
+}
+
+.icon-57 {
+    background-color: #9b59b6;
+}
+
+.icon-58 {
+    background-color: #e74c3c;
+}
+
+.icon-59 {
+    background-color: #3498db;
+}
+
+.icon-60 {
+    background-color: #2ecc71;
+}
+
+.icon-61 {
+    background-color: #9b59b6;
+}
+
+.icon-62 {
+    background-color: #e74c3c;
+}
+
+.icon-63 {
+    background-color: #3498db;
+}
+
+.icon-64 {
+    background-color: #2ecc71;
+}
+
+.icon-65 {
+    background-color: #9b59b6;
+}
+
+.icon-66 {
+    background-color: #e74c3c;
+}
+
+.icon-67 {
+    background-color: #3498db;
+}
+
+.icon-68 {
+    background-color: #2ecc71;
+}
+
+.icon-69 {
+    background-color: "#9b59b6";
+}
+
+.icon-70 {
+    background-color: "#3498db";
+}
+
+.icon-71 {
+    background-color: "#2ecc71";
+}
+
+.icon-72 {
+    background-color: "#9b59b6";
+}
+
+.icon-73 {
+    background-color: "#3498db";
+}
+
+.icon-74 {
+    background-color: "#e74c3c";
+}
+
+.icon-75 {
+    background-color: "#2ecc71";
+}
+
+.icon-76 {
+    background-color: "#3498db";
+}
+
+.icon-77 {
+    background-color: "#3498db";
+}
+
+.icon-78 {
+    background-color: "#2ecc71";
+}
+
+.icon-79 {
+    background-color: "#9b59b6";
+}
+
+.icon-80 {
+    background-color: "#3498db";
+}
+
+.icon-81 {
+    background-color: "#2ecc71";
+}
+
+.icon-82 {
+    background-color: "#3498db";
+}
+
+.icon-9 {
+    background-color: "#9b59b6";
+}
+
+.icon-9 {
+    background-color: "#3498db";
+}
+
+.icon-10 {
+    background-color: "#2ecc71";
+}
+
+.icon-11 {
+    background-color: "#3498db";
+}
+
+.icon-12 {
+    background-color: "#3498db";
+}
+
+.icon-13 {
+    background-color: "#3498db";
+}
+
+.icon-14 {
+    background-color: "#3498DB";
+}
+
+.icon-15 {
+    background-color: "#3498DB";
+}
+
+.icon-16 {
+    background-color: "#2ecc71";
+}
+
+.icon-17 {
+    background-color: "#3498DB";
+}
+.icon-18 {
+    background-color: "#3498DB";
+}
+.icon-19 {
+    background-color: "#3498DB";
+}
+.icon-20 {
+    background-color: "#3498DB";
+}
+.icon-21 {
+    background-color: "#3498DB";
+}
+.icon-24 {
+    background-color: "#3498DB";
+}
+.icon-34 {
+    background-color: "#3498DB";
+}
+.icon-4 {
+    background-color: "#3498DB";
+}
+.icon-59 {
+    background-color: "#3498DB";
+}
+.icon-60 {
+    background-color: "#3498DB";
+}
+.icon-61 {
+    background-color: "#3498DB";
+}
+.icon-62 {
+    background-color: "#3498DB";
+}
+.icon-70 {
+    background-color: "#3498DB";
+}
+.icon-71 {
+    background-color: "#3498DB";
+}
+.icon-78 {
+    background-color: "#3498DB";
+}
+.icon-80 {
+    background-color: "#3498DB";
+}
+.icon-9 {
+    background-color: "#3498DB";
+}
+.icon-9 {
+    background-color: "#3498DB";
+}
+.icon-10 {
+    background-color: "#3498DB";
+}
+.icon-11 {
+    background-color: "#3498DB";
+}
+.icon-12 {
+    background-color: "#3498DB";
+}
+.icon-13 {
+    background-color: "#3498DB";
+}
+.icon-14 {
+    background-color: "#3498DB";
+}
+.icon-15 {
+    background-color: "#3498DB";
+}
+.icon-16 {
+    background-color: "#3498DB";
+}
+.icon-17 {
+    background-color: "#3498DB";
+}
+.icon-18 {
+    background-color: "#3498DB";
+}
+.icon-19 {
+    background-color: "#3498DB";
+}
+.icon-20 {
+    background-color: "#3498DB";
+}
+.icon-17 {
+    background-color: "#3498DB";
+}
+.icon-18 {
+    background-color: "#3498DB";
+}
+.icon-19 {
+    background-color: "#3498DB";
+}
+.icon-20 {
+    background-color: "#3498DB";
+}
+.icon-34 {
+    background-color: "#3498DB";
+}
+.icon-19 {
+    background-color: "#3498DB";
+}
+.icon-20 {
+    background-color: "#3498DB";
+}
+.icon-17 {
+    background-color: "#3498DB";
+}
+.icon-18 {
+    background-color: "#3498DB";
+}
+.icon-19 {
+    background-color: "#3498DB";
+}
+.icon-20 {
+    background-color: "#3498DB";
+}
+.icon-34 {
+    background-color: "#3498DB";
+}
+.icon-19 {
+    background-color: "#3498DB";
+}
+.icon-20 {
+    background-color: "#3498DB";
+}
+.icon-17 {
+    background-color: "#3498DB";
+}
+.icon-34 {
+    background-color: "#3498DB";
+}
+.icon-19 {
+    background-color: "#3498DB";
+}
+.Icon-20 {
+    background-color: "#3498DB";
+}
+.Icon-19 {
+    background-color: "#3498DB";
+}
+.Icon-19 {
+    background-color: "#3498DB";
+}
+.Icon-17 {
+    background-COLOR: "#3498DB";
+}
+.Icon-19 {
+    background-COLOR: "#3498DB";
+}
+.Icon-19 {
+    background-COLOR: "#3498DB";
+}
+.CONNE-19 {
+    background-COLOR: "#3498DB";
+}
+.AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA

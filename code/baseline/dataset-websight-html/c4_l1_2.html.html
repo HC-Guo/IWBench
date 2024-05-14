@@ -1,0 +1,66 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-section, .discount-section {
+    margin: 10px;
+}
+
+.product, .discount {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    margin: 5px;
+}
+
+@media (min-width: 600px) {
+    .product-section, .discount-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product, .discount {
+        width: calc(50% - 10px);
+    }
+}
+</style>
+<body>
+    <header>
+        <h1>Welcome to Fashion Style</h1>
+    </header>
+    <section class="product-section">
+        <h2>New Products</h2>
+        <div class="product">
+            <img src="product1.jpg" alt="Image">
+            <h3>New Fashion Tee</h3>
+            <p>This is a cool new tee.</p>
+            <p>Price: $29.99</p>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Image">
+            <h3>Trending Jeans</h3>
+            <p>Trendy jeans that you must have.</p>
+            <p>Price: $59.99</p>
+        </div>
+    </section>
+    <section class="discount-section">
+        <h2>Hot-Selling Items</h2>
+        <div class="discount">
+            <img src="discount1.jpg" alt="Image">
+            <h3>Summer Dress</h3>
+            <p>Beautiful summer dress on discount.</p>
+            <p>Price: $39.99</p>
+        </div>
+    </section>
+    <footer>
+        <h2>Discount Area</h2>
+    </footer>
+</body>
+</html>

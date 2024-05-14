@@ -1,0 +1,54 @@
+"Message." The form is displayed in a white background, and the fields are arranged in a linear fashion.
+
+To generate the corresponding web code for this form, you can use HTML and CSS. Here's an example of the HTML code:
+```html
+<form action="submit-form.php" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  <br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <br>
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea>
+  <br>
+  <input type="submit" value="Send">
+</form>
+```
+And here's an example of the CSS code to style the form:
+```css
+form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #ccc;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45

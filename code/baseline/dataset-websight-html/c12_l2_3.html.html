@@ -1,0 +1,60 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    margin-right: 10px;
+}
+
+.product, .review, .rating {
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.product video {
+    margin-bottom: 10px;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="#products">产品</a>
+            <a href="#reviews">评论</a>
+            <a href="#ratings">评分</a>
+        </div>
+        <div class="product" id="products">
+            <h2>产品详情</h2>
+            <video controls>
+                <source src="product_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="review" id="reviews">
+            <h2>客户评论</h2>
+            <p>这是一个客户的评论</p>
+        </div>
+        <div class="rating" id="ratings">
+            <h2>产品评分</h2>
+            <select>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>

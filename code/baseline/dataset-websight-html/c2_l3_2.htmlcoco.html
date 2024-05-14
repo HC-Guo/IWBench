@@ -1,0 +1,127 @@
+<html>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header__logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.header__nav {
+    display: flex;
+    list-style: none;
+}
+
+.header__nav-item {
+    margin-left: 10px;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+}
+
+.header__search-input {
+    margin-right: 10px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.main__news {
+    width: 70%;
+}
+
+.main__sidebar {
+    width: 30%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer__logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.footer__social {
+    display: flex;
+    list-style: none;
+}
+
+.footer__social-item {
+    margin-left: 10px;
+}
+
+.footer__search {
+    display: flex;
+    align-items: center;
+}
+
+.footer__search-input {
+    margin-right: 10px;
+}
+</style>
+<body>
+    <header class="header">
+        <div class="header__logo">Local News & Weather Dashboard</div>
+        <nav class="header__nav">
+            <ul>
+                <li class="header__nav-item">Home</li>
+                <li class="header__nav-item">Categories</li>
+                <li class="header__nav-item">About</li>
+                <li class="header__nav-item">Contact</li>
+            </ul>
+        </nav>
+        <form class="header__search">
+            <input type="text" class="header__search-input" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <main class="main">
+        <section class="main__news">
+            <article class="main__news-item" style="background-color: #f00;">1</article>
+            <article class="main__news-item" style="background-color: #0f0;">2</article>
+            <article class="main__news-item" style="background-color: #00f;">3</article>
+        </section>
+        <aside class="main__sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li class="main__sidebar-item" style="background-color: #ff0;">1</li>
+                <li class="main__sidebar-item" style="background-color: #0ff;">2</li>
+                <li class="main__sidebar-item" style="background-color: #f0f;">3</li>
+            </ul>
+        </aside>
+    </main>
+    <footer class="footer">
+        <div class="footer__logo">Latest News</div>
+        <ul class="footer__social">
+            <li class="footer__social-item" style="background-color: #f00;">1</li>
+            <li class="footer__social-item" style="background-color: #0f0;">2</li>
+            <li class="footer__social-item" style="background-color: #00f;">3</li>
+        </ul>
+        <form class="footer__search">
+            <input type="text" class="footer__search-input" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </footer>
+</body>
+</html>

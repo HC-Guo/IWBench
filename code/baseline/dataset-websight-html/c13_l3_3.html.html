@@ -1,0 +1,85 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.search-bar {
+    padding: 5px;
+}
+
+.content {
+    margin: 20px;
+}
+
+.content h1 {
+    color: blue;
+}
+
+.booking-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.booking-form label {
+    margin-right: 10px;
+}
+
+.booking-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #ddd;
+    padding: 10px;
+    text-align: center;
+}
+</style>
+<body>
+    <div class="navbar">
+        <a href="#">首頁</a>
+        <a href="#">關於我們</a>
+        <a href="#">聯繫我們</a>
+        <form class="search-bar">
+            <input type="text" placeholder="搜索旅行...">
+        </form>
+    </div>
+    <div class="content">
+        <h1>歡迎訪問旅程網站</h1>
+        <p>這裡是旅行網頁的主要部分。</p>
+        <div class="booking-form">
+            <form>
+                <label for="destination">目的地:</label>
+                <input type="text" id="destination" name="destination">
+                <input type="submit" value="預約">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <a href="#">關於我們</a>
+    </div>
+</body>
+</html>

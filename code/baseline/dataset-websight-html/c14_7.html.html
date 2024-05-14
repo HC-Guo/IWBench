@@ -1,0 +1,72 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f7fa;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2em;
+    color: #6c757d;
+    margin-bottom: 1em;
+}
+
+.app-info {
+    max-width: 600px;
+    color: #6c757d;
+}
+
+.app-info p {
+    margin: 0.5em 0;
+}
+
+.app-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.app-info a:hover {
+    color: #0056b3;
+}
+
+.app-info a:active {
+    color: #003366;
+}
+
+.app-info a:visited {
+    color: #003366;
+}
+
+.app-info a:link {
+    color: #003366;
+}
+
+.app-info a:target {
+    color: #003366;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="logo">HEROKU</div>
+        <div class="app-info">
+            <p>Application error</p>
+            <p>An error occurred in the application and your page could not be served. If you are the application owner, check your <a href="#">logs</a> for details.</p>
+            <p>You can do this from the <a href="#">Heroku CLI</a> with the <code>heroku logs &lt;-tail</code> command.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-column {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.right-column {
+    width: 80%;
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.product-list {
+    list-style-type: none;
+    padding: 0;
+    background-color: #eee;
+    margin-bottom: 20px;
+}
+
+.product-list li {
+    padding: 5px;
+}
+
+.product-list li:hover {
+    background-color: #ddd;
+}
+
+.product-details {
+    margin-bottom: 20px;
+}
+
+.add-to-cart {
+    background-color: #ddd;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <h2>搜索栏</h2>
+            <form>
+                <input type="text" placeholder="搜索...">
+            </form>
+        </div>
+        <div class="right-column">
+            <ul class="product-list">
+                <li>产品1</li>
+                <li>产品2</li>
+                <li>产品3</li>
+            </ul>
+            <div class="product-details">
+                <h2>产品标题</h2>
+                <p>这是产品的简短描述。这是产品的简短描述。这是产品的简短描述。</p>
+                <button class="add-to-cart">添加到购物车</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

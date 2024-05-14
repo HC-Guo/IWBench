@@ -1,0 +1,69 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+section {
+    margin: 2em 0;
+}
+
+#photographer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#gallery img {
+    width: 30%;
+    margin: 1em;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="photographer">
+        <h1>About the Photographer</h1>
+        <p>[Introduction about the photographer's professional background and artistic philosophy.]</p>
+    </section>
+    <section id="gallery">
+        <h1>Image Gallery</h1>
+        <div id="gallery-images">
+            <img src="image1.jpg" alt="Image">
+            <!-- More images... -->
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Contact Information</h1>
+        <p>[Contact details and quick links to social media accounts.]</p>
+    </section>
+</body>
+</html>

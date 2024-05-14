@@ -1,0 +1,125 @@
+<html>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.review, .comment {
+    border: 1px solid #333;
+    margin: 10px 0;
+}
+
+.rating {
+    color: #333;
+}
+
+.rating span {
+    color: #666;
+}
+
+.rating span:nth-child(odd) {
+    background-color: #666;
+}
+
+.rating span:nth-child(even) {
+    background-color: #999;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Hub</a></li>
+            </ul>
+        </nav>
+        <h1>Movie & TV Series Reviews Hub</h1>
+    </header>
+    <main>
+        <section id="reviews">
+            <div class="review">
+                <h2>Latest Reviews</h2>
+                <div class="rating">
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                </div>
+                <h3>Movie Title</h3>
+                <p>Description...</p>
+                <div class="rating">
+                    <span>User Rating: 4.5</span>
+                </div>
+            </div>
+            <div class="review">
+                <h2>Watch on Platform A</h2>
+                <div class="rating">
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                </div>
+                <h3>Watch on Platform B</h3>
+                <p>Description...</p>
+            </div>
+        </section>
+        <section id="comments">
+            <h2>Comments</h2>
+            <div class="comment">
+                <h3>User Comment</h3>
+                <p>Write a comment...</p>
+                <button>Post Comment</button>
+            </div>
+        </section>
+        <section id="customize">
+            <h2>Customize Content Preferences</h2>
+            <div class="rating">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

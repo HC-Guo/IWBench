@@ -1,0 +1,102 @@
+<html>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background: #f8f9fa;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.review {
+    border: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+.review h2 {
+    color: #007bff;
+}
+
+.review p {
+    color: #6c757d;
+}
+
+.rating {
+    color: #00c853;
+}
+
+.comment {
+    border: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+.comment p {
+    color: #6c757d;
+}
+
+.rating {
+    color: #00c853;
+}
+</style>
+<body>
+    <header>
+        <h1>Movie Reviews Aggregator</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="review">
+            <h2>Review 1</h2>
+            <p>This is a review of the movie 123.</p>
+            <div class="rating">
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+            </div>
+        </section>
+        <section class="review">
+            <h2>Review 2</h2>
+            <p>This is a review of the movie 456.</p>
+            <div class="rating">
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+            </div>
+        </section>
+        <section class="comment">
+            <h2>Comments</h2>
+            <p>12 comments yet. Be the first to comment!</p>
+        </section>
+        <form>
+            <textarea placeholder="Write your comment"></textarea>
+            <button type="submit">Post Comment</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Movie Reviews Aggregator</p>
+    </footer>
+</body>
+</html>

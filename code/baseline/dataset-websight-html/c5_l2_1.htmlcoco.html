@@ -1,0 +1,68 @@
+<html>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.blog, .comments, .badge {
+    margin: 10px;
+    padding: 15px;
+    background-color: #f2f2f2;
+}
+
+.blog img, .comments p, .badge p {
+    border: 1px dashed #4CAF50;
+}
+
+.comments p:nth-child(odd) {
+    color: #4CAF50;
+}
+
+.comments p:nth-child(even) {
+    color: #9A0E14;
+}
+
+.badge p:nth-child(odd) {
+    color: #E60073;
+}
+
+.badge p:nth-child(even) {
+    color: #D8BFD8;
+}
+</style>
+<body>
+    <header>
+        <h1>Travel & Food Experiences Blog</h1>
+    </header>
+    <section class="blog">
+        <h2>Blog Title Here</h2>
+        <img src="https://via.placeholder.com/150" alt="Image">
+        <p>Blog content goes here... [elements that need to be included]</p>
+    </section>
+    <section class="comments">
+        <h3>Comments</h3>
+        <p>Interactive comments section... [JS functions to be included]</p>
+    </section>
+    <section class="badges">
+        <h3>Badges</h3>
+        <div class="badge">
+            <h4>Best Recipe of the Month</h4>
+            <p>[Badge content]</p>
+        </div>
+        <!-- More badges... -->
+    </section>
+</body>
+</html>

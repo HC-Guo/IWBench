@@ -1,0 +1,103 @@
+<html>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    margin: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #333;
+}
+
+#gallery, #about, #contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-item, .about-item, .contact-item {
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px dashed #333;
+    text-align: center;
+}
+
+.gallery-item {
+    color: #fff;
+}
+
+.about-item {
+    color: #333;
+}
+
+.contact-item {
+    color: #333;
+}
+</style>
+<body>
+    <header>
+        <h1>Photographer's Portfolio</h1>
+        <nav>
+            <a href="#"><i class="fa fa-camera-retro fa-2x"></i></a>
+            <a href="#"><i class="fa fa-user-secret fa-2x"></i></a>
+            <a href="#"><i class="fa fa-map-marker fa-2x"></i></a>
+            <a href="#"><i class="fa fa-envelope fa-2x"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section id="gallery">
+            <div class="gallery-item"><i class="fa fa-camera-retro"></i> 1</div>
+            <div class="gallery-item"><i class="fa fa-user-secret"></i> 2</div>
+            <div class="gallery-item"><i class="fa fa-map-marker"></i> 3</div>
+            <div class="gallery-item"><i class="fa fa-envelope"></i> 4</div>
+        </section>
+        <section id="about">
+            <h2>About the Photographer</h2>
+            <div class="about-item"><i class="fa fa-camera-retro"></i> 5</div>
+            <div class="about-item"><i class="fa fa-user-secret"></i> 6</div>
+            <div class="about-item"><i class="fa fa-map-marker"></i> 7</div>
+            <div class="about-item"><i class="fa fa-envelope"></i> 8</div>
+        </section>
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <div class="contact-item"><i class="fa fa-camera-retro"></i> 9</div>
+            <div class="contact-item"><i class="fa fa-user-secret"></i> 10</div>
+            <div class="contact-item"><i class="fa fa-map-marker"></i> 11</div>
+            <div class="contact-item"><i class="fa fa-envelope"></i> 12</div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Photographer's Name</p>
+    </footer>
+</body>
+</html>

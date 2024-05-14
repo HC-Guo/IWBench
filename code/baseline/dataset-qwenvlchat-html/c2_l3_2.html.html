@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Local News & Weather Dashboard</title>
+</head>
+<body>
+<h1>Local News & Weather Dashboard</h1>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Categories</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+<ul>
+<li><a href="#">Latest News</a></li>
+<li><a href="#">Search News</a></li>
+</ul>
+<form action="/search" method="get">
+<input type="text" name="keyword" value="<%= @keyword %>" placeholder="Search keyword" />
+<input type="submit" value="Search" />
+</form>
+</body>
+</html>

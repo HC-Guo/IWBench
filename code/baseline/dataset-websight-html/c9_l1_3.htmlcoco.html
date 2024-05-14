@@ -1,0 +1,145 @@
+<html>
+<style>
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #6bac5;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    background-color: #6bac5;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -17px;
+    background-color: #6bac5;
+    border: 4px solid #6bac5;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -10px;
+    background-color: #6bac5;
+    border: 2px solid #6bac5;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.btn {
+    background-color: #6bac5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -10px;
+    background-color: #6bac5;
+    border: 2px solid #6bac5;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+</style>
+<body>
+    <header>
+        <h1>Green Forum</h1>
+    </header>
+    <main>
+        <section class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h2>Sustainable Lifestyle</h2>
+                    <p>5</p>
+                    <button class="btn">Create Post</button>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>Environmental Protection Laws</h2>
+                    <p>6</p>
+                    <button class="btn">Create Post</button>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>Climate Change</h2>
+                    <p>7</p>
+                    <button class="btn">Create Post</button>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>Environmental Activities and Initiatives</h2>
+                    <p>8</p>
+                    <button class="btn">Create Post</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

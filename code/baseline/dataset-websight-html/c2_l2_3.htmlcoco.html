@@ -1,0 +1,80 @@
+<html>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+}
+
+.news-ticker {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.news-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+}
+
+.news-item span {
+    color: #ccc;
+}
+
+.news-item .active {
+    background-color: #f00;
+}
+
+.search-bar {
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+}
+
+.content {
+    margin-top: 50px;
+    padding: 10px;
+}
+</style>
+<body>
+    <div class="header">
+        <h1>Local News Today</h1>
+        <div class="news-ticker">
+            <div class="news-item">
+                <span class="active">1</span>
+                <p>Breaking News: Weather update</p>
+            </div>
+            <div class="news-item">
+                <span>2</span>
+                <p>New technology released</p>
+            </div>
+            <div class="news-item">
+                <span>3</span>
+                <p>Political update</p>
+            </div>
+        </div>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search News...">
+        <button>Search</button>
+    </div>
+    <div class="content">
+        <p>Loading weather...</p>
+    </div>
+</body>
+</html>

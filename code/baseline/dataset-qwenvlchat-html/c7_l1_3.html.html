@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Blog</title>
+</head>
+<body>
+<h1>Welcome to my Blog</h1>
+<nav>
+<ul>
+<li><a href="#news">News</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#about">About</a></li>
+</ul>
+</nav>
+<h2>What's on your mind?</h2>
+<form action="/post">
+<h3>Post</h3>
+<input type="text" name="title" placeholder="Title">
+<textarea name="content" placeholder="Content"></textarea>
+<button type="submit">Post</button>
+</form>
+<h2>News</h2>
+<p id="news"></p>
+<h2>Contact</h2>
+<form action="/contact">
+<h3>Send a message</h3>
+<label for="name">Name:</label>
+<input type="text" name="name" id="name">
+<label for="email">Email:</label>
+<input type="email" name="email" id="email">
+<label for="message">Message:</label>
+<textarea name="message" id="message"></textarea>
+<button type="submit">Send</button>
+</form>
+<h2>About</h2>
+<p>Here is some information about me.</p>
+</body>
+</html>

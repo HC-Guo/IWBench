@@ -1,0 +1,129 @@
+<html>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.header__logo {
+    width: 100px;
+    height: 50px;
+    background-color: #6c757d;
+}
+
+.header__nav {
+    display: flex;
+    list-style: none;
+}
+
+.header__nav-item {
+    margin-left: 10px;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+}
+
+.header__search-input {
+    margin-right: 10px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.main__newsletter {
+    width: 30%;
+    background-color: #6c757d;
+}
+
+.main__dashboard {
+    width: 70%;
+    background-color: #6c757d;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.footer__social {
+    width: 100px;
+    height: 50px;
+    background-color: #6c757d;
+}
+
+.footer__search {
+    display: flex;
+    align-items: center;
+}
+
+.footer__search-input {
+    margin-right: 10px;
+}
+</style>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <div class="header__logo-img"></div>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">Link 1</li>
+                <li class="header__nav-item">Link 2</li>
+                <li class="header__nav-item">Link 3</li>
+            </ul>
+        </nav>
+        <form class="header__search">
+            <input type="text" class="header__search-input" placeholder="Search...">
+            <button type="submit" class="header__search-button">Search</button>
+        </form>
+    </header>
+    <main class="main">
+        <section class="main__newsletter">
+            <h2>Your Local News</h2>
+            <ol>
+                <li>Weather Widget Placeholder</li>
+                <li>News Scroller Placeholder</li>
+                <li>Local Emergencies Placeholder</li>
+            </ol>
+        </section>
+        <section class="main__dashboard">
+            <h2>Personal Dashboard</h2>
+            <div class="main__dashboard-advanced">
+                <h3>Advanced Search</h3>
+                <form>
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__social">
+            <div class="footer__social-icon"></div>
+            <div class="footer__social-icon"></div>
+            <div class="footer__social-icon"></div>
+        </div>
+        <form class="footer__search">
+            <input type="text" class="footer__search-input" placeholder="Search...">
+            <button type="submit" class="footer__search-button">Search</button>
+        </form>
+    </footer>
+</body>
+</html>

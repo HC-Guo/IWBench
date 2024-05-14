@@ -1,0 +1,150 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: url('https://source.unsplash.com/1600x900/?tech');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+header h1, header h2 {
+    font-weight: 300;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header h2 {
+    font-size: 1.5em;
+}
+
+header button {
+    background: #57b5f5;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+#services {
+    background: #111;
+    color: white;
+}
+
+#about {
+    background: #e6e6e6;
+}
+
+#contact {
+    background: #333;
+    color: white;
+}
+
+.service {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+}
+
+.social-icon {
+    margin: 0 10px;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <h1>VELOCITY</h1>
+        <h2>A FREE RESPONSIVE TEMPLATE BY WEBFLOW</h2>
+        <button>SIGN UP</button>
+        <button>LEARN MORE</button>
+    </header>
+    <section id="home">
+        <h2>THIS IS VELOCITY</h2>
+        <p>THIS IS SOMETHING TOTALLY IN A DIV OF A BLOCK</p>
+    </section>
+    <section id="services">
+        <h2>THIS IS SERVICES</h2>
+        <p>THIS IS SOMETHING TOTALLY IN A DIV OF A BLOCK</p>
+        <div class="service">
+            <img src="https://source.unsplash.com/300x300/?tech" alt="Service 1">
+            <h3>SERVICE 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enatis in eros.</p>
+        </div>
+        <div class="service">
+            <img src="https://source.unsplash.com/300x300/?tech" alt="Service 2">
+            <h3>SERVICE 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enatis in eros.</p>
+        </div>
+        <div class="service">
+            <img src="https://source.unsplash.com/300x300/?tech" alt="Service 3">
+            <h3>SERVICE 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enatis in eros.</p>
+        </div>
+    </section>
+    <section id="about">
+        <h2>THIS IS ABOUT</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enatis in eros.</p>
+    </section>
+    <section id="contact">
+        <h2>THIS IS CONTACT</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enatis in eros.</p>
+        <div class="social">
+            <h3>SOCIAL LINKS</h3>
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+        <form>
+            <h3>Contact Form</h3>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>Copyright Velocity Made in Webflow.</p>
+    </footer>
+</body>
+</html>

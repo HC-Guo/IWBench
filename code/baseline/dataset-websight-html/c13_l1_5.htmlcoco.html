@@ -1,0 +1,78 @@
+<html>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 300px;
+    background-color: #eee;
+    margin: 10px;
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+}
+
+.carousel-item p {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.carousel-controls button {
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.carousel-controls button.prev {
+    color: #fff;
+    background-color: #c0392b;
+}
+
+.carousel-controls button.next {
+    color: #fff;
+    background-color: #27ae60;
+}
+</style>
+<body>
+    <div class="carousel">
+        <div class="carousel-item active">
+            <img src="product1.jpg" alt="产品1">
+            <p>这是产品1的描述</p>
+        </div>
+        <div class="carousel-item">
+            <img src="product2.jpg" alt="产品2">
+            <p>这是产品2的描述</p>
+        </div>
+        <div class="carousel-item">
+            <img src="product3.jpg" alt="产品3">
+            <p>这是产品3的描述</p>
+        </div>
+        <div class="carousel-item">
+            <img src="product4.jpg" alt="产品4">
+            <p>这是产品4的描述</p>
+        </div>
+        <div class="carousel-item">
+            <img src="product5.jpg" alt="产品5">
+            <p>这是产品5的描述</p>
+        </div>
+        <div class="carousel-controls">
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+    </div>
+</body>
+</html>

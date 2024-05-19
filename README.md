@@ -21,7 +21,7 @@ playwright install
 ```
 
 # 🚨Dataset
-Download the complete dataset from [Google Drive(88.1MB)](https://drive.google.com/drive/folders/1zmQHgLvF1591gXSXWponMTBBH_SA-8Pj) and place it in the "./dataset" directory.
+Download the version V1 dataset from [Google Drive(88.1MB)](https://drive.google.com/drive/folders/1zmQHgLvF1591gXSXWponMTBBH_SA-8Pj) and place it in the "./dataset" directory.
 
 # 📈Evaluation
 Using your LMM, generate the corresponding HTML code based on the input images. For example, use the PNG files in the 'dataset' directory as input and save the generated results in a folder, in a format like 'code/baseline/dataset-llava-v1.5-13b-html' or 'code/baseline/dataset-websight-html'. The '.html' and '.htmlcoco' files should be generated from the corresponding PNG files in the 'dataset' directory.

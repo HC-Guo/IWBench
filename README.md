@@ -42,6 +42,18 @@ Accuracy scores on our IW-bench. Element Accuracy is employed to gauge the compr
 
 
 
+## Licenses
+
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+
+This work is licensed under a [MIT License](https://lbesson.mit-license.org/).
+
+[![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+The dataset is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+
 ## 📜Citation
 
 Feel free to cite us if you like our work.

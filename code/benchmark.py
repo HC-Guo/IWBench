@@ -1,6 +1,3 @@
-# ----------------------------------------------------------------------------------
-# - Author Contact: wei.zhang, knediny@gmail.com (Original code)
-# ----------------------------------------------------------------------------------
 from utils.html.html_processor import process
 from utils.html.html_simplifier import simplify
 from utils.html.html_tree_serializer import serialize

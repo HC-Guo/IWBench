@@ -1,6 +1,6 @@
-Multimodal C4 (mmc4): An Open, Billion-scale Corpus of Images Interleaved With Text
+IW-Bench: Evaluating Large Multimodal Models for Converting Image-to-Web
 
-# Dataset Card for mmc4
+# Benchmark Card for IW-Bench
 
 ## Table of Contents
 - [Dataset Description](#dataset-description)

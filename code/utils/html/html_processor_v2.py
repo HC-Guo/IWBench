@@ -129,7 +129,7 @@ if __name__ == "__main__":
     urls = ["https://example.com"]
     local_htmls = ["./test/index1.html", "./test/index2.html"]
     
-    chrome_driver_path = "C:\\Users\wei2.zhang\preparation\screenshot2html\code\chromedriver-win64\chromedriver.exe"
+    chrome_driver_path = "xx\chromedriver.exe"
     driver_manager = WebDriverManager(executable_path=chrome_driver_path, headless=False)
     driver_manager.start_driver()
     device_type = 'mobile'

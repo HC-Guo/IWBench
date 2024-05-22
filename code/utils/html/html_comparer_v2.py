@@ -22,8 +22,6 @@ def serialize_html_elements(tree, include_styles=False):
 
 def map_semantic_roles(elements):
     roles = {
-        # ? 同义词如何获取？如何自动化？
-        # ？ 一份文件有多个同义词，如何处理？
         'header': ['header', 'head', 'top', 'branding'],
         'footer': ['footer', 'foot', 'bottom'],
         'navigation': ['nav', 'menu', 'navigation'],

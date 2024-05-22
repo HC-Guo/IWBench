@@ -1,19 +1,3 @@
-# Author: Yaonan Gu, yaonangu@u.nus.edu
-# Date: 2024.01.12
-
-"""
-这个脚本使用OpenAI的GPT-4 API来自动生成HTML代码。它首先定义了两个函数：一个用于调用API生成HTML代码，
-另一个用于将生成的HTML代码保存到文件中。这个脚本旨在通过提供的prompts生成HTML代码，并将每个生成的HTML文件
-按照特定的命名规则保存。
-
-主要步骤如下：
-1. `call_gpt4_api` 函数接收一个prompt和API密钥，调用OpenAI的GPT-4 API，并返回生成的HTML代码。
-2. `generate_and_save_html` 函数接收一个prompts字典和API密钥，使用`call_gpt4_api`函数处理每个prompt，
-   并将结果保存为HTML文件，文件名由列表名称和序号组成。
-3. 脚本最后部分调用 `generate_and_save_html` 函数，实际执行HTML代码的生成和保存操作。
-
-请注意，在实际使用此脚本之前，需要替换 `api_key` 变量的值为自己的OpenAI API密钥。
-"""
 
 import random
 import requests
@@ -75,7 +59,7 @@ prompts_list2 = generate_prompts(medium, 5, 30)  # 中等HTML，随机抽样30�
 prompts_list3 = generate_prompts(hard, 8, 30)  # 复杂HTML，随机抽样30次
 
 # OpenAI API密钥
-api_key = "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"
+api_key = "xxx"
 model_name = 'gpt-4'
 
 # 写入之前生成的prompts

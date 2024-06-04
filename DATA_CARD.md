@@ -94,9 +94,9 @@ Potential risks:
 
 
 ### Limitations
+- Language Scope: Currently, the benchmark is limited to only two languages. Expanding the scope to include additional languages would enhance its applicability and relevance to a more diverse global audience.
 
-- The benchmark is bilingual only.
-- We need more samples for benchmark.
+- Data Quantity: The benchmark dataset requires a significant increase in samples to ensure robustness and reliability. More comprehensive data coverage across different scenarios and contexts will improve the validity of benchmark results.
 
 ## Additional Information
 

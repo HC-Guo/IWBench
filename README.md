@@ -2,9 +2,6 @@
 
 ----
 
-## [🗂Project Page](https://iw-bench-page.vercel.app/) 
-<!-- | [![GitHub Repo Stars](https://img.shields.io/github/stars/HC-Guo/Image2HTML-Benchmark?label=stars&logo=github&color=brightgreen)](https://github.com/HC-Guo/Image2HTML-Benchmark) | [![arXiv](https://img.shields.io/badge/arXiv-xxxx-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/xxxx) -->
-
 # ✨Introduction
 👋 Welcome, this is a benchmark for evaluating large language models for Converting Images to HTML Code. 😊 We welcome everyone to participate and contribute 🌟. 
 

@@ -32,10 +32,6 @@ python benchmark.py --input_dir ./baseline/dataset-qwenvlchat-html
 Accuracy scores on our IW-bench. Element Accuracy is employed to gauge the comprehensiveness of elements, while Layout Accuracy is utilized to evaluate the effectiveness of webpage layout. These metrics are categorized into three difficulty levels: simple, medium, and complex. Each level is accompanied by corresponding scores and contributes to the final overall average score.
 ![image](document/result.png)
 
-# 🗓ToDO List
-✅ 1. Released version V1 of the dataset with over 317 web pages.
-
-🔘 2. Released version V2 of the dataset, a total of 1000 web pages.
 
 
 

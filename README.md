@@ -47,5 +47,16 @@ The dataset is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 
-
+## cite
+```
+@misc{guo2024iwbenchevaluatinglargemultimodal,
+      title={IW-Bench: Evaluating Large Multimodal Models for Converting Image-to-Web}, 
+      author={Hongcheng Guo and Wei Zhang and Junhao Chen and Yaonan Gu and Jian Yang and Junjia Du and Binyuan Hui and Tianyu Liu and Jianxin Ma and Chang Zhou and Zhoujun Li},
+      year={2024},
+      eprint={2409.18980},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2409.18980}, 
+}
+```
 
